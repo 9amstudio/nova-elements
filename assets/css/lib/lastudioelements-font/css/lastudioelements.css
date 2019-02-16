@@ -1,0 +1,171 @@
+@font-face {
+  font-family: 'novaelements';
+  src:  url('../fonts/novaelements.eot?n7pshk');
+  src:  url('../fonts/novaelements.eot?n7pshk#iefix') format('embedded-opentype'),
+    url('../fonts/novaelements.ttf?n7pshk') format('truetype'),
+    url('../fonts/novaelements.woff?n7pshk') format('woff'),
+    url('../fonts/novaelements.svg?n7pshk#novaelements') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="novaelements-icon-"], [class*=" novaelements-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'novaelements' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.elementor-panel [class^="novaelements-icon-"]:before,
+.elementor-panel [class*=" novaelements-icon-"]:before {
+  display: block;
+  font-size: 48px;
+  line-height: 28px;
+}
+
+.novaelements-icon-1:before {
+  content: "\e900";
+}
+.novaelements-icon-2:before {
+  content: "\e901";
+}
+.novaelements-icon-3:before {
+  content: "\e902";
+}
+.novaelements-icon-4:before {
+  content: "\e903";
+}
+.novaelements-icon-5:before {
+  content: "\e904";
+}
+.novaelements-icon-6:before {
+  content: "\e905";
+}
+.novaelements-icon-7:before {
+  content: "\e906";
+}
+.novaelements-icon-8:before {
+  content: "\e907";
+}
+.novaelements-icon-9:before {
+  content: "\e908";
+}
+.novaelements-icon-10:before {
+  content: "\e909";
+}
+.novaelements-icon-11:before {
+  content: "\e90a";
+}
+.novaelements-icon-12:before {
+  content: "\e90b";
+}
+.novaelements-icon-13:before {
+  content: "\e90c";
+}
+.novaelements-icon-14:before {
+  content: "\e90d";
+}
+.novaelements-icon-15:before {
+  content: "\e90e";
+}
+.novaelements-icon-16:before {
+  content: "\e90f";
+}
+.novaelements-icon-17:before {
+  content: "\e910";
+}
+.novaelements-icon-18:before {
+  content: "\e911";
+}
+.novaelements-icon-19:before {
+  content: "\e912";
+}
+.novaelements-icon-20:before {
+  content: "\e913";
+}
+.novaelements-icon-21:before {
+  content: "\e914";
+}
+.novaelements-icon-22:before {
+  content: "\e915";
+}
+.novaelements-icon-23:before {
+  content: "\e916";
+}
+.novaelements-icon-24:before {
+  content: "\e917";
+}
+.novaelements-icon-25:before {
+  content: "\e918";
+}
+.novaelements-icon-26:before {
+  content: "\e919";
+}
+.novaelements-icon-27:before {
+  content: "\e91a";
+}
+.novaelements-icon-28:before {
+  content: "\e91b";
+}
+.novaelements-icon-29:before {
+  content: "\e91c";
+}
+.novaelements-icon-30:before {
+  content: "\e91d";
+}
+.novaelements-icon-31:before {
+  content: "\e91e";
+}
+.novaelements-icon-32:before {
+  content: "\e91f";
+}
+.novaelements-icon-33:before {
+  content: "\e920";
+}
+.novaelements-icon-34:before {
+  content: "\e921";
+}
+.novaelements-icon-35:before {
+  content: "\e922";
+}
+.novaelements-icon-36:before {
+  content: "\e923";
+}
+.novaelements-icon-37:before {
+  content: "\e924";
+}
+.novaelements-icon-38:before {
+  content: "\e925";
+}
+.novaelements-icon-39:before {
+  content: "\e926";
+}
+.novaelements-icon-40:before {
+  content: "\e927";
+}
+.novaelements-icon-41:before {
+  content: "\e928";
+}
+.novaelements-icon-42:before {
+  content: "\e929";
+}
+.novaelements-icon-43:before {
+  content: "\e92a";
+}
+.novaelements-icon-44:before {
+  content: "\e92b";
+}
+.novaelements-icon-45:before {
+  content: "\e92c";
+}
+.novaelements-icon-46:before {
+  content: "\e92d";
+}

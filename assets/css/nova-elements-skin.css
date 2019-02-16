@@ -1,0 +1,742 @@
+.pricing-table {
+  text-align: center;
+  padding: 30px; }
+  .pricing-table__icon-box > *:before {
+    font-size: 40px; }
+  .pricing-table .pricing-table__title {
+    margin: 20px 0 0 0;
+    padding: 0; }
+  .pricing-table .pricing-table__subtitle {
+    margin: 10px 0 0 0;
+    padding: 0; }
+  .pricing-table__price {
+    padding: 15px 0; }
+    .pricing-table__price-prefix, .pricing-table__price-val {
+      font-size: 23px; }
+    .pricing-table__price-desc {
+      padding: 0;
+      margin: 5px 0 0; }
+  .pricing-table__action {
+    padding: 20px 0 0 0; }
+
+.brands-list .brands-list__item-name {
+  margin: 20px 0 0 0; }
+
+.brands-list .brands-list__item-img {
+  display: inline-block; }
+
+.nova-animated-box__front, .nova-animated-box__back {
+  padding: 10px; }
+
+.nova-animated-box__icon .nova-animated-box-icon-inner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; }
+
+.nova-animated-box__icon i {
+  font-size: 40px;
+  color: white; }
+
+.nova-animated-box .nova-animated-box__title {
+  color: white;
+  font-size: 23px;
+  margin: 0 0 10px 0; }
+
+.nova-animated-box .nova-animated-box__subtitle {
+  color: white;
+  font-size: 18px;
+  margin: 0 0 10px 0; }
+
+.nova-animated-box .nova-animated-box__description {
+  color: white;
+  font-size: 13px;
+  margin: 0 0 10px 0; }
+
+.nova-animated-box .nova-animated-box__button .nova-animated-box__button-text {
+  margin: 0 3px; }
+
+.nova-animated-box .nova-animated-box__button .nova-animated-box__button-icon {
+  color: white; }
+
+.nova-animated-text__before-text {
+  font-size: 36px; }
+
+.nova-animated-text__animated-text {
+  font-size: 40px; }
+
+.nova-animated-text__after-text {
+  font-size: 36px; }
+
+.circle-counter .circle-val {
+  color: #6ec1e4;
+  font-size: 23px; }
+  .circle-counter .circle-val .circle-counter__prefix {
+    line-height: 1; }
+  .circle-counter .circle-val .circle-counter__suffix {
+    line-height: 1; }
+
+.circle-counter .circle-counter__title {
+  padding-top: 10px; }
+
+.nova-carousel .nova-carousel__item-title {
+  margin: 0;
+  padding: 0; }
+
+.nova-carousel .nova-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  margin-top: -18px;
+  color: #fff; }
+  .nova-carousel .nova-arrow:before {
+    font-size: 23px; }
+  .nova-carousel .nova-arrow.prev-arrow {
+    left: 20px; }
+  .nova-carousel .nova-arrow.next-arrow {
+    right: 20px; }
+
+.nova-countdown-timer .nova-countdown-timer__item {
+  margin: 10px; }
+
+.nova-countdown-timer .nova-countdown-timer__item-value {
+  font-size: 23px; }
+
+.nova-countdown-timer .nova-countdown-timer__item-label {
+  font-size: 13px; }
+
+.nova-images-layout__inner {
+  margin: 10px; }
+
+.nova-images-layout__icon .nova-nova-images-layout-icon-inner {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; }
+
+.nova-images-layout__icon i {
+  font-size: 40px;
+  color: white; }
+
+.nova-images-layout__content {
+  padding: 20px; }
+  .nova-images-layout__content:before {
+    opacity: 0.4;
+    background-color: rgba(84, 89, 95, 0.6); }
+
+.nova-images-layout .nova-images-layout__title {
+  color: white;
+  font-size: 23px;
+  margin: 0 0 10px 0; }
+
+.nova-images-layout .nova-images-layout__desc {
+  color: white;
+  font-size: 13px;
+  margin: 0 0 10px 0; }
+
+.nova-slider {
+  position: relative; }
+  .nova-slider__icon .nova-slider-icon-inner {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; }
+  .nova-slider__icon i {
+    font-size: 40px;
+    color: white; }
+  .nova-slider .nova-slider__icon {
+    color: white;
+    font-size: 40px;
+    text-align: center; }
+  .nova-slider .nova-slider__title {
+    color: white;
+    font-size: 36px;
+    margin: 10px 0;
+    text-align: center; }
+  .nova-slider .nova-slider__subtitle {
+    color: white;
+    font-size: 24px;
+    margin: 10px 0;
+    text-align: center; }
+  .nova-slider .nova-slider__desc {
+    color: white;
+    font-size: 14px;
+    margin: 10px 0 30px 0;
+    text-align: center; }
+  .nova-slider .nova-slider__button-wrapper {
+    text-align: center; }
+    .nova-slider .nova-slider__button-wrapper .nova-slider__button--primary {
+      background-color: #6ec1e4; }
+  .nova-slider .sp-image-container {
+    position: relative; }
+    .nova-slider .sp-image-container:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.2);
+      content: ''; }
+  .nova-slider .sp-arrow {
+    color: white;
+    font-size: 30px;
+    background-color: #6ec1e4; }
+  .nova-slider .sp-full-screen-button {
+    font-size: 16px;
+    color: white; }
+  .nova-slider .sp-buttons .sp-button {
+    border-color: #6ec1e4;
+    background-color: transparent; }
+    .nova-slider .sp-buttons .sp-button.sp-selected-button {
+      background-color: #6ec1e4; }
+    .nova-slider .sp-buttons .sp-button:hover {
+      background-color: #6ec1e4; }
+  .nova-slider .sp-thumbnails .sp-thumbnail-container:hover:before {
+    border: 2px solid #54595f; }
+  .nova-slider .sp-thumbnails .sp-thumbnail-container.sp-selected-thumbnail:before {
+    border: 2px solid #6ec1e4; }
+
+.nova-team-member .nova-team-member__cover:before {
+  background-color: rgba(84, 89, 95, 0.5); }
+
+.nova-team-member .nova-team-member__cover:after {
+  border-color: rgba(84, 89, 95, 0.5) transparent transparent transparent; }
+
+.nova-team-member .nova-team-member__name {
+  font-size: 20px;
+  color: black;
+  margin: 10px 0; }
+
+.nova-team-member .nova-team-member__position {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 14px;
+  color: #6ec1e4; }
+
+.nova-team-member .nova-team-member__desc {
+  text-align: center;
+  font-size: 16px;
+  color: #54595f;
+  margin: 10px 0; }
+
+.nova-team-member .nova-team-member__socials {
+  margin: 10px 0; }
+
+.nova-team-member .nova-team-member__socials-icon {
+  font-size: 18px;
+  color: #6ec1e4; }
+  .nova-team-member .nova-team-member__socials-icon .inner {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%; }
+
+.nova-team-member .nova-team-member__socials-icon .inner {
+  margin: 5px; }
+
+.nova-services .nova-services__icon {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0; }
+  .nova-services .nova-services__icon .inner {
+    width: 80px;
+    height: 80px;
+    background-color: #6ec1e4;
+    border-radius: 50%; }
+    .nova-services .nova-services__icon .inner i {
+      color: white;
+      font-size: 40px; }
+
+.nova-services .nova-services__title {
+  font-size: 20px;
+  color: black;
+  margin: 10px 0; }
+
+.nova-services .nova-services__desc {
+  text-align: center;
+  font-size: 16px;
+  color: #54595f;
+  margin: 10px 0; }
+
+.nova-testimonials .nova-testimonials__icon {
+  font-size: 40px;
+  text-align: center;
+  margin: 5px; }
+  .nova-testimonials .nova-testimonials__icon .nova-testimonials__icon-inner {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%; }
+    .nova-testimonials .nova-testimonials__icon .nova-testimonials__icon-inner i {
+      font-size: 40px; }
+
+.nova-testimonials .nova-testimonials__title {
+  font-size: 20px;
+  color: black;
+  margin: 5px; }
+
+.nova-testimonials .nova-testimonials__comment {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #54595f;
+  margin: 5px;
+  padding: 25px 15px;
+  border-radius: 10px;
+  background-color: #6ec1e4; }
+
+.nova-testimonials .nova-testimonials__name {
+  font-size: 18px;
+  color: black;
+  margin: 5px; }
+
+.nova-testimonials .nova-testimonials__position {
+  text-align: center;
+  margin: 5px;
+  font-size: 16px;
+  color: #6ec1e4; }
+
+.nova-testimonials .nova-testimonials__date {
+  text-align: center;
+  margin: 5px;
+  font-size: 12px;
+  color: #7a7a7a; }
+
+.nova-testimonials .nova-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  margin-top: -18px;
+  color: #fff;
+  background-color: #6ec1e4; }
+  .nova-testimonials .nova-arrow:before {
+    font-size: 23px; }
+  .nova-testimonials .nova-arrow.prev-arrow {
+    left: 20px; }
+  .nova-testimonials .nova-arrow.next-arrow {
+    right: 20px; }
+
+.nova-testimonials .nova-slick-dots {
+  margin: 20px 0 0 0; }
+  .nova-testimonials .nova-slick-dots li.slick-active span {
+    background-color: #61ce70; }
+  .nova-testimonials .nova-slick-dots li:hover span {
+    background-color: #6ec1e4; }
+  .nova-testimonials .nova-slick-dots li span {
+    background-color: #7a7a7a; }
+
+.nova-button__instance {
+  border-radius: 4px; }
+
+.nova-button__icon {
+  color: white;
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  margin: 3px; }
+
+.nova-button__label {
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: 600;
+  text-align: left; }
+
+.nova-button__state {
+  padding: 10px 30px; }
+
+.nova-button__plane-normal {
+  background-color: #6ec1e4; }
+
+.nova-button__plane-hover {
+  background-color: #54595f; }
+
+.nova-image-comparison .jx-label {
+  margin: 5px;
+  background-color: #54595f; }
+
+.nova-image-comparison .jx-controller {
+  width: 40px;
+  height: 40px;
+  background-color: #6ec1e4;
+  transition: all 0.3s cubic-bezier(0.5, 0.12, 0.46, 0.88); }
+  .nova-image-comparison .jx-controller i {
+    color: white;
+    font-size: 20px;
+    margin: 5px; }
+
+.nova-image-comparison .jx-image.jx-left {
+  justify-content: flex-start; }
+
+.nova-image-comparison .jx-image.jx-right {
+  justify-content: flex-end; }
+
+.nova-image-comparison .nova-arrow {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  margin-top: -18px;
+  color: #fff;
+  background-color: #6ec1e4; }
+  .nova-image-comparison .nova-arrow:before {
+    font-size: 23px; }
+  .nova-image-comparison .nova-arrow.prev-arrow {
+    left: 20px; }
+  .nova-image-comparison .nova-arrow.next-arrow {
+    right: 20px; }
+
+.nova-image-comparison .nova-slick-dots {
+  margin: 20px 0 0 0; }
+  .nova-image-comparison .nova-slick-dots li.slick-active span {
+    background-color: #61ce70; }
+  .nova-image-comparison .nova-slick-dots li:hover span {
+    background-color: #6ec1e4; }
+  .nova-image-comparison .nova-slick-dots li span {
+    background-color: #7a7a7a; }
+
+.nova-instagram-gallery__content {
+  padding: 20px; }
+  .nova-instagram-gallery__content:before {
+    background-color: rgba(84, 89, 95, 0.6); }
+
+.nova-instagram-gallery__caption {
+  color: white;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  margin: 10px 0;
+  max-width: 100%;
+  z-index: 1; }
+
+.nova-instagram-gallery__meta {
+  z-index: 1; }
+
+.nova-instagram-gallery__comments-count {
+  color: white;
+  font-size: 20px;
+  margin: 5px; }
+
+.nova-instagram-gallery__comments-icon {
+  color: #6ec1e4;
+  margin-right: 5px; }
+
+.nova-instagram-gallery__likes-count {
+  color: white;
+  font-size: 20px;
+  margin: 5px; }
+
+.nova-instagram-gallery__likes-icon {
+  color: #6ec1e4;
+  margin-right: 5px; }
+
+.nova-scroll-navigation--position-left {
+  margin-left: 20px; }
+
+.nova-scroll-navigation--position-right {
+  margin-right: 20px; }
+
+.nova-scroll-navigation__item {
+  margin: 10px 0; }
+  .nova-scroll-navigation__item .nova-scroll-navigation__dot {
+    background-color: #54595f; }
+  .nova-scroll-navigation__item:hover .nova-scroll-navigation__dot {
+    background-color: #61ce70; }
+  .nova-scroll-navigation__item.invert .nova-scroll-navigation__dot {
+    background-color: #fff; }
+  .nova-scroll-navigation__item.active .nova-scroll-navigation__dot {
+    background-color: #6ec1e4; }
+
+.nova-scroll-navigation__dot {
+  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  transition: all 0.3s cubic-bezier(0.5, 0.12, 0.46, 0.88); }
+  .nova-scroll-navigation__dot i {
+    font-size: inherit; }
+
+.nova-scroll-navigation__item-hint {
+  background-color: #6ec1e4;
+  padding: 0 10px;
+  border-radius: 4px; }
+
+.nova-scroll-navigation__icon {
+  color: white;
+  font-size: 20px;
+  margin: 5px; }
+
+.nova-scroll-navigation__label {
+  color: white;
+  font-size: 16px; }
+
+.nova-headline__first {
+  color: #54595f; }
+  .nova-headline__first .nova-headline__deco {
+    margin-right: 10px; }
+
+.nova-headline__second {
+  color: #6ec1e4; }
+  .nova-headline__second .nova-headline__deco {
+    margin-left: 10px; }
+
+.nova-headline__divider {
+  height: 2px;
+  background-color: #7a7a7a; }
+
+.nova-headline__deco-icon i {
+  font-size: 30px;
+  color: #54595f; }
+
+.nova-headline--direction-horizontal .nova-headline__divider.nova-headline__left-divider {
+  margin-right: 10px; }
+
+.nova-headline--direction-horizontal .nova-headline__divider.nova-headline__right-divider {
+  margin-left: 10px; }
+
+.nova-subscribe-form .nova-subscribe-form__input {
+  border: 1px solid #e0e0e8;
+  background-color: #f7fafd;
+  border-radius: 4px;
+  padding: 13px 20px;
+  margin: 5px 0; }
+  .nova-subscribe-form .nova-subscribe-form__input.mail-invalid {
+    color: #d9534f; }
+  .nova-subscribe-form .nova-subscribe-form__input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #e0e0e8; }
+  .nova-subscribe-form .nova-subscribe-form__input:first-child {
+    margin-top: 0; }
+  .nova-subscribe-form .nova-subscribe-form__input:last-child {
+    margin-bottom: 0; }
+
+.nova-subscribe-form .nova-subscribe-form__submit {
+  background-color: #6ec1e4; }
+
+.nova-subscribe-form .nova-subscribe-form__submit-icon {
+  color: white;
+  font-size: 15px;
+  margin-right: 10px; }
+
+.nova-subscribe-form--inline-layout .nova-subscribe-form__submit {
+  margin-left: 10px; }
+
+.nova-subscribe-form--block-layout .nova-subscribe-form__submit {
+  margin-top: 10px; }
+
+.nova-subscribe-form--response-success .nova-subscribe-form__message {
+  color: #5cb85c; }
+
+.nova-subscribe-form--response-error .nova-subscribe-form__message {
+  color: #d9534f; }
+
+.nova-progress-bar__wrapper {
+  position: relative;
+  height: 30px;
+  background-color: #eeeeee;
+  border-radius: 2px; }
+
+.nova-progress-bar__status-bar {
+  height: 100%;
+  background-color: #6ec1e4;
+  border-radius: 2px; }
+
+.nova-progress-bar__title-icon {
+  margin-right: 5px; }
+
+.nova-progress-bar-type-1 .nova-progress-bar__title {
+  align-self: flex-start; }
+
+.nova-progress-bar-type-1 .nova-progress-bar__title-text {
+  color: #54595f; }
+
+.nova-progress-bar-type-1 .nova-progress-bar__title-icon {
+  color: #54595f; }
+
+.nova-progress-bar-type-1 .nova-progress-bar__percent {
+  margin: 0 10px;
+  color: white;
+  align-self: flex-end; }
+
+.nova-progress-bar-type-2 .nova-progress-bar__title {
+  align-self: center;
+  margin-top: 5px; }
+
+.nova-progress-bar-type-2 .nova-progress-bar__percent {
+  align-self: center;
+  margin-bottom: 5px; }
+
+.nova-progress-bar-type-3 .nova-progress-bar__percent {
+  width: 40px;
+  margin-right: -20px;
+  padding: 5px 0;
+  color: white;
+  background-color: #6ec1e4;
+  border-radius: 2px; }
+
+.nova-progress-bar-type-3 .nova-progress-bar__wrapper {
+  height: 10px; }
+
+.nova-progress-bar-type-4 .nova-progress-bar__title {
+  margin-right: 20px; }
+
+.nova-progress-bar-type-4 .nova-progress-bar__percent {
+  margin-left: 20px; }
+
+.nova-progress-bar-type-4 .nova-progress-bar__wrapper {
+  height: 10px; }
+
+.nova-progress-bar-type-5 .nova-progress-bar__title {
+  margin-bottom: 5px;
+  align-self: flex-start; }
+
+.nova-progress-bar-type-5 .nova-progress-bar__percent {
+  margin-left: 10px; }
+
+.nova-progress-bar-type-6 .nova-progress-bar__title {
+  align-self: flex-start; }
+
+.nova-progress-bar-type-6 .nova-progress-bar__wrapper {
+  height: 60px; }
+
+.nova-progress-bar-type-6 .nova-progress-bar__status {
+  margin-left: 10px; }
+
+.nova-progress-bar-type-6 .nova-progress-bar__percent {
+  font-size: 25px; }
+
+.nova-progress-bar-type-7 .nova-progress-bar__wrapper {
+  width: 50px;
+  height: 300px;
+  justify-content: flex-end; }
+
+.nova-progress-bar-type-7 .nova-progress-bar__percent {
+  margin-bottom: 10px; }
+
+.nova-portfolio .nova-portfolio__filter-list {
+  margin: 0 0 30px 0; }
+
+.nova-portfolio .nova-portfolio__filter-item {
+  padding: 0 10px;
+  margin: 0 5px;
+  color: #54595f; }
+  .nova-portfolio .nova-portfolio__filter-item.active {
+    color: white;
+    background-color: #6ec1e4; }
+
+.nova-portfolio .nova-portfolio__filter-item-separator {
+  font-size: 12px;
+  color: #6ec1e4; }
+
+.nova-portfolio .nova-portfolio__content-inner {
+  padding: 10px; }
+
+.nova-portfolio .nova-portfolio__title {
+  font-size: 22px;
+  margin: 0 0 5px 0; }
+
+.nova-portfolio .nova-portfolio__category {
+  font-size: 16px;
+  margin: 0 0 5px 0; }
+
+.nova-portfolio .nova-portfolio__desc {
+  font-size: 14px;
+  margin: 0 0 5px 0; }
+
+.nova-portfolio .nova-portfolio__view-more {
+  margin-top: 30px; }
+
+.nova-portfolio .nova-portfolio__view-more-button {
+  background-color: #6ec1e4;
+  color: white; }
+
+.nova-portfolio.preset-type-1 .nova-portfolio__title {
+  color: white; }
+
+.nova-portfolio.preset-type-1 .nova-portfolio__category {
+  color: white; }
+
+.nova-portfolio.preset-type-1 .nova-portfolio__desc {
+  color: white; }
+
+.nova-portfolio.preset-type-1 .nova-portfolio__content-inner {
+  background-color: #54595f; }
+
+.nova-portfolio.preset-type-2 .nova-portfolio__title {
+  color: #54595f; }
+
+.nova-portfolio.preset-type-2 .nova-portfolio__category {
+  color: #54595f; }
+
+.nova-portfolio.preset-type-2 .nova-portfolio__desc {
+  color: #54595f; }
+
+.nova-portfolio.preset-type-2 .nova-portfolio__cover {
+  background-color: rgba(84, 89, 95, 0.6); }
+  .nova-portfolio.preset-type-2 .nova-portfolio__cover i {
+    font-size: 25px;
+    color: #6ec1e4; }
+
+.nova-portfolio.preset-type-3 .nova-portfolio__cover {
+  background-color: rgba(84, 89, 95, 0.6); }
+  .nova-portfolio.preset-type-3 .nova-portfolio__cover i {
+    font-size: 25px;
+    color: #6ec1e4; }
+
+.nova-portfolio.preset-type-4 .nova-portfolio__title {
+  color: white; }
+
+.nova-portfolio.preset-type-4 .nova-portfolio__category {
+  color: white; }
+
+.nova-portfolio.preset-type-4 .nova-portfolio__desc {
+  color: white; }
+
+.nova-portfolio.preset-type-4 .nova-portfolio__content-inner {
+  background-color: rgba(84, 89, 95, 0.6); }
+
+.nova-timeline__line {
+  background-color: #e8e8f6; }
+  .nova-timeline__line-progress {
+    background-color: #55cdff; }
+
+.nova-timeline-item h5 {
+  margin-top: 0; }
+
+.nova-timeline-item .timeline-item__card {
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 2px 2px 30px 0 rgba(156, 156, 192, 0.26); }
+  .nova-timeline-item .timeline-item__card-img {
+    font-size: 0; }
+  .nova-timeline-item .timeline-item__card-arrow {
+    background-color: #fff; }
+  .nova-timeline-item .timeline-item__card-content {
+    padding: 40px; }
+
+.nova-timeline-item .timeline-item__meta-content {
+  font-size: 16px;
+  color: #a0a0a2; }
+
+.nova-timeline-item .timeline-item__point-content {
+  color: #fff;
+  background-color: #e8e8f6;
+  border-radius: 50%; }
+
+.nova-timeline-item.is--active .timeline-item__point-content {
+  background-color: #55cdff; }
+
+.nova-timeline-item.is--active .timeline-item__meta-content {
+  color: #55cdff; }
+
+.nova-timeline-item--align-left .timeline-item__card {
+  margin-left: 10px; }
+
+.nova-timeline-item--align-left .nova-timeline__line {
+  margin-left: 20px; }
+
+.nova-timeline-item--align-right .timeline-item__card {
+  margin-right: 10px; }
+
+.nova-timeline-item--align-right .nova-timeline__line {
+  margin-right: 20px; }
+
+.nova-price-list .price-list {
+  margin: 0; }
+  .nova-price-list .price-list__item-separator {
+    border-bottom: 2px dotted #434345; }

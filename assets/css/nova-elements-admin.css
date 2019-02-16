@@ -1,0 +1,11 @@
+.nova_elements_settings_form__checkbox-group .cherry-ui-container {
+  display: flex;
+  flex-flow: row wrap; }
+  .nova_elements_settings_form__checkbox-group .cherry-ui-container .cherry-checkbox-item-wrap {
+    width: 33.333%; }
+    @media screen and (max-width: 1200px) {
+      .nova_elements_settings_form__checkbox-group .cherry-ui-container .cherry-checkbox-item-wrap {
+        width: 50%; } }
+    @media screen and (max-width: 782px) {
+      .nova_elements_settings_form__checkbox-group .cherry-ui-container .cherry-checkbox-item-wrap {
+        width: 100%; } }

@@ -1,0 +1,114 @@
+.nova-banner.nova-effect-lily .nova-banner__img {
+  transform: translate3d(40px, 0, 0); }
+
+.nova-banner.nova-effect-roxy .nova-banner__img {
+  transform: translate3d(50px, 0, 0); }
+
+.nova-download__icon.icon-left {
+  margin-left: 10px;
+  margin-right: 0;
+  order: 1; }
+
+.nova-download__icon.icon-right {
+  margin-right: 10px;
+  margin-left: 0;
+  order: 3; }
+
+.pricing-feature .item-bullet {
+  margin-left: 7px;
+  margin-right: 0; }
+
+.nova-animated-text__animated-text-item {
+  direction: ltr; }
+
+.nova-timeline--align-right .nova-timeline-item, .nova-timeline--align-left .nova-timeline-item {
+  direction: ltr; }
+
+@media (min-width: 1025px) {
+  .nova-timeline--align-center .nova-timeline-item:nth-child(even) .timeline-item__meta {
+    text-align: left; }
+  .nova-timeline--align-center .nova-timeline-item:nth-child(even) .timeline-item__card-arrow {
+    right: 0;
+    margin-right: -10px; }
+  .nova-timeline--align-center .nova-timeline-item:nth-child(odd) .timeline-item__meta {
+    text-align: right; }
+  .nova-timeline--align-center .nova-timeline-item:nth-child(odd) .timeline-item__card-arrow {
+    left: 0;
+    right: auto;
+    margin-left: -10px; } }
+
+@media (max-width: 1024px) {
+  .nova-timeline--align-center .nova-timeline-item {
+    direction: ltr; } }
+
+@media (min-width: 1025px) {
+  .nova-timeline--align-top.nova-timeline--align-center .timeline-item__card-arrow {
+    transform: rotate(-135deg); } }
+
+@media (min-width: 1025px) {
+  .nova-timeline--align-middle.nova-timeline--align-center .timeline-item__card-arrow {
+    transform: translateY(-50%) rotate(-135deg); } }
+
+@media (min-width: 1025px) {
+  .nova-timeline--align-bottom.nova-timeline--align-center .timeline-item__card-arrow {
+    transform: rotate(-135deg); } }
+
+.nova-table__cell-content {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: right; }
+
+.nova-table__cell-icon--before:not(:only-child), .nova-table__cell-img--before:not(:only-child) {
+  margin-left: 5px; }
+
+.nova-table__cell-icon--after:not(:only-child), .nova-table__cell-img--after:not(:only-child) {
+  margin-right: 5px; }
+
+.nova-table__sort-icon {
+  margin-right: 5px;
+  margin-left: 0; }
+
+.nova-dropbar__button-icon--before:not(:only-child) {
+  margin-left: 5px; }
+
+.nova-dropbar__button-icon--after:not(:only-child) {
+  margin-right: 5px; }
+
+.nova-audio .mejs-controls .mejs-volume-button,
+.nova-audio .mejs-controls .mejs-fullscreen-button,
+.nova-audio .mejs-controls .mejs-currenttime,
+.nova-audio .mejs-controls .mejs-duration,
+.nova-video .nova-video-mejs-player .mejs-controls .mejs-volume-button,
+.nova-video .nova-video-mejs-player .mejs-controls .mejs-fullscreen-button,
+.nova-video .nova-video-mejs-player .mejs-controls .mejs-currenttime,
+.nova-video .nova-video-mejs-player .mejs-controls .mejs-duration {
+  margin-left: 0;
+  margin-right: 10px; }
+
+.nova-audio .mejs-controls .mejs-currenttime ~ .mejs-duration,
+.nova-video .nova-video-mejs-player .mejs-controls .mejs-currenttime ~ .mejs-duration {
+  margin-right: 0; }
+
+.nova-audio .mejs-controls .mejs-time-rail,
+.nova-video .nova-video-mejs-player .mejs-controls .mejs-time-rail {
+  margin: 0 10px 0 0; }
+
+.nova-audio .mejs-controls .mejs-horizontal-volume-slider,
+.nova-video .nova-video-mejs-player .mejs-controls .mejs-horizontal-volume-slider {
+  margin-left: 0;
+  margin-right: 7px; }
+
+.nova-carousel.elementor-slick-slider .nova-arrow,
+.nova-testimonials .elementor-slick-slider .nova-arrow,
+.nova-image-comparison .elementor-slick-slider .nova-arrow {
+  transform: rotate(180deg); }
+  .nova-carousel.elementor-slick-slider .nova-arrow.prev-arrow,
+  .nova-testimonials .elementor-slick-slider .nova-arrow.prev-arrow,
+  .nova-image-comparison .elementor-slick-slider .nova-arrow.prev-arrow {
+    left: auto;
+    right: 20px; }
+  .nova-carousel.elementor-slick-slider .nova-arrow.next-arrow,
+  .nova-testimonials .elementor-slick-slider .nova-arrow.next-arrow,
+  .nova-image-comparison .elementor-slick-slider .nova-arrow.next-arrow {
+    left: 20px;
+    right: auto; }

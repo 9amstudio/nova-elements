@@ -1,0 +1,127 @@
+.nova-carousel {
+	margin-left: -10px;
+	margin-right: -10px;
+
+	&-wrap {
+		&.nova-equal-cols {
+			.slick-track {
+				display: flex;
+				display: -webkit-flex;
+				align-items: stretch;
+				-webkit-align-items: stretch;
+			}
+			.nova-carousel__item-link{
+				display: flex;
+				display: -webkit-flex;
+			}
+			.nova-carousel__item {
+				float: none;
+				height: auto;
+				display: flex;
+				display: -webkit-flex;
+				flex-direction: column;
+				-webkit-flex-direction: column;
+				img {
+					object-fit: cover;
+					flex-grow: 1;
+				}
+				.nova-carousel__item-inner,
+				.nova-banner,
+				.nova-banner__link {
+					display: flex;
+					display: -webkit-flex;
+					flex-direction: column;
+					-webkit-flex-direction: column;
+					flex-direction: column;
+					align-items: center;
+					-webkit-align-items: center;
+				}
+				.nova-carousel__item-inner,
+				.nova-carousel__item-inner > *:last-child,
+				.nova-banner__link {
+					flex-grow: 1;
+				}
+			}
+		}
+	}
+
+	&__item {
+		padding: 10px;
+
+		.nova-banner {
+			float: none;
+		}
+	}
+	&__content {
+		position: relative;
+		z-index: 2;
+		max-width: 100%;
+	}
+
+	&__content,
+	&__item-title,
+	&__item-text {
+		transition: all 200ms linear;
+	}
+
+	.nova-arrow {
+		position: absolute;
+		top: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		z-index: 999;
+		transition: all 200ms linear;
+
+		&:before {
+			display: block;
+			width: 100%;
+			text-align: center;
+			line-height: 0;
+			transition: all 200ms linear;
+		}
+		&.prev-arrow {
+			left: 0;
+		}
+		&.next-arrow {
+			right: 0;
+		}
+	}
+
+	.nova-slick-dots {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+		z-index: 3;
+		margin-top: 15px;
+		li {
+			padding: 5px;
+			margin: 0;
+			list-style: none;
+			span {
+				transition: all 200ms linear;
+				display: block;
+				cursor: pointer;
+				width: 14px;
+				height: 14px;
+				border-radius: 7px;
+				padding: 0;
+				text-indent: 10em;
+				overflow: hidden;
+				&:before {
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.elementor-nova-carousel .nova-carousel,
+.elementor-nova-posts .nova-carousel > .nova-posts {
+	&:not(.slick-initialized) {
+		display: flex;
+		visibility: hidden;
+	}
+}
