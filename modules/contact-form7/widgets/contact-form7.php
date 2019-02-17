@@ -29,7 +29,7 @@ class Contact_Form7 extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-13';
+        return 'eicon-form-horizontal';
     }
 
     protected function _register_controls() {

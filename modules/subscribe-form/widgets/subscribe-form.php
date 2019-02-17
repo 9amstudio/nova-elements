@@ -37,7 +37,7 @@ class Subscribe_Form extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-35';
+        return 'eicon-form-vertical';
     }
 
     public function get_script_depends() {

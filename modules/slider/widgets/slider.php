@@ -34,7 +34,7 @@ class Slider extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-7';
+        return 'eicon-thumbnails-down';
     }
 
     public function get_script_depends() {

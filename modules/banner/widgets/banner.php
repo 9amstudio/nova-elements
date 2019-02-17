@@ -31,7 +31,7 @@ class Banner extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-10';
+        return 'eicon-image-rollover';
     }
 
     protected function _register_controls() {

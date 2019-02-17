@@ -30,7 +30,7 @@ class Headline extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-31';
+        return 'eicon-heading';
     }
 
     protected function _register_controls() {

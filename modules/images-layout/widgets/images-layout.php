@@ -33,7 +33,7 @@ class Images_Layout extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-21';
+        return 'eicon-gallery-justified';
     }
 
 

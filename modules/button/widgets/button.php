@@ -30,7 +30,7 @@ class Button extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-28';
+        return 'eicon-button';
     }
 
     protected function _register_controls() {

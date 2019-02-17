@@ -26,7 +26,7 @@ class Advanced_Map extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-8';
+        return 'eicon-google-maps';
     }
 
     public function get_script_depends() {

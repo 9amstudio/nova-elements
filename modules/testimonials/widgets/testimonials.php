@@ -31,7 +31,7 @@ class Testimonials extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-27';
+        return 'eicon-testimonial';
     }
 
     public function get_script_depends() {

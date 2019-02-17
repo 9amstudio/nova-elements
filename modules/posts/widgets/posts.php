@@ -31,7 +31,7 @@ class Posts extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-5';
+        return 'eicon-post-content';
     }
 
     public function __shortcode() {

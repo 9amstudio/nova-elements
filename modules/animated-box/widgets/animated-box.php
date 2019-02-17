@@ -31,7 +31,7 @@ class Animated_Box extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-11';
+        return ' eicon-flip-box';
     }
 
     public function get_script_depends() {

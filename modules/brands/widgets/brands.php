@@ -31,7 +31,7 @@ class Brands extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-2';
+        return 'eicon-menu-toggle';
     }
 
     protected function _register_controls() {

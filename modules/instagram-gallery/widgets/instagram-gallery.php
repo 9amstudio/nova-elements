@@ -67,7 +67,7 @@ class Instagram_Gallery extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-30';
+        return 'eicon-posts-masonry';
     }
 
     public function get_script_depends() {

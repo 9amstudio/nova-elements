@@ -24,7 +24,7 @@ class Inline_Svg extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-44';
+        return 'eicon-info';
     }
 
     protected function _register_controls() {

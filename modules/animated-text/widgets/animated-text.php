@@ -28,7 +28,7 @@ class Animated_Text extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-12';
+        return 'eicon-animation-text';
     }
 
     public function get_script_depends() {

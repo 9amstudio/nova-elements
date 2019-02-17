@@ -29,7 +29,7 @@ class Team_Member extends Nova_Widget {
     }
 
     public function get_icon() {
-        return 'novaelements-icon-25';
+        return 'eicon-person';
     }
 
     public function __shortcode() {
