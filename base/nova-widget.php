@@ -465,12 +465,6 @@ abstract class Nova_Widget extends Widget_Base {
             'arrows'         => filter_var( $settings['arrows'], FILTER_VALIDATE_BOOLEAN ),
             'dots'           => filter_var( $settings['dots'], FILTER_VALIDATE_BOOLEAN ),
             'slidesToScroll' => absint( $settings['slides_to_scroll'] ),
-            'prevArrow'      => nova_elements_tools()->get_carousel_arrow(
-                array( $settings['prev_arrow'], 'prev-arrow' )
-            ),
-            'nextArrow'      => nova_elements_tools()->get_carousel_arrow(
-                array( $settings['next_arrow'], 'next-arrow' )
-            ),
             'rtl' => $is_rtl,
         );
 
@@ -534,32 +528,6 @@ abstract class Nova_Widget extends Widget_Base {
                 'label_off'    => esc_html__( 'No', 'nova-elements' ),
                 'return_value' => 'true',
                 'default'      => 'true',
-            )
-        );
-
-        $this->add_control(
-            'prev_arrow',
-            array(
-                'label'   => esc_html__( 'Prev Arrow Icon', 'nova-elements' ),
-                'type'    => Controls_Manager::SELECT,
-                'default' => 'fa fa-angle-left',
-                'options' => nova_elements_tools()->get_available_prev_arrows_list(),
-                'condition' => array(
-                    'arrows' => 'true',
-                ),
-            )
-        );
-
-        $this->add_control(
-            'next_arrow',
-            array(
-                'label'   => esc_html__( 'Next Arrow Icon', 'nova-elements' ),
-                'type'    => Controls_Manager::SELECT,
-                'default' => 'fa fa-angle-right',
-                'options' => nova_elements_tools()->get_available_next_arrows_list(),
-                'condition' => array(
-                    'arrows' => 'true',
-                ),
             )
         );
 

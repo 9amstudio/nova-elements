@@ -221,9 +221,8 @@ class Products_Renderer extends \WC_Shortcode_Products {
         }
         if( $layout == 'grid' ){
             if( 'yes' == $this->settings['carousel_enabled'] ) {
-                $container_attr = ' data-la_component="AutoCarousel" ';
-                $container_attr .= ' data-slider_config="'. esc_attr($this->settings['carousel_setting']) .'"';
-                $loopCssClass[] = 'nova-carousel js-el la-slick-slider';
+                $container_attr = ' data-slider_config="'. esc_attr($this->settings['carousel_setting']) .'"';
+                $loopCssClass[] = 'nova-carousel slick-carousel';
             }
         }
 
@@ -345,7 +344,7 @@ class Products_Renderer extends \WC_Shortcode_Products {
             if ( wc_get_loop_prop( 'total' ) ) {
 
                 echo sprintf(
-                    '<div class="row"><div class="col-xs-12"><ul class="%s"%s>',
+                    '<div class="row"><div class="small-12"><ul class="%s"%s>',
                     esc_attr(implode(' ', $loopCssClass)),
                     $container_attr ? $container_attr : ''
                 );

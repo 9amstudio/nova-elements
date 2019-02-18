@@ -184,7 +184,6 @@ class Products extends Products_Base {
                 'options'   => [
                     'grid'      => __( 'Grid', 'plugin-domain' ),
                     'masonry'   => __( 'Masonry', 'plugin-domain' ),
-                    'list'      => __( 'List', 'plugin-domain' ),
                 ]
             )
         );
