@@ -19,7 +19,7 @@ class Modules_Manager {
             'banner',
             'brands',
             'button',
-            'headline',
+            'heading',
             'images-layout',
             'inline-svg',
             'instagram-gallery',

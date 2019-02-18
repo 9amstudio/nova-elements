@@ -87,7 +87,7 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/addons/_nova-headline.scss": {
+	"/addons/_nova-heading.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -95,7 +95,7 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 1,
-		"oAP": "/addons/_nova-headline.css",
+		"oAP": "/addons/_nova-heading.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
