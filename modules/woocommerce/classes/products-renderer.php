@@ -239,68 +239,14 @@ class Products_Renderer extends \WC_Shortcode_Products {
         $loopCssClass[] = 'products ul_products';
 
         if($layout != 'list'){
-            if( $layout != 'masonry' || ($layout == 'masonry' && 'true' != $this->settings['enable_custom_masonry_layout']) ){
-                $loopCssClass[] = 'grid-items';
-                $loopCssClass[] = nova_elements_tools()->block_grid_legacy_classes(array(
-                    'desk'  => $this->settings['columns'],
-                    'lap'   => $this->settings['columns_laptop'],
-                    'tab'   => $this->settings['columns_tablet'],
-                    'tabp'  => $this->settings['columns_width800'],
-                    'mob'   => $this->settings['columns_mobile'],
-                    'mobp'   => $this->settings['columns_width640'],
-                ));
-            }
+
             $loopCssClass[] = 'products-grid';
             $loopCssClass[] = 'products-grid-' . $style;
 
-            if($layout == 'masonry'){
-
-                $loopCssClass[] = 'js-el la-isotope-container';
-                $loopCssClass[] = 'prods_masonry';
-
-                if( 'true' == $this->settings['enable_custom_masonry_layout'] ) {
-                    $loopCssClass[] = 'masonry__column-type-custom';
-                    $container_attr  = ' data-la_component="AdvancedMasonry"';
-                }
-                else{
-                    $container_attr  = ' data-la_component="DefaultMasonry"';
-                }
-
-                $container_attr .= ' data-item-width="' . ( $this->settings['masonry_item_base_width'] ? intval($this->settings['masonry_item_base_width']) : 300 ) . '"';
-                $container_attr .= ' data-item-height="' . ( $this->settings['masonry_item_base_height'] ? intval($this->settings['masonry_item_base_height']) : 300 ) . '"';
-                $container_attr .= ' data-container-width="' . ( $this->settings['masonry_container_width'] ? intval($this->settings['masonry_container_width']) : 1170 ) . '"';
-                $container_attr .= ' data-md-col="' . ($this->settings['columns_tablet'] ? $this->settings['columns_tablet'] : 1) . '"';
-                $container_attr .= ' data-sm-col="' . ($this->settings['columns_width800'] ? $this->settings['columns_width800'] : 1) . '"';
-                $container_attr .= ' data-xs-col="' . ($this->settings['columns_mobile'] ? $this->settings['columns_mobile'] : 1) . '"';
-                $container_attr .= ' data-mb-col="' . ($this->settings['columns_width640'] ? $this->settings['columns_width640'] : 1) . '"';
-
-                if( 'true' == $this->settings['enable_custom_masonry_layout'] ) {
-                    $_item_sizes = $this->settings['masonry_item_sizes'];
-                    $__new_item_sizes = array();
-                    if(!empty($_item_sizes)){
-                        foreach($_item_sizes as $k => $size){
-                            $__new_item_sizes[$k] = [
-                                'w' => $size['item_width'],
-                                'h' => $size['item_height']
-                            ];
-                        }
-                    }
-                    $globalWcLoopTmp['item_sizes'] = $__new_item_sizes;
-                }
-
-                $globalWcLoopTmp['prods_masonry'] = true;
-
-                $container_attr .= ' data-item_selector=".product_item"';
-                $container_attr .= ' data-la-effect="sequencefade"';
-            }
         }
         else{
             $loopCssClass[] = 'products-' . $layout;
             $loopCssClass[] = 'products-' . $layout . '-' . $style;
-        }
-
-        if(isset($this->settings['paginate_as_loadmore']) && $this->settings['paginate_as_loadmore'] == 'yes'){
-            $globalWcLoopTmp['products__loadmore_ajax_text'] = $this->settings['loadmore_text'];
         }
 
         $products = $this->get_query_results();

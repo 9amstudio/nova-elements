@@ -18,7 +18,8 @@
 				'nova-instagram-gallery.default' : NovaElements.widgetInstagramGallery,
 				'nova-subscribe-form.default' : NovaElements.widgetSubscribeForm,
 				'nova-team-member.default': NovaElements.widgetTeamMember,
-				'nova-tabs.default': NovaElements.widgetTabs
+				'nova-tabs.default': NovaElements.widgetTabs,
+				'nova-products.default': NovaElements.widgetProducts
 			};
 
 			$.each( widgets, function( widget, callback ) {
@@ -141,7 +142,13 @@
             }
             NovaElements.initCarousel( $target.find( '.nova-team-member' ), $target.data( 'slider_options' ) );
 		},
-
+		widgetProducts: function ( $scope ) {
+						var $target = $scope.find( '.nova-carousel' );
+						if ( ! $target.length ) {
+								return;
+						}
+						nova_slick_slider($target);
+		},
 		widgetPosts: function ( $scope ) {
 
 			var $target = $scope.find( '.nova-carousel' );
@@ -565,10 +572,6 @@
 			options.slidesToShow = parseInt(options.slidesToShow.desktop) || 1;
 
 			defaultOptions = {
-				customPaging: function(slider, i) {
-					return $( '<span />' ).text( i + 1 );
-				},
-				dotsClass: 'nova-slick-dots',
 				responsive: [
                     {
                         breakpoint: 1600,
@@ -610,45 +613,7 @@
 
 			slickOptions = $.extend( {}, defaultOptions, options );
 
-			var _autoPlay = slickOptions.autoplay || false;
-
 			$target.slick( slickOptions );
-
-            if( $(window).width() > 1200) {
-
-                if ($target.closest('.nova-portfolio.preset-list-type-1').length > 0 || $target.closest('.nova-portfolio.preset-list-type-2').length > 0) {
-
-                    $target.on('wheel', (function (e) {
-                        e.preventDefault();
-                        if (e.originalEvent.deltaY < 0) {
-                            $(this).slick('slickNext');
-                        } else {
-                            $(this).slick('slickPrev');
-                        }
-                    }));
-
-                }
-            }
-
-			if( $target.closest('.nova-portfolio').length == 0 ) {
-                _autoPlay = false;
-			}
-
-            if(_autoPlay){
-                var $bar = $('<div class="slick-controls-auto"><a class="slick-control-start" href="#"><i class="fa fa-play" aria-hidden="true"></i></a><a class="slick-control-stop active" href="#"><i class="fa fa-pause" aria-hidden="true"></i></a></div>');
-                $bar.appendTo( $target );
-                $target
-					.on('click', '.slick-control-start', function (e) {
-						e.preventDefault();
-						$(this).removeClass('active').siblings('a').addClass('active');
-                        $target.slick('slickPlay');
-                	})
-					.on('click', '.slick-control-stop', function (e) {
-						e.preventDefault();
-                        $(this).removeClass('active').siblings('a').addClass('active');
-                        $target.slick('slickPause');
-                	})
-            }
 		},
 
 		widgetTabs: function( $scope ) {

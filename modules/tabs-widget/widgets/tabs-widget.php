@@ -89,7 +89,7 @@ class Tabs_Widget extends Nova_Widget {
                 'type'        => Controls_Manager::ICON,
                 'label_block' => true,
                 'file'        => '',
-                'default'     => 'fa fa-arrow-circle-right',
+                'default'     => '',
             )
         );
 

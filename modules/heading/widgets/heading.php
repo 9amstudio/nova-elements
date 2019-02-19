@@ -28,6 +28,10 @@ class Heading extends Nova_Widget {
     protected function get_widget_title() {
         return esc_html__( 'Heading', 'nova-elements' );
     }
+		
+		public function is_reload_preview_required() {
+				return true;
+		}
 
     public function get_icon() {
         return 'eicon-heading';
