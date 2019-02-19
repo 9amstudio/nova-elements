@@ -1259,7 +1259,8 @@
 .nova-posts .slick-slide .nova-posts__item {
   width: 100%;
   flex: 0 0 100%;
-  max-width: 100%; }
+  max-width: 100%;
+  padding: 15px; }
 
 .post-meta {
   padding-bottom: 10px; }
