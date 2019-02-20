@@ -131,17 +131,6 @@ class Instagram_Gallery extends Nova_Widget {
             )
         );
 
-//		$this->add_control(
-//			'self',
-//			array(
-//				'label' => esc_html__( 'Username', 'nova-elements' ),
-//				'type'  => Controls_Manager::TEXT,
-//				'condition' => array(
-//					'endpoint' => 'self',
-//				),
-//			)
-//		);
-
         if ( ! $this->get_access_token() ) {
             $this->add_control(
                 'set_access_token',
@@ -280,9 +269,7 @@ class Instagram_Gallery extends Nova_Widget {
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'masonry',
                 'options' => array(
-                    'masonry' => esc_html__( 'Masonry', 'nova-elements' ),
                     'grid'    => esc_html__( 'Grid', 'nova-elements' ),
-                    'list'    => esc_html__( 'List', 'nova-elements' ),
                 ),
             )
         );
@@ -292,10 +279,10 @@ class Instagram_Gallery extends Nova_Widget {
             array(
                 'label'   => esc_html__( 'Columns', 'nova-elements' ),
                 'type'    => Controls_Manager::SELECT,
-                'default' => 3,
+                'default' => 5,
                 'options' => nova_elements_tools()->get_select_range( 6 ),
                 'condition' => array(
-                    'layout_type' => array( 'masonry', 'grid' ),
+                    'layout_type' => array('grid' ),
                 ),
             )
         );
@@ -876,7 +863,6 @@ class Instagram_Gallery extends Nova_Widget {
         }
 
         $html = '';
-        $col_class = '';
 
         // Endpoint.
         $endpoint = $this->sanitize_endpoint();
@@ -945,15 +931,7 @@ class Instagram_Gallery extends Nova_Widget {
                     $item_html = sprintf( $link_format, esc_url( $link ), $item_html );
                 }
 
-                if ( 'grid' === $settings['layout_type'] ) {
-                    $col_class = nova_elements_tools()->col_classes( array(
-                        'desk' => $settings['columns'],
-                        'tab'  => $settings['columns_tablet'],
-                        'mob'  => $settings['columns_mobile'],
-                    ) );
-                }
-
-                $html .= sprintf( '<div class="nova-instagram-gallery__item %s"><div class="nova-instagram-gallery__inner">%s</div></div>', $col_class, $item_html );
+                $html .= sprintf( '<div class="nova-instagram-gallery__item cell"><div class="nova-instagram-gallery__inner">%s</div></div>', $item_html );
             }
 
         } else {
@@ -1402,26 +1380,6 @@ class Instagram_Gallery extends Nova_Widget {
             $this->config['posts_counter'],
             $this->config['post_caption_length']
         );
-    }
-
-    /**
-     * Generate setting json
-     *
-     * @return string
-     */
-    public function generate_setting_json() {
-        $module_settings = $this->get_settings();
-
-        $settings = array(
-            'layoutType'    => $module_settings['layout_type'],
-            'columns'       => $module_settings['columns'],
-            'columnsTablet' => $module_settings['columns_tablet'],
-            'columnsMobile' => $module_settings['columns_mobile'],
-        );
-
-        $settings = json_encode( $settings );
-
-        return sprintf( 'data-settings=\'%1$s\'', $settings );
     }
 
     /**

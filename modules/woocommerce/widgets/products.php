@@ -184,7 +184,6 @@ class Products extends Products_Base {
                 'options'   => [
                     'grid'      => __( 'Grid', 'plugin-domain' ),
                     'masonry'   => __( 'Masonry', 'plugin-domain' ),
-                    'list'      => __( 'List', 'plugin-domain' ),
                 ]
             )
         );
@@ -255,73 +254,6 @@ class Products extends Products_Base {
                 'max' => 100,
                 'default' => -1,
                 'render_type' => 'template'
-			]
-		);
-
-        $this->add_control(
-            'enable_custom_image_size',
-            [
-                'label' => __( 'Enable Custom Image Size', 'nova-elements' ),
-                'type' => Controls_Manager::SWITCHER,
-                'return_value' => 'yes',
-                'default' => '',
-            ]
-        );
-
-        $this->add_control(
-            'image_size',
-            array(
-                'type'       => 'select',
-                'label'      => esc_html__( 'Images Size', 'nova-elements' ),
-                'default'    => 'shop_catalog',
-                'options'    => nova_elements_tools()->get_image_sizes(),
-                'condition' => [
-                    'enable_custom_image_size' => 'yes'
-                ]
-            )
-        );
-
-        $this->add_control(
-            'disable_alt_image',
-            [
-                'label' => __( 'Disable Crossfade Image Effect', 'nova-elements' ),
-                'type' => Controls_Manager::SWITCHER,
-                'return_value' => 'yes',
-                'default' => ''
-            ]
-        );
-
-		$this->add_control(
-			'paginate',
-			[
-				'label' => __( 'Pagination', 'nova-elements' ),
-				'type' => Controls_Manager::SWITCHER,
-				'default' => ''
-			]
-		);
-
-		$this->add_control(
-			'paginate_as_loadmore',
-			[
-				'label' => __( 'Use Load More', 'nova-elements' ),
-				'type' => Controls_Manager::SWITCHER,
-				'default' => '',
-				'condition' => [
-					'paginate' => 'yes',
-				],
-			]
-		);
-
-		$this->add_control(
-			'loadmore_text',
-			[
-				'label' => __( 'Load More Text', 'nova-elements' ),
-				'type' => Controls_Manager::TEXT,
-				'default' => 'Load More',
-				'condition' => [
-					'paginate' => 'yes',
-					'paginate_as_loadmore' => 'yes',
-				]
 			]
 		);
 

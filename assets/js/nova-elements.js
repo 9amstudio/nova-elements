@@ -8,28 +8,14 @@
 
 			var widgets = {
 				'nova-advanced-carousel.default' : NovaElements.widgetCarousel,
-				'nova-circle-progress.default' : NovaElements.widgetProgress,
 				'nova-advanced-map.default' : NovaElements.widgetMap,
-				'nova-countdown-timer.default' : NovaElements.widgetCountdown,
 				'nova-posts.default' : NovaElements.widgetPosts,
 				'nova-animated-text.default' : NovaElements.widgetAnimatedText,
 				'nova-animated-box.default' : NovaElements.widgetAnimatedBox,
 				'nova-images-layout.default' : NovaElements.widgetImagesLayout,
 				'nova-slider.default' : NovaElements.widgetSlider,
 				'nova-testimonials.default' : NovaElements.widgetTestimonials,
-				'nova-image-comparison.default' : NovaElements.widgetImageComparison,
-				'nova-instagram-gallery.default' : NovaElements.widgetInstagramGallery,
-				'nova-scroll-navigation.default' : NovaElements.widgetScrollNavigation,
 				'nova-subscribe-form.default' : NovaElements.widgetSubscribeForm,
-				'nova-progress-bar.default' : NovaElements.widgetProgressBar,
-				'nova-portfolio.default' : NovaElements.widgetPortfolio,
-				'nova-timeline.default': NovaElements.widgetTimeLine,
-				'nova-table.default': NovaElements.widgetTable,
-				'nova-dropbar.default': NovaElements.widgetDropbar,
-				'nova-video.default': NovaElements.widgetVideo,
-				'nova-audio.default': NovaElements.widgetAudio,
-				'nova-horizontal-timeline.default': NovaElements.widgetHorizontalTimeline,
-				'mp-timetable.default': NovaElements.widgetTimeTable,
 				'nova-team-member.default': NovaElements.widgetTeamMember,
 				'nova-tabs.default': NovaElements.widgetTabs,
 				'nova-products.default': NovaElements.widgetProducts
@@ -39,17 +25,9 @@
 				elementor.hooks.addAction( 'frontend/element_ready/' + widget, callback );
 			});
 
-            elementor.hooks.addAction( 'frontend/element_ready/widget', function( $scope ) {
-                try {
-                    LA.core.initAll($scope);
-                }catch (e) {
-					console.log(e);
-                }
-            } );
-
-            elementor.hooks.addAction( 'frontend/element_ready/image-gallery.default', function( $scope ) {
-                $scope.find('br').remove();
-            } );
+      elementor.hooks.addAction( 'frontend/element_ready/image-gallery.default', function( $scope ) {
+          $scope.find('br').remove();
+      } );
 
 			elementor.hooks.addAction( 'frontend/element_ready/section', NovaElements.elementorSection );
 			//elementor.hooks.addAction( 'frontend/element_ready/column', NovaElements.elementorColumn );
@@ -81,93 +59,6 @@
 			return device;
 
         },
-
-        widgetProducts: function( $scope ){
-            LA.core.initAll($scope);
-		},
-
-		widgetCountdown: function( $scope ) {
-
-			var timeInterval,
-				$coutdown = $scope.find( '[data-due-date]' ),
-				endTime = new Date( $coutdown.data( 'due-date' ) * 1000 ),
-				elements = {
-					days: $coutdown.find( '[data-value="days"]' ),
-					hours: $coutdown.find( '[data-value="hours"]' ),
-					minutes: $coutdown.find( '[data-value="minutes"]' ),
-					seconds: $coutdown.find( '[data-value="seconds"]' )
-				};
-
-			NovaElements.widgetCountdown.updateClock = function() {
-
-				var timeRemaining = NovaElements.widgetCountdown.getTimeRemaining( endTime );
-
-				$.each( timeRemaining.parts, function( timePart ) {
-
-					var $element = elements[ timePart ];
-
-					if ( $element.length ) {
-						$element.html( this );
-					}
-
-				} );
-
-				if ( timeRemaining.total <= 0 ) {
-					clearInterval( timeInterval );
-				}
-			};
-
-			NovaElements.widgetCountdown.initClock = function() {
-				NovaElements.widgetCountdown.updateClock();
-				timeInterval = setInterval( NovaElements.widgetCountdown.updateClock, 1000 );
-			};
-
-			NovaElements.widgetCountdown.splitNum = function( num ) {
-
-				var num   = num.toString(),
-					arr   = [],
-					reult = '';
-
-				if ( 1 === num.length ) {
-					num = 0 + num;
-				}
-
-				arr = num.match(/\d{1}/g);
-
-				$.each( arr, function( index, val ) {
-					reult += '<span class="nova-countdown-timer__digit">' + val + '</span>';
-				});
-
-				return reult;
-			};
-
-			NovaElements.widgetCountdown.getTimeRemaining = function( endTime ) {
-
-				var timeRemaining = endTime - new Date(),
-					seconds = Math.floor( ( timeRemaining / 1000 ) % 60 ),
-					minutes = Math.floor( ( timeRemaining / 1000 / 60 ) % 60 ),
-					hours = Math.floor( ( timeRemaining / ( 1000 * 60 * 60 ) ) % 24 ),
-					days = Math.floor( timeRemaining / ( 1000 * 60 * 60 * 24 ) );
-
-				if ( days < 0 || hours < 0 || minutes < 0 ) {
-					seconds = minutes = hours = days = 0;
-				}
-
-				return {
-					total: timeRemaining,
-					parts: {
-						days: NovaElements.widgetCountdown.splitNum( days ),
-						hours: NovaElements.widgetCountdown.splitNum( hours ),
-						minutes: NovaElements.widgetCountdown.splitNum( minutes ),
-						seconds: NovaElements.widgetCountdown.splitNum( seconds )
-					}
-				};
-			};
-
-			NovaElements.widgetCountdown.initClock();
-
-		},
-
 		widgetMap: function( $scope ) {
 
 			var $container = $scope.find( '.nova-map' ),
@@ -231,126 +122,6 @@
 
 		},
 
-		widgetProgress: function( $scope ) {
-
-			var $progress = $scope.find( '.circle-progress' );
-
-			if ( ! $progress.length ) {
-				return;
-			}
-
-			var $value            = $progress.find( '.circle-progress__value' ),
-				$meter            = $progress.find( '.circle-progress__meter' ),
-				percent           = parseInt( $value.data( 'value' ) ),
-				progress          = percent / 100,
-				duration          = $scope.find( '.circle-progress-wrap' ).data( 'duration' ),
-				responsiveSizes   = $progress.data( 'responsive-sizes' ),
-				desktopSizes      = responsiveSizes.desktop,
-				tabletSizes       = responsiveSizes.tablet,
-				mobileSizes       = responsiveSizes.mobile,
-				currentDeviceMode = NovaElements.getCurrentDeviceMode(),
-				prevDeviceMode    = currentDeviceMode,
-				isAnimatedCircle  = false;
-
-			if ( 'tablet' === currentDeviceMode ) {
-				updateSvgSizes( tabletSizes.size, tabletSizes.viewBox, tabletSizes.center, tabletSizes.radius, tabletSizes.valStroke, tabletSizes.bgStroke, tabletSizes.circumference );
-			}
-
-			if ( 'mobile' === currentDeviceMode ) {
-				updateSvgSizes( mobileSizes.size, mobileSizes.viewBox, mobileSizes.center, mobileSizes.radius, mobileSizes.valStroke, mobileSizes.bgStroke, mobileSizes.circumference );
-			}
-
-			elementorFrontend.waypoint( $scope, function() {
-
-				// animate counter
-				var $number = $scope.find( '.circle-counter__number' ),
-					data = $number.data();
-
-				var decimalDigits = data.toValue.toString().match( /\.(.*)/ );
-
-				if ( decimalDigits ) {
-					data.rounding = decimalDigits[1].length;
-				}
-
-				data.duration = duration;
-
-				$number.numerator( data );
-
-				// animate progress
-				var circumference = parseInt( $progress.data( 'circumference' ) ),
-					dashoffset    = circumference * (1 - progress);
-
-				$value.css({
-					'transitionDuration': duration + 'ms',
-					'strokeDashoffset': dashoffset
-				});
-
-				isAnimatedCircle = true;
-
-			}, {
-				offset: 'bottom-in-view'
-			} );
-
-			$( window ).on( 'resize.novaCircleProgress orientationchange.novaCircleProgress', circleResizeHandler );
-
-			function circleResizeHandler( event ) {
-				currentDeviceMode = NovaElements.getCurrentDeviceMode();
-
-				if ( 'desktop' === currentDeviceMode && 'desktop' !== prevDeviceMode ) {
-					updateSvgSizes( desktopSizes.size, desktopSizes.viewBox, desktopSizes.center, desktopSizes.radius, desktopSizes.valStroke, desktopSizes.bgStroke, desktopSizes.circumference );
-					prevDeviceMode = 'desktop';
-				}
-
-				if ( 'tablet' === currentDeviceMode && 'tablet' !== prevDeviceMode ) {
-					updateSvgSizes( tabletSizes.size, tabletSizes.viewBox, tabletSizes.center, tabletSizes.radius, tabletSizes.valStroke, tabletSizes.bgStroke, tabletSizes.circumference );
-					prevDeviceMode = 'tablet';
-				}
-
-				if ( 'mobile' === currentDeviceMode && 'mobile' !== prevDeviceMode ) {
-					updateSvgSizes( mobileSizes.size, mobileSizes.viewBox, mobileSizes.center, mobileSizes.radius, mobileSizes.valStroke, mobileSizes.bgStroke, mobileSizes.circumference );
-					prevDeviceMode = 'mobile';
-				}
-			}
-
-			function updateSvgSizes( size, viewBox, center, radius, valStroke, bgStroke, circumference ) {
-				var dashoffset = circumference * (1 - progress);
-
-				$progress.attr( {
-					'width': size,
-					'height': size,
-					'data-radius': radius,
-					'data-circumference': circumference
-				} );
-
-				$progress[0].setAttribute( 'viewBox', viewBox );
-
-				$meter.attr( {
-					'cx': center,
-					'cy': center,
-					'r': radius,
-					'stroke-width': bgStroke
-				} );
-
-				if ( isAnimatedCircle ) {
-					$value.css( {
-						'transitionDuration': ''
-					} );
-				}
-
-				$value.attr( {
-					'cx': center,
-					'cy': center,
-					'r': radius,
-					'stroke-width': valStroke
-				} );
-
-				$value.css( {
-					'strokeDasharray': circumference,
-					'strokeDashoffset': isAnimatedCircle ? dashoffset : circumference
-				} );
-			}
-		},
-
 		widgetCarousel: function( $scope ) {
 
 			var $carousel = $scope.find( '.nova-carousel' );
@@ -363,14 +134,20 @@
 
 		},
 
-        widgetTeamMember: function ( $scope ) {
+    widgetTeamMember: function ( $scope ) {
             var $target = $scope.find( '.nova-carousel' );
             if ( ! $target.length ) {
                 return;
             }
             NovaElements.initCarousel( $target.find( '.nova-team-member' ), $target.data( 'slider_options' ) );
 		},
-
+		widgetProducts: function ( $scope ) {
+						var $target = $scope.find( '.nova-carousel' );
+						if ( ! $target.length ) {
+								return;
+						}
+						nova_slick_slider($target);
+		},
 		widgetPosts: function ( $scope ) {
 
 			var $target = $scope.find( '.nova-carousel' );
@@ -483,62 +260,6 @@
 			instance.init();
 		},
 
-		widgetPortfolio: function( $scope ) {
-			var $target = $scope.find( '.nova-portfolio' ),
-				instance = null,
-				settings = {};
-
-			if ( ! $target.length ) {
-				return;
-			}
-
-			settings = $target.data( 'settings' );
-			instance = new novaPortfolio( $target, settings );
-			instance.init();
-		},
-
-		widgetInstagramGallery: function( $scope ) {
-			var $target         = $scope.find( '.nova-instagram-gallery__instance' ),
-				instance        = null,
-				defaultSettings = {},
-				settings        = {};
-
-			if ( ! $target.length ) {
-				return;
-			}
-
-			settings = $target.data( 'settings' );
-
-			/*
-			 * Default Settings
-			 */
-			defaultSettings = {
-				layoutType: 'masonry',
-				columns: 3,
-				columnsTablet: 2,
-				columnsMobile: 1
-			};
-
-			/**
-			 * Checking options, settings and options merging
-			 */
-			$.extend( defaultSettings, settings );
-
-			if ( 'masonry' === settings.layoutType ) {
-				salvattore.init();
-			}
-
-		},
-
-		widgetScrollNavigation: function( $scope ) {
-			var $target         = $scope.find( '.nova-scroll-navigation' ),
-				instance        = null,
-				settings        = $target.data( 'settings' );
-
-			instance = new novaScrollNavigation( $target, settings );
-			instance.init();
-		},
-
 		widgetSubscribeForm: function( $scope ) {
 			var $target               = $scope.find( '.nova-subscribe-form' ),
 				scoreId               = $scope.data( 'id' ),
@@ -648,44 +369,6 @@
 					}, 20000 );
 				}
 			}
-		},
-
-		widgetProgressBar: function( $scope ) {
-			var $target      = $scope.find( '.nova-progress-bar' ),
-				percent      = $target.data( 'percent' ),
-				type         = $target.data( 'type' ),
-				deltaPercent = percent * 0.01;
-
-			elementorFrontend.waypoint( $target, function( direction ) {
-				var $this       = $( this ),
-					animeObject = { charged: 0 },
-					$statusBar  = $( '.nova-progress-bar__status-bar', $this ),
-					$percent    = $( '.nova-progress-bar__percent-value', $this ),
-					animeProgress,
-					animePercent;
-
-				if ( 'type-7' == type ) {
-					$statusBar.css( {
-						'height': percent + '%'
-					} );
-				} else {
-					$statusBar.css( {
-						'width': percent + '%'
-					} );
-				}
-
-				animePercent = anime({
-					targets: animeObject,
-					charged: percent,
-					round: 1,
-					duration: 1000,
-					easing: 'easeInOutQuad',
-					update: function() {
-						$percent.html( animeObject.charged );
-					}
-				});
-
-			} );
 		},
 
 		widgetSlider: function( $scope ) {
@@ -824,62 +507,6 @@
             NovaElements.initCarousel( $target, settings );
 		},
 
-		widgetImageComparison: function( $scope ) {
-			var $target              = $scope.find( '.nova-image-comparison__instance' ),
-				instance             = null,
-				imageComparisonItems = $( '.nova-image-comparison__container', $target ),
-				settings             = $target.data( 'settings' ),
-				elementId            = $scope.data( 'id' );
-
-			if ( ! $target.length ) {
-				return;
-			}
-
-			window.juxtapose.scanPage( '.nova-juxtapose' );
-
-			settings.draggable = false;
-			settings.infinite = false;
-			//settings.adaptiveHeight = true;
-			NovaElements.initCarousel( $target, settings );
-		},
-
-		widgetTimeTable: function( $scope ) {
-
-			var $mptt_shortcode_wrapper = $scope.find( '.mptt-shortcode-wrapper' );
-
-			if ( ( typeof typenow ) !== 'undefined' ) {
-				if ( pagenow === typenow ) {
-					switch ( typenow ) {
-
-						case 'mp-event':
-							Registry._get( 'Event' ).init();
-							break;
-
-						case 'mp-column':
-							Registry._get( 'Event' ).initDatePicker();
-							Registry._get( 'Event' ).columnRadioBox();
-							break;
-
-						default:
-							break;
-					}
-				}
-			}
-
-			if ( $mptt_shortcode_wrapper.length ) {
-
-				Registry._get( 'Event' ).initTableData();
-				Registry._get( 'Event' ).filterShortcodeEvents();
-				Registry._get( 'Event' ).getFilterByHash();
-
-				$mptt_shortcode_wrapper.show();
-			}
-
-			if ( $( '.upcoming-events-widget' ).length || $mptt_shortcode_wrapper.length ) {
-				Registry._get( 'Event' ).setColorSettings();
-			}
-		},
-
 		elementorSection: function( $scope ) {
 			var $target   = $scope,
 				instance  = null,
@@ -911,10 +538,6 @@
 			options.slidesToShow = parseInt(options.slidesToShow.desktop) || 1;
 
 			defaultOptions = {
-				customPaging: function(slider, i) {
-					return $( '<span />' ).text( i + 1 );
-				},
-				dotsClass: 'nova-slick-dots',
 				responsive: [
                     {
                         breakpoint: 1600,
@@ -956,442 +579,7 @@
 
 			slickOptions = $.extend( {}, defaultOptions, options );
 
-			var _autoPlay = slickOptions.autoplay || false;
-
 			$target.slick( slickOptions );
-
-            if( $(window).width() > 1200) {
-
-                if ($target.closest('.nova-portfolio.preset-list-type-1').length > 0 || $target.closest('.nova-portfolio.preset-list-type-2').length > 0) {
-
-                    $target.on('wheel', (function (e) {
-                        e.preventDefault();
-                        if (e.originalEvent.deltaY < 0) {
-                            $(this).slick('slickNext');
-                        } else {
-                            $(this).slick('slickPrev');
-                        }
-                    }));
-
-                }
-            }
-
-			if( $target.closest('.nova-portfolio').length == 0 ) {
-                _autoPlay = false;
-			}
-
-            if(_autoPlay){
-                var $bar = $('<div class="slick-controls-auto"><a class="slick-control-start" href="#"><i class="fa fa-play" aria-hidden="true"></i></a><a class="slick-control-stop active" href="#"><i class="fa fa-pause" aria-hidden="true"></i></a></div>');
-                $bar.appendTo( $target );
-                $target
-					.on('click', '.slick-control-start', function (e) {
-						e.preventDefault();
-						$(this).removeClass('active').siblings('a').addClass('active');
-                        $target.slick('slickPlay');
-                	})
-					.on('click', '.slick-control-stop', function (e) {
-						e.preventDefault();
-                        $(this).removeClass('active').siblings('a').addClass('active');
-                        $target.slick('slickPause');
-                	})
-            }
-		},
-
-		widgetTimeLine : function ( $scope ){
-			var $target = $scope.find( '.nova-timeline' ),
-				instance = null;
-
-			if ( ! $target.length ) {
-				return;
-			}
-
-			instance = new novaTimeLine( $target );
-			instance.init();
-		},
-
-		widgetTable: function( $scope ) {
-			var $target = $scope.find( '.nova-table' ),
-				options = {
-					cssHeader: 'nova-table-header-sort',
-					cssAsc: 'nova-table-header-sort--up',
-					cssDesc: 'nova-table-header-sort--down',
-					initWidgets: false
-				};
-
-			if ( ! $target.length ) {
-				return;
-			}
-
-			if ( $target.hasClass( 'nova-table--sorting' ) ) {
-				$target.tablesorter( options );
-			}
-		},
-
-		widgetDropbar: function( $scope ) {
-			var $dropbar       = $scope.find( '.nova-dropbar' ),
-				$dropbar_inner = $dropbar.find( '.nova-dropbar__inner' ),
-				$btn           = $dropbar.find( '.nova-dropbar__button' ),
-				$content       = $dropbar.find( '.nova-dropbar__content' ),
-				settings       = $dropbar.data( 'settings' ) || {},
-				mode           = settings['mode'] || 'hover',
-				hide_delay     = +settings['hide_delay'] || 0,
-				activeClass    = 'nova-dropbar-open',
-				scrollOffset,
-				timer;
-
-			if ( 'click' === mode ) {
-				$btn.on( 'click.novaDropbar', function( event ) {
-					$dropbar.toggleClass( activeClass );
-				} );
-			} else {
-				if ( 'ontouchstart' in window || 'ontouchend' in window ) {
-					$btn.on( 'touchend.novaDropbar', function( event ) {
-						if ( $( window ).scrollTop() !== scrollOffset ) {
-							return;
-						}
-
-						$dropbar.toggleClass( activeClass );
-					} );
-				} else {
-					$dropbar_inner.on( 'mouseenter.novaDropbar', function( event ) {
-						clearTimeout( timer );
-						$dropbar.addClass( activeClass );
-					} );
-
-					$dropbar_inner.on( 'mouseleave.novaDropbar', function( event ) {
-						timer = setTimeout( function() {
-							$dropbar.removeClass( activeClass );
-						}, hide_delay );
-					} );
-				}
-			}
-
-			$( document ).on( 'touchstart.novaDropbar', function( event ) {
-				scrollOffset = $( window ).scrollTop();
-			} );
-
-			$( document ).on( 'click.novaDropbar touchend.novaDropbar', function( event ) {
-
-				if ( 'touchend' === event.type && $( window ).scrollTop() !== scrollOffset ) {
-					return;
-				}
-
-				if ( $( event.target ).closest( $btn ).length || $( event.target ).closest( $content ).length ) {
-					return;
-				}
-
-				if ( ! $dropbar.hasClass( activeClass ) ) {
-					return;
-				}
-
-				$dropbar.removeClass( activeClass );
-			} );
-		},
-
-		widgetVideo: function( $scope ) {
-			var $video = $scope.find( '.nova-video' ),
-				$iframe = $scope.find( '.nova-video-iframe' ),
-				$videoPlaer = $scope.find( '.nova-video-player' ),
-				$mejsPlaer = $scope.find( '.nova-video-mejs-player' ),
-				mejsPlaerControls = $mejsPlaer.data( 'controls' ) || ['playpause', 'current', 'progress', 'duration', 'volume', 'fullscreen'],
-				$overlay = $scope.find( '.nova-video__overlay' ),
-				hasOverlay = $overlay.length > 0,
-				settings = $video.data( 'settings' ) || {},
-				autoplay = settings.autoplay || false;
-
-			if ( $overlay[0] ) {
-				$overlay.on( 'click.novaVideo', function( event ) {
-
-					if ( $videoPlaer[0] ) {
-						$videoPlaer[0].play();
-
-						$overlay.remove();
-						hasOverlay = false;
-
-						return;
-					}
-
-					if ( $iframe[0] ) {
-						iframeStartPlay();
-					}
-				} );
-			}
-
-			if ( autoplay && $iframe[0] && $overlay[0] ) {
-				iframeStartPlay();
-			}
-
-			function iframeStartPlay() {
-				var lazyLoad = $iframe.data( 'lazy-load' );
-
-				if ( lazyLoad ) {
-					$iframe.attr( 'src', lazyLoad );
-				}
-
-				if ( ! autoplay ) {
-					$iframe[0].src = $iframe[0].src.replace( '&autoplay=0', '&autoplay=1' );
-				}
-
-				$overlay.remove();
-				hasOverlay = false;
-			}
-
-			if ( $videoPlaer[0] ) {
-				$videoPlaer.on( 'play.novaVideo', function( event ) {
-					if ( hasOverlay ) {
-						$overlay.remove();
-						hasOverlay = false;
-					}
-				} );
-			}
-
-			if ( $mejsPlaer[0] ) {
-				$mejsPlaer.mediaelementplayer( {
-					videoVolume: 'horizontal',
-					hideVolumeOnTouchDevices: false,
-					enableProgressTooltip: false,
-					features: mejsPlaerControls,
-					success: function( media ) {
-						media.addEventListener( 'timeupdate', function( event ) {
-							var $currentTime = $scope.find( '.mejs-time-current' ),
-								inlineStyle  = $currentTime.attr( 'style' );
-
-							if ( inlineStyle ) {
-								var scaleX = inlineStyle.match(/scaleX\([0-9.]*\)/gi)[0].replace( 'scaleX(', '' ).replace( ')', '' );
-
-								if ( scaleX ) {
-									$currentTime.css( 'width', scaleX * 100 + '%' );
-								}
-							}
-						}, false );
-					}
-				} );
-			}
-		},
-
-		widgetAudio: function( $scope ) {
-			var $wrapper = $scope.find( '.nova-audio' ),
-				$player  = $scope.find( '.nova-audio-player' ),
-				settings = $wrapper.data( 'settings' );
-
-			if ( ! $player[0] ) {
-				return;
-			}
-
-			$player.mediaelementplayer( {
-				features: settings['controls'] || ['playpause', 'current', 'progress', 'duration', 'volume'],
-				audioVolume: settings['audioVolume'] || 'horizontal',
-				startVolume: settings['startVolume'] || 0.8,
-				hideVolumeOnTouchDevices: settings['hideVolumeOnTouchDevices'],
-				enableProgressTooltip: false,
-				success: function( media ) {
-					media.addEventListener( 'timeupdate', function( event ) {
-						var $currentTime = $scope.find( '.mejs-time-current' ),
-							inlineStyle  = $currentTime.attr( 'style' );
-
-						if ( inlineStyle ) {
-							var scaleX = inlineStyle.match(/scaleX\([0-9.]*\)/gi)[0].replace( 'scaleX(', '' ).replace( ')', '' );
-
-							if ( scaleX ) {
-								$currentTime.css( 'width', scaleX * 100 + '%' );
-							}
-						}
-					}, false );
-				}
-			} );
-		},
-
-		widgetHorizontalTimeline: function( $scope ) {
-			var $timeline         = $scope.find( '.nova-hor-timeline' ),
-				$timelineTrack    = $scope.find( '.nova-hor-timeline-track' ),
-				$items            = $scope.find( '.nova-hor-timeline-item' ),
-				$arrows           = $scope.find( '.nova-arrow' ),
-				$nextArrow        = $scope.find( '.nova-next-arrow' ),
-				$prevArrow        = $scope.find( '.nova-prev-arrow' ),
-				columns           = $timeline.data( 'columns' ) || {},
-				desktopColumns    = columns.desktop || 3,
-				tabletColumns     = columns.tablet || desktopColumns,
-				mobileColumns     = columns.mobile || tabletColumns,
-				firstMouseEvent   = true,
-				currentDeviceMode = NovaElements.getCurrentDeviceMode(),
-				prevDeviceMode    = currentDeviceMode,
-				itemsCount        = $scope.find( '.nova-hor-timeline-list--middle .nova-hor-timeline-item' ).length,
-				currentTransform  = 0,
-				currentPosition   = 0,
-				transform = {
-					desktop: 100 / desktopColumns,
-					tablet:  100 / tabletColumns,
-					mobile:  100 / mobileColumns
-				},
-				maxPosition = {
-					desktop: Math.max( 0, (itemsCount - desktopColumns) ),
-					tablet:  Math.max( 0, (itemsCount - tabletColumns) ),
-					mobile:  Math.max( 0, (itemsCount - mobileColumns) )
-				};
-
-			if ( 'ontouchstart' in window || 'ontouchend' in window ) {
-				$items.on( 'touchend.novaHorTimeline', function( event ) {
-					var itemId = $( this ).data( 'item-id' );
-
-					$scope.find( '.elementor-repeater-item-' + itemId ).toggleClass( 'is-hover' );
-				} );
-			} else {
-				$items.on( 'mouseenter.novaHorTimeline mouseleave.novaHorTimeline', function( event ) {
-
-					if ( firstMouseEvent && 'mouseleave' === event.type ) {
-						return;
-					}
-
-					if ( firstMouseEvent && 'mouseenter' === event.type ) {
-						firstMouseEvent = false;
-					}
-
-					var itemId = $( this ).data( 'item-id' );
-
-					$scope.find( '.elementor-repeater-item-' + itemId ).toggleClass( 'is-hover' );
-				} );
-			}
-
-			// Set Line Position
-			setLinePosition();
-			$( window ).on( 'resize.novaHorTimeline orientationchange.novaHorTimeline', setLinePosition );
-
-			function setLinePosition() {
-				var $line             = $scope.find( '.nova-hor-timeline__line' ),
-					$firstPoint       = $scope.find( '.nova-hor-timeline-item__point-content:first' ),
-					$lastPoint        = $scope.find( '.nova-hor-timeline-item__point-content:last' ),
-					firstPointLeftPos = $firstPoint.position().left + parseInt( $firstPoint.css( 'marginLeft' ) ),
-					lastPointLeftPos  = $lastPoint.position().left + parseInt( $lastPoint.css( 'marginLeft' ) ),
-					pointWidth        = $firstPoint.outerWidth();
-
-				$line.css( {
-					'left': firstPointLeftPos + pointWidth/2,
-					'width': lastPointLeftPos - firstPointLeftPos
-				} );
-
-				// var $progressLine   = $scope.find( '.nova-hor-timeline__line-progress' ),
-				// 	$lastActiveItem = $scope.find( '.nova-hor-timeline-list--middle .nova-hor-timeline-item.is-active:last' );
-				//
-				// if ( $lastActiveItem[0] ) {
-				// 	var $lastActiveItemPointWrap = $lastActiveItem.find( '.nova-hor-timeline-item__point' ),
-				// 		progressLineWidth        = $lastActiveItemPointWrap.position().left + $lastActiveItemPointWrap.outerWidth() - firstPointLeftPos - pointWidth / 2;
-				//
-				// 	$progressLine.css( {
-				// 		'width': progressLineWidth
-				// 	} );
-				// }
-			}
-
-			// Arrows Navigation Type
-			if ( $nextArrow[0] && maxPosition[ currentDeviceMode ] === 0 ) {
-				$nextArrow.addClass( 'nova-arrow-disabled' );
-			}
-
-			if ( $arrows[0] ) {
-				$arrows.on( 'click.novaHorTimeline', function( event ){
-					var $this = $( this ),
-						direction = $this.hasClass( 'nova-next-arrow' ) ? 'next' : 'prev',
-						currentDeviceMode = NovaElements.getCurrentDeviceMode();
-
-					if ( 'next' === direction && currentPosition < maxPosition[ currentDeviceMode ] ) {
-						currentTransform -= transform[ currentDeviceMode ];
-						currentPosition += 1;
-					}
-
-					if ( 'prev' === direction && currentPosition > 0 ) {
-						currentTransform += transform[ currentDeviceMode ];
-						currentPosition -= 1;
-					}
-
-					if ( currentPosition > 0 ) {
-						$prevArrow.removeClass( 'nova-arrow-disabled' );
-					} else {
-						$prevArrow.addClass( 'nova-arrow-disabled' );
-					}
-
-					if ( currentPosition === maxPosition[ currentDeviceMode ] ) {
-						$nextArrow.addClass( 'nova-arrow-disabled' );
-					} else {
-						$nextArrow.removeClass( 'nova-arrow-disabled' );
-					}
-
-					if ( currentPosition === 0 ) {
-						currentTransform = 0;
-					}
-
-					$timelineTrack.css({
-						'transform': 'translateX(' + currentTransform + '%)'
-					});
-
-				} );
-			}
-
-			setArrowPosition();
-			$( window ).on( 'resize.novaHorTimeline orientationchange.novaHorTimeline', setArrowPosition );
-			$( window ).on( 'resize.novaHorTimeline orientationchange.novaHorTimeline', timelineSliderResizeHandler );
-
-			function setArrowPosition() {
-				if ( ! $arrows[0] ) {
-					return;
-				}
-
-				var $middleList = $scope.find( '.nova-hor-timeline-list--middle' ),
-					middleListTopPosition = $middleList.position().top,
-					middleListHeight = $middleList.outerHeight();
-
-				$arrows.css({
-					'top': middleListTopPosition + middleListHeight/2
-				});
-			}
-
-			function timelineSliderResizeHandler( event ) {
-				if ( ! $timeline.hasClass( 'nova-hor-timeline--arrows-nav' ) ) {
-					return;
-				}
-
-				var currentDeviceMode = NovaElements.getCurrentDeviceMode(),
-					resetSlider = function() {
-						$prevArrow.addClass( 'nova-arrow-disabled' );
-
-						if ( $nextArrow.hasClass( 'nova-arrow-disabled' ) ) {
-							$nextArrow.removeClass( 'nova-arrow-disabled' );
-						}
-
-						if ( maxPosition[ currentDeviceMode ] === 0 ) {
-							$nextArrow.addClass( 'nova-arrow-disabled' );
-						}
-
-						currentTransform = 0;
-						currentPosition = 0;
-
-						$timelineTrack.css({
-							'transform': 'translateX(0%)'
-						});
-					};
-
-				switch ( currentDeviceMode ) {
-					case 'desktop':
-						if ( 'desktop' !== prevDeviceMode ) {
-							resetSlider();
-							prevDeviceMode = 'desktop';
-						}
-						break;
-
-					case 'tablet':
-						if ( 'tablet' !== prevDeviceMode ) {
-							resetSlider();
-							prevDeviceMode = 'tablet';
-						}
-						break;
-
-					case 'mobile':
-						if ( 'mobile' !== prevDeviceMode ) {
-							resetSlider();
-							prevDeviceMode = 'mobile';
-						}
-						break;
-				}
-			}
 		},
 
 		widgetTabs: function( $scope ) {

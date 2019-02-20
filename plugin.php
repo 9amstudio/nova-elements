@@ -336,13 +336,7 @@ class NovaPlugin {
 			[],
 			NOVA_ELEMENTS_VER
 		);
-
-        wp_enqueue_style(
-            'nova-elements-font',
-            NOVA_ELEMENTS_URL . 'assets/css/lib/novaelements-font/css/novaelements.css' ,
-            [],
-            NOVA_ELEMENTS_VER
-        );
+		
 	}
 
     /**
@@ -573,7 +567,7 @@ class NovaPlugin {
             }
         }
     }
-	
+
 }
 
 
