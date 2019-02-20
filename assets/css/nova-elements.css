@@ -11,16 +11,16 @@
 .wc-view-toggle .fa-th:before {
   content: "\ed64"; }
 
-.la-pagination i.fa {
+.nova-pagination i.fa {
   font-family: 'dliconoutline';
   vertical-align: middle; }
 
-.la-pagination .fa-angle-double-left:before,
-.la-pagination .fa-arrow-left:before {
+.nova-pagination .fa-angle-double-left:before,
+.nova-pagination .fa-arrow-left:before {
   content: "\eacf"; }
 
-.la-pagination .fa-angle-double-right:before,
-.la-pagination .fa-arrow-right:before {
+.nova-pagination .fa-angle-double-right:before,
+.nova-pagination .fa-arrow-right:before {
   content: "\ead0"; }
 
 .btn-close-hamburger-menu-full i:before,
@@ -1546,7 +1546,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      display: block;
+      display: none;
       background-color: rgba(0, 0, 0, 0.8);
       content: ''; }
   .nova-slider .sp-full-screen-button {

@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: Nova Elements For Elementor
- * Plugin URI:  https://la-studioweb.com
+ * Plugin URI:  https://nineamstudio.com
  * Description: This plugin use only for Nova theme with Elementor Page Builder
- * Version:     1.0.2.1
+ * Version:     1.0
  * Author:      Nova
- * Author URI:  https://la-studioweb.com
+ * Author URI:  https://nineamstudio.com
  * Text Domain: nova-elements
  * License:     GPL-2.0+
  * License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -14,7 +14,7 @@
  * @package nova-elements
  * @author  Nova
  * @license GPL-2.0+
- * @copyright  2018, Nova
+ * @copyright  2019, Nova
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly

@@ -92,7 +92,7 @@
             }
 
             elementorFrontend.hooks.addAction( 'frontend/element_ready/widget', function( $scope ) {
-                $('.la-lazyload-image', $scope).each(function () {
+                $('.nova-lazyload-image', $scope).each(function () {
                     makeImageAsLoaded(this);
                 });
             } );

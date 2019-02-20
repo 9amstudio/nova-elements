@@ -56,7 +56,7 @@ class Advanced_Map extends Nova_Widget {
                     'raw'  => sprintf(
                         esc_html__( 'Please set Google maps API key before using this widget. You can create own API key  %1$s. Paste created key on %2$s', 'nova-elements' ),
                         '<a target="_blank" href="https://developers.google.com/maps/documentation/javascript/get-api-key">' . esc_html__( 'here', 'nova-elements' ) . '</a>',
-                        '<a target="_blank" href="'. admin_url('themes.php?page=theme_options&la_section=additional_code_panel') .'">' . esc_html__( 'settings page', 'nova-elements' ) . '</a>'
+                        '<a target="_blank" href="'. admin_url('themes.php?page=theme_options&nova_section=additional_code_panel') .'">' . esc_html__( 'settings page', 'nova-elements' ) . '</a>'
                     )
                 )
             );

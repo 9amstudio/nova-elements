@@ -20,6 +20,7 @@ class Modules_Manager {
             'brands',
             'button',
             'heading',
+						'contact-form7',
             'images-layout',
             'inline-svg',
             'instagram-gallery',

@@ -11,10 +11,6 @@ $container_width = ( '%' === $settings['slider_container_width']['unit'] ) ? $co
 <div class="nova-slider__item sp-slide">
 	<?php
 		echo $this->__loop_item_image_tag();
-
-		if ( filter_var( $settings['thumbnails'], FILTER_VALIDATE_BOOLEAN ) ) {
-			echo $this->__loop_item( array( 'item_image', 'url' ), '<img class="sp-thumbnail" src="%s" alt="">' );
-		}
 	?>
 	<div class="nova-slider__content sp-layer" data-position="centerCenter" data-width="100%" data-height="100%" data-horizontal="0%" data-show-transition="up" data-show-duration="400" data-show-delay="400">
 		<div class="nova-slider__content-item">
@@ -33,4 +29,3 @@ $container_width = ( '%' === $settings['slider_container_width']['unit'] ) ? $co
 		</div>
 	</div>
 </div>
-

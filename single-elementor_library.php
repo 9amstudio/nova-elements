@@ -42,7 +42,7 @@ else{
             </div>
         </div>
     </div>
-    <footer id="colophon" class="site-footer la-footer-builder">
+    <footer id="colophon" class="site-footer nova-footer-builder">
         <div class="container">
         <?php the_content(); ?>
         </div>
