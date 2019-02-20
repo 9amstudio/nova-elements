@@ -15,7 +15,6 @@
 				'nova-images-layout.default' : NovaElements.widgetImagesLayout,
 				'nova-slider.default' : NovaElements.widgetSlider,
 				'nova-testimonials.default' : NovaElements.widgetTestimonials,
-				'nova-instagram-gallery.default' : NovaElements.widgetInstagramGallery,
 				'nova-subscribe-form.default' : NovaElements.widgetSubscribeForm,
 				'nova-team-member.default': NovaElements.widgetTeamMember,
 				'nova-tabs.default': NovaElements.widgetTabs,
@@ -259,39 +258,6 @@
 			settings = $target.data( 'settings' );
 			instance = new novaImagesLayout( $target, settings );
 			instance.init();
-		},
-
-		widgetInstagramGallery: function( $scope ) {
-			var $target         = $scope.find( '.nova-instagram-gallery__instance' ),
-				instance        = null,
-				defaultSettings = {},
-				settings        = {};
-
-			if ( ! $target.length ) {
-				return;
-			}
-
-			settings = $target.data( 'settings' );
-
-			/*
-			 * Default Settings
-			 */
-			defaultSettings = {
-				layoutType: 'masonry',
-				columns: 3,
-				columnsTablet: 2,
-				columnsMobile: 1
-			};
-
-			/**
-			 * Checking options, settings and options merging
-			 */
-			$.extend( defaultSettings, settings );
-
-			if ( 'masonry' === settings.layoutType ) {
-				salvattore.init();
-			}
-
 		},
 
 		widgetSubscribeForm: function( $scope ) {

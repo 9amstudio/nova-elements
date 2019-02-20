@@ -229,25 +229,7 @@ class Products_Renderer extends \WC_Shortcode_Products {
         $globalWcLoopTmp['loop_layout']    = $layout;
         $globalWcLoopTmp['loop_style']     = $style;
 
-        if($image_size){
-            $globalWcLoopTmp['image_size'] = $this->settings['image_size'];
-        }
-        if($disable_alt_image){
-            $globalWcLoopTmp['disable_alt_image'] = true;
-        }
-
-        $loopCssClass[] = 'products ul_products';
-
-        if($layout != 'list'){
-
-            $loopCssClass[] = 'products-grid';
-            $loopCssClass[] = 'products-grid-' . $style;
-
-        }
-        else{
-            $loopCssClass[] = 'products-' . $layout;
-            $loopCssClass[] = 'products-' . $layout . '-' . $style;
-        }
+        $loopCssClass[] = 'products';
 
         $products = $this->get_query_results();
 
