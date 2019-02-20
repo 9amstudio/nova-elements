@@ -21,7 +21,6 @@ class Modules_Manager {
             'button',
             'heading',
 						'contact-form7',
-            'headline',
             'images-layout',
             'inline-svg',
             'instagram-gallery',
