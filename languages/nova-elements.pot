@@ -3552,7 +3552,7 @@ msgstr ""
 
 #. URI of the plugin
 #. Author URI of the plugin
-msgid "https://la-studioweb.com"
+msgid "https://nineamstudio.com"
 msgstr ""
 
 #: modules/table/widgets/table.php:353

@@ -30,7 +30,7 @@ class Posts extends Shortcode_Base {
 
 		$columns           = nova_elements_tools()->get_select_range( 6 );
 		$custom_query_link = sprintf(
-			'<a href="https://la-studioweb.com/tool/wp-query-generator/" target="_blank">%s</a>',
+			'<a href="https://nineamstudio.com/tool/wp-query-generator/" target="_blank">%s</a>',
 			__( 'Generate custom query', 'nova-elements' )
 		);
 

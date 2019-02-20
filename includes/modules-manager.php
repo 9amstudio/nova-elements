@@ -19,6 +19,7 @@ class Modules_Manager {
             'banner',
             'brands',
             'button',
+						'contact-form7',
             'headline',
             'images-layout',
             'inline-svg',

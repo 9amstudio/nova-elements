@@ -30,7 +30,7 @@ class Team_Member extends Shortcode_Base {
 
 		$columns           = nova_elements_tools()->get_select_range( 6 );
 		$custom_query_link = sprintf(
-			'<a href="https://la-studioweb.com/tool/wp-query-generator/" target="_blank">%s</a>',
+			'<a href="https://nineamstudio.com/tool/wp-query-generator/" target="_blank">%s</a>',
 			__( 'Generate custom query', 'nova-elements' )
 		);
 
@@ -204,7 +204,7 @@ class Team_Member extends Shortcode_Base {
 	public function get_default_query_args() {
 
 		$query_args = array(
-			'post_type'           => 'la_team_member',
+			'post_type'           => 'nova_team_member',
 			'post_status'         => 'publish',
 			'ignore_sticky_posts' => true,
 			'posts_per_page'      => intval( $this->get_attr( 'number' ) ),

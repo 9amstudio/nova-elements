@@ -223,7 +223,7 @@ class Products_Renderer extends \WC_Shortcode_Products {
             if( 'yes' == $this->settings['carousel_enabled'] ) {
                 $container_attr = ' data-la_component="AutoCarousel" ';
                 $container_attr .= ' data-slider_config="'. esc_attr($this->settings['carousel_setting']) .'"';
-                $loopCssClass[] = 'nova-carousel js-el la-slick-slider';
+                $loopCssClass[] = 'nova-carousel js-el nova-slick-slider';
             }
         }
 
@@ -256,7 +256,7 @@ class Products_Renderer extends \WC_Shortcode_Products {
 
             if($layout == 'masonry'){
 
-                $loopCssClass[] = 'js-el la-isotope-container';
+                $loopCssClass[] = 'js-el nova-isotope-container';
                 $loopCssClass[] = 'prods_masonry';
 
                 if( 'true' == $this->settings['enable_custom_masonry_layout'] ) {
@@ -292,7 +292,7 @@ class Products_Renderer extends \WC_Shortcode_Products {
                 $globalWcLoopTmp['prods_masonry'] = true;
 
                 $container_attr .= ' data-item_selector=".product_item"';
-                $container_attr .= ' data-la-effect="sequencefade"';
+                $container_attr .= ' data-nova-effect="sequencefade"';
             }
         }
         else{
