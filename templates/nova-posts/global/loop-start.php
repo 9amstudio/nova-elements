@@ -9,9 +9,9 @@ $classes = array(
 	'grid-padding-x',
 	'grid-padding-y',
 );
-$columns        = $settings['columns_laptop'];
-$columns_tablet = $settings['columns_tablet'];
-$columns_mobile = $settings['columns_mobile'];
+$columns        = $this->get_attr( 'columns' );
+$columns_tablet = $this->get_attr( 'columns_tablet' );
+$columns_mobile = $this->get_attr( 'columns_mobile' );
 
 $columns        = empty( $columns ) ? 3 : $columns;
 $columns_tablet = empty( $columns_tablet ) ? 2 : $columns_tablet;

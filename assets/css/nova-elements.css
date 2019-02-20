@@ -1256,10 +1256,7 @@
   .nova-posts.nova-equal-cols .nova-posts__item .nova-posts__inner-content {
     flex-grow: 1; }
 
-.nova-posts .slick-slide .nova-posts__item {
-  width: 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
+.nova-posts.slick-slider .nova-posts__item {
   padding: 15px; }
 
 .post-meta {
