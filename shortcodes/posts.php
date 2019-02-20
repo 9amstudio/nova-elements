@@ -69,37 +69,23 @@ class Posts extends Shortcode_Base {
 			'columns_laptop' => array(
 				'default' => 3,
 			),
-            'columns_tablet' => array(
-				'default' => 2,
-			),
-            'columns_width800' => array(
+      'columns_tablet' => array(
 				'default' => 2,
 			),
 			'columns_mobile' => array(
 				'default' => 1,
 			),
-            'columns_width640' => array(
-				'default' => 1,
-			),
-            'preset' => array(
-                'type'       => 'select',
-                'label'      => esc_html__( 'Preset', 'nova-elements' ),
-                'default'    => 'type-1',
-                'options'    => $preset_type,
-                'condition' => array(
-                    'use_custom_query!'    => 'true',
-                    'is_archive_template!' => 'true',
-                    'post_type' => 'post',
-                ),
-            ),
-			'equal_height_cols' => array(
-				'label'        => esc_html__( 'Equal Columns Height', 'nova-elements' ),
-				'type'         => 'switcher',
-				'label_on'     => esc_html__( 'Yes', 'nova-elements' ),
-				'label_off'    => esc_html__( 'No', 'nova-elements' ),
-				'return_value' => 'true',
-				'default'      => '',
-			),
+      'preset' => array(
+          'type'       => 'select',
+          'label'      => esc_html__( 'Preset', 'nova-elements' ),
+          'default'    => 'type-1',
+          'options'    => $preset_type,
+          'condition' => array(
+              'use_custom_query!'    => 'true',
+              'is_archive_template!' => 'true',
+              'post_type' => 'post',
+          ),
+      ),
 			'is_archive_template' => array(
 				'label'        => esc_html__( 'Is archive template', 'nova-elements' ),
 				'type'         => 'switcher',
@@ -407,18 +393,18 @@ class Posts extends Shortcode_Base {
 					'show_meta' => array( 'yes' ),
 				),
 			),
-            'show_categories' => array(
-                'type'         => 'switcher',
-                'label'        => esc_html__( 'Show Posts Category', 'nova-elements' ),
-                'label_on'     => esc_html__( 'Yes', 'nova-elements' ),
-                'label_off'    => esc_html__( 'No', 'nova-elements' ),
-                'return_value' => 'yes',
-                'default'      => 'yes',
-                'condition' => array(
-                    'post_type' => 'post',
-                    'show_meta' => array( 'yes' ),
-                ),
-            ),
+      'show_categories' => array(
+          'type'         => 'switcher',
+          'label'        => esc_html__( 'Show Posts Category', 'nova-elements' ),
+          'label_on'     => esc_html__( 'Yes', 'nova-elements' ),
+          'label_off'    => esc_html__( 'No', 'nova-elements' ),
+          'return_value' => 'yes',
+          'default'      => 'yes',
+          'condition' => array(
+              'post_type' => 'post',
+              'show_meta' => array( 'yes' ),
+          ),
+      ),
 			'show_more' => array(
 				'type'         => 'switcher',
 				'label'        => esc_html__( 'Show Read More Button', 'nova-elements' ),
@@ -441,22 +427,6 @@ class Posts extends Shortcode_Base {
 				'condition' => array(
 					'show_more' => array( 'yes' ),
 				),
-			),
-			'columns_gap' => array(
-				'type'         => 'switcher',
-				'label'        => esc_html__( 'Add gap between columns', 'nova-elements' ),
-				'label_on'     => esc_html__( 'Yes', 'nova-elements' ),
-				'label_off'    => esc_html__( 'No', 'nova-elements' ),
-				'return_value' => 'yes',
-				'default'      => 'yes',
-			),
-			'rows_gap' => array(
-				'type'         => 'switcher',
-				'label'        => esc_html__( 'Add gap between rows', 'nova-elements' ),
-				'label_on'     => esc_html__( 'Yes', 'nova-elements' ),
-				'label_off'    => esc_html__( 'No', 'nova-elements' ),
-				'return_value' => 'yes',
-				'default'      => 'yes',
 			),
 			'show_title_related_meta'       => array( 'default' => false ),
 			'show_content_related_meta'     => array( 'default' => false ),

@@ -5,16 +5,22 @@
 
 $classes = array(
 	'nova-posts',
-	'col-row',
-	'preset-' . $this->get_attr( 'preset' ),
-	nova_elements_tools()->gap_classes( $this->get_attr( 'columns_gap' ), $this->get_attr( 'rows_gap' ) ),
+	'grid-x',
+	'grid-padding-x',
+	'grid-padding-y',
 );
+$columns        = $settings['columns_laptop'];
+$columns_tablet = $settings['columns_tablet'];
+$columns_mobile = $settings['columns_mobile'];
 
-$equal = $this->get_attr( 'equal_height_cols' );
+$columns        = empty( $columns ) ? 3 : $columns;
+$columns_tablet = empty( $columns_tablet ) ? 2 : $columns_tablet;
+$columns_mobile = empty( $columns_mobile ) ? 1 : $columns_mobile;
 
-if ( $equal ) {
-	$classes[] = 'nova-equal-cols';
-}
+$classes[] =  'large-up-' . $columns;
+$classes[] =  'medium-up-' . $columns_tablet;
+$classes[] =  'small-up-' . $columns_mobile;
 
+$classes[] =  'preset-' . $this->get_attr( 'preset' );
 ?>
 <div class="<?php echo implode( ' ', $classes ); ?>">
