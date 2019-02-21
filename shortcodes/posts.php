@@ -38,11 +38,7 @@ class Posts extends Shortcode_Base {
             'nova-elements/shortcodes/nova-posts/preset',
             array(
                 'type-1' => esc_html__( 'Type-1', 'nova-elements' ),
-                'type-2' => esc_html__( 'Type-2', 'nova-elements' ),
-                'type-3' => esc_html__( 'Type-3', 'nova-elements' ),
-                'type-4' => esc_html__( 'Type-4', 'nova-elements' ),
-                'type-5' => esc_html__( 'Type-5', 'nova-elements' ),
-                'type-6' => esc_html__( 'Type-6', 'nova-elements' )
+                'type-2' => esc_html__( 'Type-2', 'nova-elements' )
             )
         );
 
