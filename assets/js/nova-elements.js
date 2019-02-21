@@ -372,124 +372,13 @@
 		},
 
 		widgetSlider: function( $scope ) {
-			var $target        = $scope.find( '.nova-slider' ),
-				$imagesTagList = $( '.sp-image', $target ),
-				instance       = null,
-				defaultSettings = {
-					imageScaleMode: 'cover',
-					slideDistance: { size: 0, unit: 'px' },
-					slideDuration: 500,
-					sliderAutoplay: true,
-					sliderAutoplayDelay: 1200,
-					sliderAutoplayOnHover: 'pause',
-					sliderFadeMode: true,
-					sliderFullScreen: false,
-					sliderFullscreenIcon: 'fa fa-arrows-alt',
-					sliderHeight: { size: 600, unit: 'px' },
-                    sliderHeightLaptop: { size: 600, unit: 'px' },
-					sliderHeightTablet: { size: 400, unit: 'px' },
-                    sliderHeight800: { size: 400, unit: 'px' },
-                    sliderHeight640: { size: 300, unit: 'px' },
-					sliderHeightMobile: { size: 300, unit: 'px' },
-					sliderLoop: true,
-					sliderNaviOnHover: false,
-					sliderNavigation: true,
-					sliderNavigationIcon: 'fa fa-angle-left',
-					sliderPagination: false,
-					sliderShuffle: false,
-					sliderWidth: { size: 100, unit: '%' },
-					thumbnailWidth: 120,
-					thumbnailHeight: 80,
-					thumbnails: true,
-					rightToLeft: false
-				},
-				instanceSettings = $target.data( 'settings' ) || {},
-				settings        = $.extend( {}, defaultSettings, instanceSettings );
+			var $target        = $scope.find( '.shortcode_nova_slider' );
+		
+		  $('.cover-slider').each(function() {
+		    $(this).css('background-image', 'url('+$(this).data('bg')+')');
+		  });
 
-			if ( ! $target.length ) {
-				return;
-			}
-
-			$target.imagesLoaded().progress( function( instance, image ) {
-				var loadedImages = null,
-					progressBarWidth = null;
-
-				if ( image.isLoaded ) {
-
-					if ( $( image.img ).hasClass( 'sp-image' ) ) {
-						$( image.img ).addClass( 'image-loaded' );
-					}
-
-					if($(image.img).hasClass('jetpack-lazy-image') && !$(image.img).hasClass('jetpack-lazy-image--handled')){
-                        NovaElementsTools.makeImageAsLoaded(image.img);
-					}
-
-					loadedImages = $( '.image-loaded', $target );
-					progressBarWidth = 100 * ( loadedImages.length / $imagesTagList.length ) + '%';
-
-					$( '.nova-slider-loader', $target ).css( { width: progressBarWidth } );
-				}
-
-			} ).done( function( instance ) {
-
-				$( '.slider-pro', $target ).addClass( 'slider-loaded' );
-				$( '.nova-slider-loader', $target ).css( { 'display': 'none' } );
-			} );
-
-			var laptopHeight = '' !== settings['sliderHeightLaptop']['size'] ? settings['sliderHeightLaptop']['size'] + settings['sliderHeightLaptop']['unit'] : settings['sliderHeight']['size'] + settings['sliderHeight']['unit'];
-			var tabletHeight = '' !== settings['sliderHeightTablet']['size'] ? settings['sliderHeightTablet']['size'] + settings['sliderHeightTablet']['unit'] : settings['sliderHeight']['size'] + settings['sliderHeight']['unit'];
-            var tablet800Height = '' !== settings['sliderHeight800']['size'] ? settings['sliderHeight800']['size'] + settings['sliderHeight800']['unit'] : tabletHeight;
-			var mobileHeight = '' !== settings['sliderHeightMobile']['size'] ? settings['sliderHeightMobile']['size'] + settings['sliderHeightMobile']['unit'] : settings['sliderHeight']['size'] + settings['sliderHeight']['unit'];
-			var mobile640Height = '' !== settings['sliderHeight640']['size'] ? settings['sliderHeight640']['size'] + settings['sliderHeight640']['unit'] : mobileHeight;
-
-			$( '.slider-pro', $target ).sliderPro( {
-				width: settings['sliderWidth']['size'] + settings['sliderWidth']['unit'],
-				height: settings['sliderHeight']['size'] + settings['sliderHeight']['unit'],
-				arrows: settings['sliderNavigation'],
-				fadeArrows: settings['sliderNaviOnHover'],
-				buttons: settings['sliderPagination'],
-				autoplay: settings['sliderAutoplay'],
-				autoplayDelay: settings['sliderAutoplayDelay'],
-				autoplayOnHover: settings['sliderAutoplayOnHover'],
-				fullScreen: settings['sliderFullScreen'],
-				shuffle: settings['sliderShuffle'],
-				loop: settings['sliderLoop'],
-				fade: settings['sliderFadeMode'],
-				slideDistance: ( 'string' !== typeof settings['slideDistance']['size'] ) ? settings['slideDistance']['size'] : 0,
-				slideAnimationDuration: +settings['slideDuration'],
-				//imageScaleMode: settings['imageScaleMode'],
-				imageScaleMode: 'exact',
-				waitForLayers: false,
-				grabCursor: false,
-				thumbnailWidth: settings['thumbnailWidth'],
-				thumbnailHeight: settings['thumbnailHeight'],
-				rightToLeft: settings['rightToLeft'],
-				init: function() {
-					this.resize();
-
-					$( '.sp-previous-arrow', $target ).append( '<i class="' + settings['sliderNavigationIcon'] + '"></i>' );
-					$( '.sp-next-arrow', $target ).append( '<i class="' + settings['sliderNavigationIcon'] + '"></i>' );
-
-					$( '.sp-full-screen-button', $target ).append( '<i class="' + settings['sliderFullscreenIcon'] + '"></i>' );
-				},
-				breakpoints: {
-					1599: {
-						height: laptopHeight
-					},
-					1199: {
-						height: tabletHeight
-					},
-					799: {
-						height: tablet800Height
-					},
-					767: {
-						height: mobileHeight
-					},
-					639: {
-						height: mobile640Height
-					}
-				}
-			} );
+			nova_slider($target);
 		},
 
 		widgetTestimonials: function( $scope ) {
