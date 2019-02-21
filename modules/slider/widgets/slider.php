@@ -412,9 +412,9 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'slider_title_alignment',
             array(
-                'label'   => esc_html__( 'Alignment', 'nova-elements' ),
+                'label'   => esc_html__( 'Text Alignment', 'nova-elements' ),
                 'type'    => Controls_Manager::CHOOSE,
-                'default' => 'center',
+                'default' => 'left',
                 'options' => array(
                     'left'    => array(
                         'title' => esc_html__( 'Left', 'nova-elements' ),
@@ -440,7 +440,7 @@ class Slider extends Nova_Widget {
             array(
                 'label'   => esc_html__( 'Alignment', 'nova-elements' ),
                 'type'    => Controls_Manager::CHOOSE,
-                'default' => 'center',
+                'default' => 'flex-start',
                 'options' => array(
                     'flex-start'    => array(
                         'title' => esc_html__( 'Left', 'nova-elements' ),
@@ -545,9 +545,9 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'slider_subtitle_alignment',
             array(
-                'label'   => esc_html__( 'Alignment', 'nova-elements' ),
+                'label'   => esc_html__( 'Text Alignment', 'nova-elements' ),
                 'type'    => Controls_Manager::CHOOSE,
-                'default' => 'center',
+                'default' => 'left',
                 'options' => array(
                     'left'    => array(
                         'title' => esc_html__( 'Left', 'nova-elements' ),
@@ -573,7 +573,7 @@ class Slider extends Nova_Widget {
             array(
                 'label'   => esc_html__( 'Alignment', 'nova-elements' ),
                 'type'    => Controls_Manager::CHOOSE,
-                'default' => 'center',
+                'default' => 'flex-start',
                 'options' => array(
                     'flex-start'    => array(
                         'title' => esc_html__( 'Left', 'nova-elements' ),
@@ -679,7 +679,7 @@ class Slider extends Nova_Widget {
             array(
                 'label'   => esc_html__( 'Text Alignment', 'nova-elements' ),
                 'type'    => Controls_Manager::CHOOSE,
-                'default' => 'center',
+                'default' => 'left',
                 'options' => array(
                     'left'    => array(
                         'title' => esc_html__( 'Left', 'nova-elements' ),
@@ -705,7 +705,7 @@ class Slider extends Nova_Widget {
             array(
                 'label'   => esc_html__( 'Alignment', 'nova-elements' ),
                 'type'    => Controls_Manager::CHOOSE,
-                'default' => 'center',
+                'default' => 'flex-start',
                 'options' => array(
                     'flex-start'    => array(
                         'title' => esc_html__( 'Left', 'nova-elements' ),
@@ -767,7 +767,7 @@ class Slider extends Nova_Widget {
             array(
                 'label'   => esc_html__( 'Alignment', 'nova-elements' ),
                 'type'    => Controls_Manager::CHOOSE,
-                'default' => 'center',
+                'default' => 'left',
                 'options' => array(
                     'left'    => array(
                         'title' => esc_html__( 'Left', 'nova-elements' ),

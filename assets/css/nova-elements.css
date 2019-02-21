@@ -1221,58 +1221,6 @@
     opacity: 1;
     transform: scale(1); }
 
-.nova-posts__item {
-  outline: none; }
-
-.nova-posts__inner-box {
-  overflow: hidden; }
-
-.nova-posts .nova-more {
-  overflow: hidden;
-  color: initial; }
-
-.nova-posts .nova-more-icon {
-  margin-left: 5px; }
-
-.nova-posts .post-thumbnail {
-  overflow: hidden; }
-
-.nova-posts.nova-equal-cols .slick-track {
-  display: flex;
-  align-items: stretch; }
-  .nova-posts.nova-equal-cols .slick-track .nova-posts__item {
-    flex: 0 0 auto; }
-
-.nova-posts.nova-equal-cols .nova-posts__item {
-  height: auto;
-  display: flex;
-  flex-direction: column; }
-  .nova-posts.nova-equal-cols .nova-posts__item .nova-posts__inner-box {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    width: 100%;
-    box-sizing: border-box; }
-  .nova-posts.nova-equal-cols .nova-posts__item .nova-posts__inner-content {
-    flex-grow: 1; }
-
-.nova-posts.slick-slider .nova-posts__item {
-  padding: 15px; }
-
-.post-meta {
-  padding-bottom: 10px; }
-  .post-meta__item {
-    display: inline-block; }
-    .post-meta__item:not(:first-child):before {
-      content: "";
-      display: inline-block;
-      margin-left: 5px;
-      margin-right: 5px; }
-
-.elementor-nova-posts .nova-carousel {
-  margin-left: 0;
-  margin-right: 0; }
-
 .nova-images-layout {
   position: relative; }
   .nova-images-layout__item {
