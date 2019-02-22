@@ -417,7 +417,7 @@ if ( ! class_exists( 'Nova_Elements_Tools' ) ) {
 					'fa fa-chevron-circle-left' => __( 'Chevron Circle', 'nova-elements' ),
 					'fa fa-caret-square-o-left' => __( 'Caret Square', 'nova-elements' ),
 					'dlicon arrows-1_tail-left' => __( 'Tail Left', 'nova-elements' ),
-                    'dlicon arrows-1_tail-triangle-left' => __( 'Tail Triangle Left', 'nova-elements' ),
+          'dlicon arrows-1_tail-triangle-left' => __( 'Tail Triangle Left', 'nova-elements' ),
 				)
 			);
 
