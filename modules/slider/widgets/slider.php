@@ -61,6 +61,7 @@ class Slider extends Nova_Widget {
                 'title'               => '.shortcode_nova_slider .slide-title',
                 'subtitle'            => '.shortcode_nova_slider .slide-subtitle',
                 'desc'                => '.shortcode_nova_slider .slide-description',
+								'buttons_wrapper2'    => '.nova-button__container',
                 'buttons_wrapper'     => '.nova-slider__button-wrapper',
                 'primary_button'      => '.nova-slider__button--primary',
                 'secondary_button'    => '.nova-slider__button--secondary',
@@ -762,6 +763,65 @@ class Slider extends Nova_Widget {
             )
         );
 
+        $effects = apply_filters(
+            'nova-elements/button/effects',
+            array(
+                'effect-0'  => esc_html__( 'None', 'nova-elements' ),
+                'effect-1'  => esc_html__( 'Fade', 'nova-elements' ),
+                'effect-2'  => esc_html__( 'Up Slide', 'nova-elements' ),
+                'effect-3'  => esc_html__( 'Down Slide', 'nova-elements' ),
+                'effect-4'  => esc_html__( 'Right Slide', 'nova-elements' ),
+                'effect-5'  => esc_html__( 'Left Slide', 'nova-elements' ),
+                'effect-6'  => esc_html__( 'Up Scale', 'nova-elements' ),
+                'effect-7'  => esc_html__( 'Down Scale', 'nova-elements' ),
+                'effect-8'  => esc_html__( 'Top Diagonal Slide', 'nova-elements' ),
+                'effect-9'  => esc_html__( 'Bottom Diagonal Slide', 'nova-elements' ),
+                'effect-10' => esc_html__( 'Right Rayen', 'nova-elements' ),
+                'effect-11' => esc_html__( 'Left Rayen', 'nova-elements' ),
+            )
+        );
+
+        $this->add_control(
+            'hover_effect',
+            array(
+                'label'   => esc_html__( 'Hover Effect', 'nova-elements' ),
+                'type'    => Controls_Manager::SELECT,
+                'default' => 'effect-0',
+                'options' => $effects,
+            )
+        );
+
+        $this->add_control(
+            'use_button_icon',
+            array(
+                'label'        => esc_html__( 'Use Icon?', 'nova-elements' ),
+                'type'         => Controls_Manager::SWITCHER,
+                'label_on'     => esc_html__( 'Yes', 'nova-elements' ),
+                'label_off'    => esc_html__( 'No', 'nova-elements' ),
+                'return_value' => 'yes',
+                'default'      => 'yes',
+            )
+        );
+
+        $this->add_control(
+            'button_icon_position',
+            array(
+                'label'   => esc_html__( 'Icon Position', 'nova-elements' ),
+                'type'    => Controls_Manager::SELECT,
+                'options' => array(
+                    'left'   => esc_html__( 'Left', 'nova-elements' ),
+                    'top'    => esc_html__( 'Top', 'nova-elements' ),
+                    'right'  => esc_html__( 'Right', 'nova-elements' ),
+                    'bottom' => esc_html__( 'Bottom', 'nova-elements' ),
+                ),
+                'default'     => 'left',
+                'render_type' => 'template',
+                'condition' => array(
+                    'use_button_icon' => 'yes',
+                ),
+            )
+        );
+
         $this->add_responsive_control(
             'slider_action_button_alignment',
             array(
@@ -784,6 +844,7 @@ class Slider extends Nova_Widget {
                 ),
                 'selectors'  => array(
                     '{{WRAPPER}} ' . $css_scheme['buttons_wrapper'] => 'text-align: {{VALUE}};',
+										'{{WRAPPER}} ' . $css_scheme['buttons_wrapper2'] => 'text-align: {{VALUE}};',
                 ),
             )
         );
@@ -807,17 +868,21 @@ class Slider extends Nova_Widget {
         );
 
         $this->add_control(
-            'primary_button_bg_color',
+            'primary_button_icon',
             array(
-                'label' => esc_html__( 'Background Color', 'nova-elements' ),
-                'type' => Controls_Manager::COLOR,
-                'scheme' => array(
-                    'type'  => Scheme_Color::get_type(),
-                    'value' => Scheme_Color::COLOR_1,
-                ),
-                'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['primary_button'] => 'background-color: {{VALUE}}',
-                ),
+                'label'       => esc_html__( 'Button Icon', 'nova-elements' ),
+                'type'        => Controls_Manager::ICON,
+                'label_block' => true,
+                'file'        => '',
+                'default'     => 'fa fa-circle-o',
+            )
+        );
+
+        $this->add_group_control(
+            Group_Control_Background::get_type(),
+            array(
+                'name'     => 'primary_button_bg_color',
+                'selector' => '{{WRAPPER}} ' . $css_scheme['primary_button'],
             )
         );
 
@@ -906,13 +971,21 @@ class Slider extends Nova_Widget {
         );
 
         $this->add_control(
-            'primary_button_hover_bg_color',
+            'primary_button_hover_icon',
             array(
-                'label'     => esc_html__( 'Background Color', 'nova-elements' ),
-                'type'      => Controls_Manager::COLOR,
-                'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['primary_button'] . ':hover' => 'background-color: {{VALUE}}',
-                ),
+                'label'       => esc_html__( 'Button Icon', 'nova-elements' ),
+                'type'        => Controls_Manager::ICON,
+                'label_block' => true,
+                'file'        => '',
+                'default'     => 'fa fa-circle-o',
+            )
+        );
+
+        $this->add_group_control(
+            Group_Control_Background::get_type(),
+            array(
+                'name'     => 'primary_button_hover_bg_color',
+                'selector' => '{{WRAPPER}} ' . $css_scheme['primary_button'] . ':hover',
             )
         );
 
@@ -1013,17 +1086,21 @@ class Slider extends Nova_Widget {
         );
 
         $this->add_control(
-            'secondary_button_bg_color',
+            'secondary_button_icon',
             array(
-                'label' => esc_html__( 'Background Color', 'nova-elements' ),
-                'type' => Controls_Manager::COLOR,
-                'scheme' => array(
-                    'type'  => Scheme_Color::get_type(),
-                    'value' => Scheme_Color::COLOR_2,
-                ),
-                'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] => 'background-color: {{VALUE}}',
-                ),
+                'label'       => esc_html__( 'Button Icon', 'nova-elements' ),
+                'type'        => Controls_Manager::ICON,
+                'label_block' => true,
+                'file'        => '',
+                'default'     => 'fa fa-circle-o',
+            )
+        );
+
+        $this->add_group_control(
+            Group_Control_Background::get_type(),
+            array(
+                'name'     => 'secondary_button_bg_color',
+                'selector' => '{{WRAPPER}} ' . $css_scheme['secondary_button'],
             )
         );
 
@@ -1112,13 +1189,21 @@ class Slider extends Nova_Widget {
         );
 
         $this->add_control(
-            'secondary_button_hover_bg_color',
+            'secondary_button_hover_icon',
             array(
-                'label'     => esc_html__( 'Background Color', 'nova-elements' ),
-                'type'      => Controls_Manager::COLOR,
-                'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ':hover' => 'background-color: {{VALUE}}',
-                ),
+                'label'       => esc_html__( 'Button Icon', 'nova-elements' ),
+                'type'        => Controls_Manager::ICON,
+                'label_block' => true,
+                'file'        => '',
+                'default'     => 'fa fa-circle-o',
+            )
+        );
+
+        $this->add_group_control(
+            Group_Control_Background::get_type(),
+            array(
+                'name'     => 'secondary_button_hover_bg_color',
+                'selector' => '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ':hover',
             )
         );
 
