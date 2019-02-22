@@ -9,9 +9,18 @@ $classes_list[] = 'shortcode_nova_slider';
 $classes_list[] = 'slider-horizontal';
 $classes = implode( ' ', $classes_list );
 
+$position = $this->get_settings_for_display( 'button_icon_position' );
+$hover_effect = $this->get_settings_for_display( 'hover_effect' );
+
+$this->add_render_attribute( 'nova-button-primary', 'class', 'nova-slider__button--primary' );
 $this->add_render_attribute( 'nova-button-primary', 'class', 'nova-button__instance' );
-$this->add_render_attribute( 'nova-button-primary', 'class', 'nova-button__instance--icon-left' );
-$this->add_render_attribute( 'nova-button-primary', 'class', 'hover-effect-0' );
+$this->add_render_attribute( 'nova-button-primary', 'class', 'nova-button__instance--icon-' . $position );
+$this->add_render_attribute( 'nova-button-primary', 'class', 'hover-' . $hover_effect );
+
+$this->add_render_attribute( 'nova-button-secondary', 'class', 'nova-slider__button--secondary' );
+$this->add_render_attribute( 'nova-button-secondary', 'class', 'nova-button__instance' );
+$this->add_render_attribute( 'nova-button-secondary', 'class', 'nova-button__instance--icon-' . $position );
+$this->add_render_attribute( 'nova-button-secondary', 'class', 'hover-' . $hover_effect );
 
 
 ?>
