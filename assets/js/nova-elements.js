@@ -373,7 +373,7 @@
 
 		widgetSlider: function( $scope ) {
 			var $target        = $scope.find( '.shortcode_nova_slider' );
-		
+
 		  $('.cover-slider').each(function() {
 		    $(this).css('background-image', 'url('+$(this).data('bg')+')');
 		  });

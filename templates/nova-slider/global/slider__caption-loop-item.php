@@ -11,6 +11,31 @@ $settings = $this->get_settings_for_display();
       echo $this->__loop_item( array( 'item_title' ), '<h1 class="slide-title"><span class="down-up"><span>%s</span></span></h1>' );
       echo $this->__loop_item( array( 'item_desc' ), '<div class="slide-description"><span class="down-up"><span>%s</span></span></div>' );
     ?>
+
+    <div class="nova-button__container">
+      <?php
+        echo $this->__loop_item( array( 'item_button_primary_url' ), '<a '.$this->get_render_attribute_string( 'nova-button-primary' ).' href="%1$s %1$s">'.$this->__loop_item( array( 'item_button_primary_text' ) ).'</a>' );
+      ?>
+
+
+      <?php
+        echo $this->__loop_button_item( array( 'item_button_primary_url', 'item_button_primary_text' ), '<a '.$this->get_render_attribute_string( 'nova-button-primary' ).' href="%1$s">
+        <div class="nova-button__plane nova-button__plane-normal"></div>
+    		<div class="nova-button__plane nova-button__plane-hover"></div>
+        <div class="nova-button__state nova-button__state-normal">
+
+          <span class="nova-button__label">%2$s</span>
+        </div>
+        <div class="nova-button__state nova-button__state-hover">
+
+          <span class="nova-button__label">%2$s</span>
+        </div>
+        </a>' );
+        echo $this->__loop_button_item( array( 'item_button_secondary_url', 'item_button_secondary_text' ), '<a class="nova-button__instance nova-button__instance--icon-left hover-effect-0" href="%1$s">%2$s</a>' );
+      ?>
+
+    </div>
+
     <div class="nova-slider__button-wrapper">
       <span class="down-up"><span><?php
       echo $this->__loop_button_item( array( 'item_button_primary_url', 'item_button_primary_text' ), '<a class="elementor-button elementor-size-md nova-slider__button nova-slider__button--primary" href="%1$s">%2$s</a>' );

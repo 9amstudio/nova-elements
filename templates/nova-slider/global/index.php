@@ -8,6 +8,12 @@ $data_settings = $this->generate_setting_json();
 $classes_list[] = 'shortcode_nova_slider';
 $classes_list[] = 'slider-horizontal';
 $classes = implode( ' ', $classes_list );
+
+$this->add_render_attribute( 'nova-button-primary', 'class', 'nova-button__instance' );
+$this->add_render_attribute( 'nova-button-primary', 'class', 'nova-button__instance--icon-left' );
+$this->add_render_attribute( 'nova-button-primary', 'class', 'hover-effect-0' );
+
+
 ?>
 
 <div class="<?php echo $classes; ?>" <?php //echo $data_settings; ?>>

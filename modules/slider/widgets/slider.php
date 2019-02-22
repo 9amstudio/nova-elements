@@ -61,6 +61,7 @@ class Slider extends Nova_Widget {
                 'title'               => '.shortcode_nova_slider .slide-title',
                 'subtitle'            => '.shortcode_nova_slider .slide-subtitle',
                 'desc'                => '.shortcode_nova_slider .slide-description',
+								'buttons_wrapper2'    => '.nova-button__container',
                 'buttons_wrapper'     => '.nova-slider__button-wrapper',
                 'primary_button'      => '.nova-slider__button--primary',
                 'secondary_button'    => '.nova-slider__button--secondary',
@@ -784,6 +785,7 @@ class Slider extends Nova_Widget {
                 ),
                 'selectors'  => array(
                     '{{WRAPPER}} ' . $css_scheme['buttons_wrapper'] => 'text-align: {{VALUE}};',
+										'{{WRAPPER}} ' . $css_scheme['buttons_wrapper2'] => 'text-align: {{VALUE}};',
                 ),
             )
         );
@@ -806,18 +808,11 @@ class Slider extends Nova_Widget {
             )
         );
 
-        $this->add_control(
-            'primary_button_bg_color',
+        $this->add_group_control(
+            Group_Control_Background::get_type(),
             array(
-                'label' => esc_html__( 'Background Color', 'nova-elements' ),
-                'type' => Controls_Manager::COLOR,
-                'scheme' => array(
-                    'type'  => Scheme_Color::get_type(),
-                    'value' => Scheme_Color::COLOR_1,
-                ),
-                'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['primary_button'] => 'background-color: {{VALUE}}',
-                ),
+                'name'     => 'primary_button_bg_color',
+                'selector' => '{{WRAPPER}} ' . $css_scheme['primary_button'],
             )
         );
 
@@ -905,14 +900,11 @@ class Slider extends Nova_Widget {
             )
         );
 
-        $this->add_control(
-            'primary_button_hover_bg_color',
+        $this->add_group_control(
+            Group_Control_Background::get_type(),
             array(
-                'label'     => esc_html__( 'Background Color', 'nova-elements' ),
-                'type'      => Controls_Manager::COLOR,
-                'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['primary_button'] . ':hover' => 'background-color: {{VALUE}}',
-                ),
+                'name'     => 'primary_button_hover_bg_color',
+                'selector' => '{{WRAPPER}} ' . $css_scheme['primary_button'] . ':hover',
             )
         );
 
@@ -1012,18 +1004,11 @@ class Slider extends Nova_Widget {
             )
         );
 
-        $this->add_control(
-            'secondary_button_bg_color',
+        $this->add_group_control(
+            Group_Control_Background::get_type(),
             array(
-                'label' => esc_html__( 'Background Color', 'nova-elements' ),
-                'type' => Controls_Manager::COLOR,
-                'scheme' => array(
-                    'type'  => Scheme_Color::get_type(),
-                    'value' => Scheme_Color::COLOR_2,
-                ),
-                'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] => 'background-color: {{VALUE}}',
-                ),
+                'name'     => 'secondary_button_bg_color',
+                'selector' => '{{WRAPPER}} ' . $css_scheme['secondary_button'],
             )
         );
 
@@ -1111,14 +1096,11 @@ class Slider extends Nova_Widget {
             )
         );
 
-        $this->add_control(
-            'secondary_button_hover_bg_color',
+        $this->add_group_control(
+            Group_Control_Background::get_type(),
             array(
-                'label'     => esc_html__( 'Background Color', 'nova-elements' ),
-                'type'      => Controls_Manager::COLOR,
-                'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ':hover' => 'background-color: {{VALUE}}',
-                ),
+                'name'     => 'secondary_button_hover_bg_color',
+                'selector' => '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ':hover',
             )
         );
 
