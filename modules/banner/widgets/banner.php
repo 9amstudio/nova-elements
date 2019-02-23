@@ -209,6 +209,71 @@ class Banner extends Nova_Widget {
             )
         );
 
+				$this->add_responsive_control(
+						'content_h_alignment',
+						array(
+								'label'   => esc_html__( 'Content Horizontal Alignment', 'nova-elements' ),
+								'type'    => Controls_Manager::CHOOSE,
+								'default' => 'center',
+								'options' => array(
+										'left'    => array(
+												'title' => esc_html__( 'Left', 'nova-elements' ),
+												'icon'  => 'fa fa-arrow-left',
+										),
+										'center' => array(
+												'title' => esc_html__( 'Center', 'nova-elements' ),
+												'icon'  => 'fa fa-align-center',
+										),
+										'right' => array(
+												'title' => esc_html__( 'Right', 'nova-elements' ),
+												'icon'  => 'fa fa-arrow-right',
+										),
+								),
+								'selectors'  => array(
+										'{{WRAPPER}} ' . $css_scheme['banner_content'] => 'justify-content: {{VALUE}};',
+								),
+						)
+				);
+
+				$this->add_responsive_control(
+						'content_v_alignment',
+						array(
+								'label'   => esc_html__( 'Content Vertical Alignment', 'nova-elements' ),
+								'type'    => Controls_Manager::CHOOSE,
+								'default' => 'center',
+								'options' => array(
+										'flex-start'    => array(
+												'title' => esc_html__( 'Top', 'nova-elements' ),
+												'icon'  => 'fa fa-arrow-up',
+										),
+										'center' => array(
+												'title' => esc_html__( 'Center', 'nova-elements' ),
+												'icon'  => 'fa fa-align-center',
+										),
+										'flex-end' => array(
+												'title' => esc_html__( 'Bottom', 'nova-elements' ),
+												'icon'  => 'fa fa-arrow-down',
+										),
+								),
+								'selectors'  => array(
+										'{{WRAPPER}} ' . $css_scheme['banner_content'] => 'align-items: {{VALUE}};',
+								),
+						)
+				);
+
+				$this->add_responsive_control(
+						'content_margin',
+						array(
+								'label'      => __( 'Content Padding', 'nova-elements' ),
+								'type'       => Controls_Manager::DIMENSIONS,
+								'size_units' => array( 'px', '%' ),
+								'selectors'  => array(
+										'{{WRAPPER}} ' . $css_scheme['banner_content'] => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+								),
+								'separator'  => 'before',
+						)
+				);
+
         $this->start_controls_tabs( 'tabs_background' );
 
         $this->start_controls_tab(

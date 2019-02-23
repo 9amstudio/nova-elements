@@ -28,7 +28,7 @@ class Heading extends Nova_Widget {
     protected function get_widget_title() {
         return esc_html__( 'Heading', 'nova-elements' );
     }
-		
+
 		public function is_reload_preview_required() {
 				return true;
 		}
@@ -354,6 +354,7 @@ class Heading extends Nova_Widget {
                     'value' => Scheme_Color::COLOR_1,
                 ),
                 'selectors' => array(
+										'{{WRAPPER}} ' . $css_scheme['heading_title'].' span' => 'color: {{VALUE}}',
                     '{{WRAPPER}} ' . $css_scheme['heading_subtitle'] => 'color: {{VALUE}}',
                 ),
             )
