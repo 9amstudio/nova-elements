@@ -61,8 +61,7 @@ class Slider extends Nova_Widget {
                 'title'               => '.shortcode_nova_slider .slide-title',
                 'subtitle'            => '.shortcode_nova_slider .slide-subtitle',
                 'desc'                => '.shortcode_nova_slider .slide-description',
-								'buttons_wrapper2'    => '.nova-button__container',
-                'buttons_wrapper'     => '.nova-slider__button-wrapper',
+								'buttons_wrapper'     => '.nova-button__container',
                 'primary_button'      => '.nova-slider__button--primary',
                 'secondary_button'    => '.nova-slider__button--secondary',
 								'action_button'       => '.shortcode_nova_slider .slide-button',
@@ -827,9 +826,9 @@ class Slider extends Nova_Widget {
             array(
                 'label'   => esc_html__( 'Alignment', 'nova-elements' ),
                 'type'    => Controls_Manager::CHOOSE,
-                'default' => 'left',
+                'default' => 'flex-start',
                 'options' => array(
-                    'left'    => array(
+                    'flex-start'    => array(
                         'title' => esc_html__( 'Left', 'nova-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ),
@@ -837,14 +836,13 @@ class Slider extends Nova_Widget {
                         'title' => esc_html__( 'Center', 'nova-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ),
-                    'right' => array(
+                    'flex-end' => array(
                         'title' => esc_html__( 'Right', 'nova-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ),
                 ),
                 'selectors'  => array(
-                    '{{WRAPPER}} ' . $css_scheme['buttons_wrapper'] => 'text-align: {{VALUE}};',
-										'{{WRAPPER}} ' . $css_scheme['buttons_wrapper2'] => 'text-align: {{VALUE}};',
+										'{{WRAPPER}} ' . $css_scheme['buttons_wrapper'] => 'justify-content: {{VALUE}};',
                 ),
             )
         );
