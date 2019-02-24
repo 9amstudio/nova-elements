@@ -55,7 +55,7 @@ if ( ! class_exists( 'Nova_Elements_Tools' ) ) {
 
 			foreach ( $columns as $device => $cols ) {
 				if ( ! empty( $cols ) ) {
-					$classes[] = sprintf( 'col-%1$s-%2$s', $device, $cols );
+					$classes[] = sprintf( '%1$s-up-%2$s', $device, $cols );
 				}
 			}
 

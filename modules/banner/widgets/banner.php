@@ -168,20 +168,9 @@ class Banner extends Nova_Widget {
             array(
                 'label'   => esc_html__( 'Animation Effect', 'nova-elements' ),
                 'type'    => Controls_Manager::SELECT,
-                'default' => 'lily',
+                'default' => 'none',
                 'options' => array(
                     'none'   => esc_html__( 'None', 'nova-elements' ),
-                    'lily'   => esc_html__( 'Lily', 'nova-elements' ),
-                    'sadie'  => esc_html__( 'Sadie', 'nova-elements' ),
-                    'layla'  => esc_html__( 'Layla', 'nova-elements' ),
-                    'oscar'  => esc_html__( 'Oscar', 'nova-elements' ),
-                    'marley' => esc_html__( 'Marley', 'nova-elements' ),
-                    'ruby'   => esc_html__( 'Ruby', 'nova-elements' ),
-                    'roxy'   => esc_html__( 'Roxy', 'nova-elements' ),
-                    'bubba'  => esc_html__( 'Bubba', 'nova-elements' ),
-                    'romeo'  => esc_html__( 'Romeo', 'nova-elements' ),
-                    'sarah'  => esc_html__( 'Sarah', 'nova-elements' ),
-                    'chico'  => esc_html__( 'Chico', 'nova-elements' ),
                 ),
             )
         );
@@ -216,7 +205,7 @@ class Banner extends Nova_Widget {
 								'type'    => Controls_Manager::CHOOSE,
 								'default' => 'center',
 								'options' => array(
-										'left'    => array(
+										'flex-start'    => array(
 												'title' => esc_html__( 'Left', 'nova-elements' ),
 												'icon'  => 'fa fa-arrow-left',
 										),
@@ -224,7 +213,7 @@ class Banner extends Nova_Widget {
 												'title' => esc_html__( 'Center', 'nova-elements' ),
 												'icon'  => 'fa fa-align-center',
 										),
-										'right' => array(
+										'flex-end' => array(
 												'title' => esc_html__( 'Right', 'nova-elements' ),
 												'icon'  => 'fa fa-arrow-right',
 										),
