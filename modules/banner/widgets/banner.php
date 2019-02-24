@@ -596,7 +596,27 @@ class Banner extends Nova_Widget {
 								'show_label' => false,
 						)
 				);
-
+				$this->add_responsive_control(
+						'button_max_width',
+						array(
+								'label' => esc_html__( 'Button Max Width', 'nova-elements' ),
+								'type'  => Controls_Manager::SLIDER,
+								'size_units' => array( 'px', '%' ),
+								'range' => array(
+										'%' => array(
+												'min' => 10,
+												'max' => 100,
+										),
+										'px' => array(
+												'min' => 100,
+												'max' => 500,
+										),
+								),
+								'selectors' => array(
+										'{{WRAPPER}} ' . $css_scheme['banner_button'] => 'max-width: {{SIZE}}{{UNIT}};',
+								),
+						)
+				);
         $this->start_controls_tabs( 'tabs_banner_button_style' );
 
         $this->start_controls_tab(
@@ -605,22 +625,13 @@ class Banner extends Nova_Widget {
                 'label' => esc_html__( 'Normal', 'nova-elements' ),
             )
         );
-
-        $this->add_control(
-            'banner_button_bg_color',
-            array(
-                'label' => esc_html__( 'Background Color', 'nova-elements' ),
-                'type' => Controls_Manager::COLOR,
-                'scheme' => array(
-                    'type'  => Scheme_Color::get_type(),
-                    'value' => Scheme_Color::COLOR_1,
-                ),
-                'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['banner_button'] => 'background-color: {{VALUE}}',
-                ),
-            )
-        );
-
+				$this->add_group_control(
+						Group_Control_Background::get_type(),
+						array(
+								'name'     => 'button_background',
+								'selector' => '{{WRAPPER}} ' . $css_scheme['banner_button'],
+						)
+				);
         $this->add_control(
             'banner_button_color',
             array(
@@ -705,16 +716,13 @@ class Banner extends Nova_Widget {
             )
         );
 
-        $this->add_control(
-            'banner_button_hover_bg_color',
-            array(
-                'label'     => esc_html__( 'Background Color', 'nova-elements' ),
-                'type'      => Controls_Manager::COLOR,
-                'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['banner_button'] . ':hover' => 'background-color: {{VALUE}}',
-                ),
-            )
-        );
+				$this->add_group_control(
+						Group_Control_Background::get_type(),
+						array(
+								'name'     => 'button_background_hover',
+								'selector' => '{{WRAPPER}} ' . $css_scheme['banner_button'] . ':hover',
+						)
+				);
 
         $this->add_control(
             'banner_button_hover_color',
