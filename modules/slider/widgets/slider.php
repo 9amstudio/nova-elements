@@ -865,22 +865,11 @@ class Slider extends Nova_Widget {
             )
         );
 
-        $this->add_control(
-            'primary_button_icon',
-            array(
-                'label'       => esc_html__( 'Button Icon', 'nova-elements' ),
-                'type'        => Controls_Manager::ICON,
-                'label_block' => true,
-                'file'        => '',
-                'default'     => 'fa fa-circle-o',
-            )
-        );
-
         $this->add_group_control(
             Group_Control_Background::get_type(),
             array(
                 'name'     => 'primary_button_bg_color',
-                'selector' => '{{WRAPPER}} ' . $css_scheme['primary_button'],
+                'selector' => '{{WRAPPER}} ' . $css_scheme['primary_button'] . ' .nova-button__plane-normal',
             )
         );
 
@@ -890,7 +879,7 @@ class Slider extends Nova_Widget {
                 'label'     => esc_html__( 'Text Color', 'nova-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['primary_button'] => 'color: {{VALUE}}',
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'] .' .nova-button__state-normal .nova-button__label' => 'color: {{VALUE}}',
                 ),
             )
         );
@@ -900,7 +889,7 @@ class Slider extends Nova_Widget {
             array(
                 'name'     => 'primary_button_typography',
                 'scheme'   => Scheme_Typography::TYPOGRAPHY_4,
-                'selector' => '{{WRAPPER}}  ' . $css_scheme['primary_button'],
+                'selector' => '{{WRAPPER}}  ' . $css_scheme['primary_button'] .' .nova-button__state-normal .nova-button__label',
             )
         );
 
@@ -911,7 +900,7 @@ class Slider extends Nova_Widget {
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%', 'em' ),
                 'selectors'  => array(
-                    '{{WRAPPER}} ' . $css_scheme['primary_button'] => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-normal' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ),
             )
         );
@@ -959,17 +948,8 @@ class Slider extends Nova_Widget {
             )
         );
 
-        $this->end_controls_tab();
-
-        $this->start_controls_tab(
-            'tab_primary_button_hover',
-            array(
-                'label' => esc_html__( 'Hover', 'nova-elements' ),
-            )
-        );
-
         $this->add_control(
-            'primary_button_hover_icon',
+            'primary_button_icon',
             array(
                 'label'       => esc_html__( 'Button Icon', 'nova-elements' ),
                 'type'        => Controls_Manager::ICON,
@@ -979,11 +959,137 @@ class Slider extends Nova_Widget {
             )
         );
 
+        $this->add_control(
+            'primary_button_icon_color',
+            array(
+                'label' => esc_html__( 'Icon Color', 'nova-elements' ),
+                'type' => Controls_Manager::COLOR,
+                'selectors' => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'] . ' .nova-button__state-normal .nova-button__icon i' => 'color: {{VALUE}}',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'primary_button_icon_font_size',
+            array(
+                'label'      => esc_html__( 'Icon Size', 'nova-elements' ),
+                'type'       => Controls_Manager::SLIDER,
+                'size_units' => array(
+                    'px', 'em', 'rem',
+                ),
+                'range'      => array(
+                    'px' => array(
+                        'min' => 1,
+                        'max' => 100,
+                    ),
+                ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'] . ' .nova-button__state-normal .nova-button__icon i' => 'font-size: {{SIZE}}{{UNIT}}',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'primary_button_icon_box_width',
+            array(
+                'label'      => esc_html__( 'Icon Box Width', 'nova-elements' ),
+                'type'       => Controls_Manager::SLIDER,
+                'size_units' => array(
+                    'px', 'em', '%',
+                ),
+                'range'      => array(
+                    'px' => array(
+                        'min' => 10,
+                        'max' => 200,
+                    ),
+                ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-normal .nova-button__icon' => 'width: {{SIZE}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'primary_button_icon_box_height',
+            array(
+                'label'      => esc_html__( 'Icon Box Height', 'nova-elements' ),
+                'type'       => Controls_Manager::SLIDER,
+                'size_units' => array(
+                    'px', 'em', '%',
+                ),
+                'range'      => array(
+                    'px' => array(
+                        'min' => 10,
+                        'max' => 200,
+                    ),
+                ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-normal .nova-button__icon' => 'height: {{SIZE}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->add_control(
+            'primary_button_icon_box_color',
+            array(
+                'label' => esc_html__( 'Icon Box Color', 'nova-elements' ),
+                'type' => Controls_Manager::COLOR,
+                'selectors' => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-normal .nova-button__icon' => 'background-color: {{VALUE}}',
+                ),
+            )
+        );
+
+        $this->add_group_control(
+            Group_Control_Border::get_type(),
+            array(
+                'name'        => 'primary_button_icon_box_border',
+                'label'       => esc_html__( 'Icon Box Border', 'nova-elements' ),
+                'placeholder' => '1px',
+                'default'     => '1px',
+                'selector'    => '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-normal .nova-button__icon',
+            )
+        );
+
+        $this->add_control(
+            'primary_button_icon_box_border_radius',
+            array(
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
+                'type'       => Controls_Manager::DIMENSIONS,
+                'size_units' => array( 'px', '%' ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-normal .nova-button__icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'primary_button_icon_margin',
+            array(
+                'label'      => __( 'Icon Box Margin', 'nova-elements' ),
+                'type'       => Controls_Manager::DIMENSIONS,
+                'size_units' => array( 'px', '%' ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-normal .nova-button__icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->end_controls_tab();
+
+        $this->start_controls_tab(
+            'tab_primary_button_hover',
+            array(
+                'label' => esc_html__( 'Hover', 'nova-elements' ),
+            )
+        );
+
         $this->add_group_control(
             Group_Control_Background::get_type(),
             array(
                 'name'     => 'primary_button_hover_bg_color',
-                'selector' => '{{WRAPPER}} ' . $css_scheme['primary_button'] . ':hover',
+                'selector' => '{{WRAPPER}} ' . $css_scheme['primary_button'] . ' .nova-button__plane-hover',
             )
         );
 
@@ -993,7 +1099,7 @@ class Slider extends Nova_Widget {
                 'label'     => esc_html__( 'Text Color', 'nova-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['primary_button'] . ':hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'] .' .nova-button__state-hover .nova-button__label' => 'color: {{VALUE}}',
                 ),
             )
         );
@@ -1002,7 +1108,8 @@ class Slider extends Nova_Widget {
             Group_Control_Typography::get_type(),
             array(
                 'name'     => 'primary_button_hover_typography',
-                'selector' => '{{WRAPPER}}  ' . $css_scheme['primary_button'] . ':hover',
+								'scheme'   => Scheme_Typography::TYPOGRAPHY_4,
+                'selector' => '{{WRAPPER}}  ' . $css_scheme['primary_button'] .' .nova-button__state-hover .nova-button__label',
             )
         );
 
@@ -1013,7 +1120,7 @@ class Slider extends Nova_Widget {
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%', 'em' ),
                 'selectors'  => array(
-                    '{{WRAPPER}} ' . $css_scheme['primary_button'] . ':hover' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'] . ' .nova-button__state-hover' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ),
             )
         );
@@ -1061,6 +1168,134 @@ class Slider extends Nova_Widget {
             )
         );
 
+        $this->add_control(
+            'primary_button_hover_icon',
+            array(
+                'label'       => esc_html__( 'Button Icon', 'nova-elements' ),
+                'type'        => Controls_Manager::ICON,
+                'label_block' => true,
+                'file'        => '',
+                'default'     => 'fa fa-circle-o',
+            )
+        );
+
+        $this->add_control(
+            'primary_button_hover_icon_color',
+            array(
+                'label' => esc_html__( 'Icon Color', 'nova-elements' ),
+                'type' => Controls_Manager::COLOR,
+                'selectors' => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'] . ' .nova-button__state-hover .nova-button__icon i' => 'color: {{VALUE}}',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'primary_button_hover_icon_font_size',
+            array(
+                'label'      => esc_html__( 'Icon Size', 'nova-elements' ),
+                'type'       => Controls_Manager::SLIDER,
+                'size_units' => array(
+                    'px', 'em', 'rem',
+                ),
+                'range'      => array(
+                    'px' => array(
+                        'min' => 1,
+                        'max' => 100,
+                    ),
+                ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'] . ' .nova-button__state-hover .nova-button__icon i' => 'font-size: {{SIZE}}{{UNIT}}',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'primary_button_hover_icon_box_width',
+            array(
+                'label'      => esc_html__( 'Icon Box Width', 'nova-elements' ),
+                'type'       => Controls_Manager::SLIDER,
+                'size_units' => array(
+                    'px', 'em', '%',
+                ),
+                'range'      => array(
+                    'px' => array(
+                        'min' => 10,
+                        'max' => 200,
+                    ),
+                ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-hover .nova-button__icon' => 'width: {{SIZE}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'primary_button_hover_icon_box_height',
+            array(
+                'label'      => esc_html__( 'Icon Box Height', 'nova-elements' ),
+                'type'       => Controls_Manager::SLIDER,
+                'size_units' => array(
+                    'px', 'em', '%',
+                ),
+                'range'      => array(
+                    'px' => array(
+                        'min' => 10,
+                        'max' => 200,
+                    ),
+                ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-hover .nova-button__icon' => 'height: {{SIZE}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->add_control(
+            'primary_button_hover_icon_box_color',
+            array(
+                'label' => esc_html__( 'Icon Box Color', 'nova-elements' ),
+                'type' => Controls_Manager::COLOR,
+                'selectors' => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-hover .nova-button__icon' => 'background-color: {{VALUE}}',
+                ),
+            )
+        );
+
+        $this->add_group_control(
+            Group_Control_Border::get_type(),
+            array(
+                'name'        => 'primary_button_hover_icon_box_border',
+                'label'       => esc_html__( 'Icon Box Border', 'nova-elements' ),
+                'placeholder' => '1px',
+                'default'     => '1px',
+                'selector'    => '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-hover .nova-button__icon',
+            )
+        );
+
+        $this->add_control(
+            'primary_button_hover_icon_box_border_radius',
+            array(
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
+                'type'       => Controls_Manager::DIMENSIONS,
+                'size_units' => array( 'px', '%' ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-hover .nova-button__icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'primary_button_hover_icon_margin',
+            array(
+                'label'      => __( 'Icon Box Margin', 'nova-elements' ),
+                'type'       => Controls_Manager::DIMENSIONS,
+                'size_units' => array( 'px', '%' ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['primary_button'].' .nova-button__state-hover .nova-button__icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ),
+            )
+        );
+
         $this->end_controls_tab();
 
         $this->end_controls_tabs();
@@ -1083,22 +1318,11 @@ class Slider extends Nova_Widget {
             )
         );
 
-        $this->add_control(
-            'secondary_button_icon',
-            array(
-                'label'       => esc_html__( 'Button Icon', 'nova-elements' ),
-                'type'        => Controls_Manager::ICON,
-                'label_block' => true,
-                'file'        => '',
-                'default'     => 'fa fa-circle-o',
-            )
-        );
-
         $this->add_group_control(
             Group_Control_Background::get_type(),
             array(
                 'name'     => 'secondary_button_bg_color',
-                'selector' => '{{WRAPPER}} ' . $css_scheme['secondary_button'],
+                'selector' => '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__plane-normal',
             )
         );
 
@@ -1108,7 +1332,7 @@ class Slider extends Nova_Widget {
                 'label'     => esc_html__( 'Text Color', 'nova-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] => 'color: {{VALUE}}',
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] .' .nova-button__state-normal .nova-button__label' => 'color: {{VALUE}}',
                 ),
             )
         );
@@ -1118,7 +1342,7 @@ class Slider extends Nova_Widget {
             array(
                 'name'     => 'secondary_button_typography',
                 'scheme'   => Scheme_Typography::TYPOGRAPHY_4,
-                'selector' => '{{WRAPPER}}  ' . $css_scheme['secondary_button'],
+                'selector' => '{{WRAPPER}}  ' . $css_scheme['secondary_button'] .' .nova-button__state-normal .nova-button__label',
             )
         );
 
@@ -1129,7 +1353,7 @@ class Slider extends Nova_Widget {
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%', 'em' ),
                 'selectors'  => array(
-                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-normal' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ),
             )
         );
@@ -1177,17 +1401,8 @@ class Slider extends Nova_Widget {
             )
         );
 
-        $this->end_controls_tab();
-
-        $this->start_controls_tab(
-            'tab_secondary_button_hover',
-            array(
-                'label' => esc_html__( 'Hover', 'nova-elements' ),
-            )
-        );
-
         $this->add_control(
-            'secondary_button_hover_icon',
+            'secondary_button_icon',
             array(
                 'label'       => esc_html__( 'Button Icon', 'nova-elements' ),
                 'type'        => Controls_Manager::ICON,
@@ -1197,11 +1412,137 @@ class Slider extends Nova_Widget {
             )
         );
 
+        $this->add_control(
+            'secondary_button_icon_color',
+            array(
+                'label' => esc_html__( 'Icon Color', 'nova-elements' ),
+                'type' => Controls_Manager::COLOR,
+                'selectors' => array(
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ' .nova-button__state-normal .nova-button__icon i' => 'color: {{VALUE}}',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'secondary_button_icon_font_size',
+            array(
+                'label'      => esc_html__( 'Icon Size', 'nova-elements' ),
+                'type'       => Controls_Manager::SLIDER,
+                'size_units' => array(
+                    'px', 'em', 'rem',
+                ),
+                'range'      => array(
+                    'px' => array(
+                        'min' => 1,
+                        'max' => 100,
+                    ),
+                ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ' .nova-button__state-normal .nova-button__icon i' => 'font-size: {{SIZE}}{{UNIT}}',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'secondary_button_icon_box_width',
+            array(
+                'label'      => esc_html__( 'Icon Box Width', 'nova-elements' ),
+                'type'       => Controls_Manager::SLIDER,
+                'size_units' => array(
+                    'px', 'em', '%',
+                ),
+                'range'      => array(
+                    'px' => array(
+                        'min' => 10,
+                        'max' => 200,
+                    ),
+                ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-normal .nova-button__icon' => 'width: {{SIZE}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'secondary_button_icon_box_height',
+            array(
+                'label'      => esc_html__( 'Icon Box Height', 'nova-elements' ),
+                'type'       => Controls_Manager::SLIDER,
+                'size_units' => array(
+                    'px', 'em', '%',
+                ),
+                'range'      => array(
+                    'px' => array(
+                        'min' => 10,
+                        'max' => 200,
+                    ),
+                ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-normal .nova-button__icon' => 'height: {{SIZE}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->add_control(
+            'secondary_button_icon_box_color',
+            array(
+                'label' => esc_html__( 'Icon Box Color', 'nova-elements' ),
+                'type' => Controls_Manager::COLOR,
+                'selectors' => array(
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-normal .nova-button__icon' => 'background-color: {{VALUE}}',
+                ),
+            )
+        );
+
+        $this->add_group_control(
+            Group_Control_Border::get_type(),
+            array(
+                'name'        => 'secondary_button_icon_box_border',
+                'label'       => esc_html__( 'Icon Box Border', 'nova-elements' ),
+                'placeholder' => '1px',
+                'default'     => '1px',
+                'selector'    => '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-normal .nova-button__icon',
+            )
+        );
+
+        $this->add_control(
+            'secondary_button_icon_box_border_radius',
+            array(
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
+                'type'       => Controls_Manager::DIMENSIONS,
+                'size_units' => array( 'px', '%' ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-normal .nova-button__icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->add_responsive_control(
+            'secondary_button_icon_margin',
+            array(
+                'label'      => __( 'Icon Box Margin', 'nova-elements' ),
+                'type'       => Controls_Manager::DIMENSIONS,
+                'size_units' => array( 'px', '%' ),
+                'selectors'  => array(
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-normal .nova-button__icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                ),
+            )
+        );
+
+        $this->end_controls_tab();
+
+        $this->start_controls_tab(
+            'tab_secondary_button_hover',
+            array(
+                'label' => esc_html__( 'Hover', 'nova-elements' ),
+            )
+        );
+
         $this->add_group_control(
             Group_Control_Background::get_type(),
             array(
                 'name'     => 'secondary_button_hover_bg_color',
-                'selector' => '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ':hover',
+                'selector' => '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ' .nova-button__plane-hover',
             )
         );
 
@@ -1211,7 +1552,7 @@ class Slider extends Nova_Widget {
                 'label'     => esc_html__( 'Text Color', 'nova-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => array(
-                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ':hover' => 'color: {{VALUE}}',
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] .' .nova-button__state-hover .nova-button__label' => 'color: {{VALUE}}',
                 ),
             )
         );
@@ -1220,7 +1561,8 @@ class Slider extends Nova_Widget {
             Group_Control_Typography::get_type(),
             array(
                 'name'     => 'secondary_button_hover_typography',
-                'selector' => '{{WRAPPER}}  ' . $css_scheme['secondary_button'] . ':hover',
+								'scheme'   => Scheme_Typography::TYPOGRAPHY_4,
+                'selector' => '{{WRAPPER}}  ' . $css_scheme['secondary_button'] .' .nova-button__state-hover .nova-button__label',
             )
         );
 
@@ -1231,7 +1573,7 @@ class Slider extends Nova_Widget {
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%', 'em' ),
                 'selectors'  => array(
-                    '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ':hover' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-hover' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ),
             )
         );
@@ -1278,6 +1620,134 @@ class Slider extends Nova_Widget {
                 'selector' => '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ':hover',
             )
         );
+
+        $this->add_control(
+            'secondary_button_hover_icon',
+            array(
+                'label'       => esc_html__( 'Button Icon', 'nova-elements' ),
+                'type'        => Controls_Manager::ICON,
+                'label_block' => true,
+                'file'        => '',
+                'default'     => 'fa fa-circle-o',
+            )
+        );
+
+				$this->add_control(
+				    'secondary_button_hover_icon_color',
+				    array(
+				        'label' => esc_html__( 'Icon Color', 'nova-elements' ),
+				        'type' => Controls_Manager::COLOR,
+				        'selectors' => array(
+				            '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ' .nova-button__state-hover .nova-button__icon i' => 'color: {{VALUE}}',
+				        ),
+				    )
+				);
+
+				$this->add_responsive_control(
+				    'secondary_button_hover_icon_font_size',
+				    array(
+				        'label'      => esc_html__( 'Icon Size', 'nova-elements' ),
+				        'type'       => Controls_Manager::SLIDER,
+				        'size_units' => array(
+				            'px', 'em', 'rem',
+				        ),
+				        'range'      => array(
+				            'px' => array(
+				                'min' => 1,
+				                'max' => 100,
+				            ),
+				        ),
+				        'selectors'  => array(
+				            '{{WRAPPER}} ' . $css_scheme['secondary_button'] . ' .nova-button__state-hover .nova-button__icon i' => 'font-size: {{SIZE}}{{UNIT}}',
+				        ),
+				    )
+				);
+
+				$this->add_responsive_control(
+				    'secondary_button_hover_icon_box_width',
+				    array(
+				        'label'      => esc_html__( 'Icon Box Width', 'nova-elements' ),
+				        'type'       => Controls_Manager::SLIDER,
+				        'size_units' => array(
+				            'px', 'em', '%',
+				        ),
+				        'range'      => array(
+				            'px' => array(
+				                'min' => 10,
+				                'max' => 200,
+				            ),
+				        ),
+				        'selectors'  => array(
+				            '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-hover .nova-button__icon' => 'width: {{SIZE}}{{UNIT}};',
+				        ),
+				    )
+				);
+
+				$this->add_responsive_control(
+				    'secondary_button_hover_icon_box_height',
+				    array(
+				        'label'      => esc_html__( 'Icon Box Height', 'nova-elements' ),
+				        'type'       => Controls_Manager::SLIDER,
+				        'size_units' => array(
+				            'px', 'em', '%',
+				        ),
+				        'range'      => array(
+				            'px' => array(
+				                'min' => 10,
+				                'max' => 200,
+				            ),
+				        ),
+				        'selectors'  => array(
+				            '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-hover .nova-button__icon' => 'height: {{SIZE}}{{UNIT}};',
+				        ),
+				    )
+				);
+
+				$this->add_control(
+				    'secondary_button_hover_icon_box_color',
+				    array(
+				        'label' => esc_html__( 'Icon Box Color', 'nova-elements' ),
+				        'type' => Controls_Manager::COLOR,
+				        'selectors' => array(
+				            '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-hover .nova-button__icon' => 'background-color: {{VALUE}}',
+				        ),
+				    )
+				);
+
+				$this->add_group_control(
+				    Group_Control_Border::get_type(),
+				    array(
+				        'name'        => 'secondary_button_hover_icon_box_border',
+				        'label'       => esc_html__( 'Icon Box Border', 'nova-elements' ),
+				        'placeholder' => '1px',
+				        'default'     => '1px',
+				        'selector'    => '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-hover .nova-button__icon',
+				    )
+				);
+
+				$this->add_control(
+				    'secondary_button_hover_icon_box_border_radius',
+				    array(
+				        'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
+				        'type'       => Controls_Manager::DIMENSIONS,
+				        'size_units' => array( 'px', '%' ),
+				        'selectors'  => array(
+				            '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-hover .nova-button__icon' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				        ),
+				    )
+				);
+
+				$this->add_responsive_control(
+				    'secondary_button_hover_icon_margin',
+				    array(
+				        'label'      => __( 'Icon Box Margin', 'nova-elements' ),
+				        'type'       => Controls_Manager::DIMENSIONS,
+				        'size_units' => array( 'px', '%' ),
+				        'selectors'  => array(
+				            '{{WRAPPER}} ' . $css_scheme['secondary_button'].' .nova-button__state-hover .nova-button__icon' => 'margin: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+				        ),
+				    )
+				);
 
         $this->end_controls_tab();
 
