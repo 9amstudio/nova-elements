@@ -129,7 +129,12 @@ class NovaPlugin {
             false,
             NOVA_ELEMENTS_VER
         );
-
+				wp_enqueue_style(
+            'nova-outline-icon',
+            NOVA_ELEMENTS_URL . 'assets/css/lib/nova-outline/css/style.css',
+            false,
+            NOVA_ELEMENTS_VER
+        );
         $asset_font_without_domain = NOVA_ELEMENTS_URL . 'assets/css/lib/dlicon';
         wp_add_inline_style(
             'nova-dlicon',
@@ -170,14 +175,6 @@ class NovaPlugin {
         }
 
         $default_theme_enabled = apply_filters( 'nova-elements/assets/css/default-theme-enabled', true );
-
-        // Register vendor slider-pro.css styles (https://github.com/bqworks/slider-pro)
-        wp_register_style(
-            'nova-slider-pro-css',
-            NOVA_ELEMENTS_URL . 'assets/css/lib/slider-pro/slider-pro.min.css',
-            false,
-            '1.3.0'
-        );
 
         // Register vendor juxtapose-css styles
         wp_register_style(
@@ -268,15 +265,6 @@ class NovaPlugin {
             true
         );
 
-        // Register vendor slider-pro.js script (https://github.com/bqworks/slider-pro)
-        wp_register_script(
-            'nova-slider-pro',
-            NOVA_ELEMENTS_URL . 'assets/js/lib/slider-pro/jquery.sliderPro.min.js' ,
-            [],
-            '1.3.0',
-            true
-        );
-
         // Register vendor juxtapose.js script
         wp_register_script(
             'nova-juxtapose',
@@ -336,7 +324,7 @@ class NovaPlugin {
 			[],
 			NOVA_ELEMENTS_VER
 		);
-		
+
 	}
 
     /**

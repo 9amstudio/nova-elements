@@ -1,0 +1,41 @@
+$nova-outline-icon-free-return = "\ea01"
+$nova-outline-icon-free-shipping = "\ea02"
+$nova-outline-icon-member-discount = "\ea03"
+$nova-outline-icon-support-24-7 = "\ea04"
+
+@font-face
+  font-family: "nova-outline"
+  src: url("../font/nova-outline.eot")
+  src: url("../font/nova-outline.eot?#iefix") format("embedded-opentype"), url("../font/nova-outline.woff2") format("woff2"), url("../font/nova-outline.woff") format("woff"), url("../font/nova-outline.ttf") format("truetype"), url("../font/nova-outline.svg#nova-outline") format("svg")
+  font-style: normal
+  font-weight: 400
+
+$nova-outline-icon
+  display: inline-block
+  font-family: "nova-outline" !important
+  font-style: normal !important
+  font-weight: normal !important
+  font-variant: normal !important
+  text-transform: none !important
+  speak: none
+  line-height: 1
+  vertical-align: -.125em
+  text-rendering: auto
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+.nova-outline-icon
+  @extend $nova-outline-icon
+
+.nova-outline-icon-free-return::before
+  content: "\ea01"
+
+.nova-outline-icon-free-shipping::before
+  content: "\ea02"
+
+.nova-outline-icon-member-discount::before
+  content: "\ea03"
+
+.nova-outline-icon-support-24-7::before
+  content: "\ea04"
+

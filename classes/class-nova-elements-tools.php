@@ -201,8 +201,8 @@ if ( ! class_exists( 'Nova_Elements_Tools' ) ) {
 
 			$default = array(
 				'icons'  => false,
-				'format' => 'dlicon %s',
-				'file'   => NOVA_ELEMENTS_PATH . 'assets/css/lib/dlicon/dlicon.css'
+				'format' => 'nova-outline-icon %s',
+				'file'   => NOVA_ELEMENTS_PATH . 'assets/css/lib/nova-outline/css/style.css'
 			);
 
 			/**
