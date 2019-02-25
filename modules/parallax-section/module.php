@@ -392,9 +392,6 @@ class Module extends Module_Base {
         add_action( 'elementor/element/section/section_layout/after_section_end', [ $this, 'after_section_end' ], 10, 2 );
         add_action( 'elementor/element/column/layout/after_section_end', [ $this, 'after_column_end' ], 10, 2 );
 
-        //add_action( 'elementor/element/column/layout/after_section_end', [ $this, 'after_section_end' ], 10, 2 );
-
-        //add_action( 'elementor/frontend/column/before_render', [ $this, 'section_before_render' ] );
         add_action( 'elementor/frontend/section/before_render', [ $this, 'section_before_render' ] );
 
         add_action( 'elementor/frontend/after_enqueue_scripts', [ $this, 'enqueue_scripts' ], 0 );
