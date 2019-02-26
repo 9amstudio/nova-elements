@@ -180,12 +180,13 @@ class Banner extends Nova_Widget {
         $css_scheme = apply_filters(
             'nova-elements/banner/css-scheme',
             array(
-                'banner'         => '.nova-banner',
-                'banner_content' => '.nova-banner__content',
-                'banner_overlay' => '.nova-banner__overlay',
-                'banner_title'   => '.nova-banner__title',
-                'banner_text'    => '.nova-banner__text',
-                'banner_button'  => '.nova-banner__button',
+                'banner'         			=> '.nova-banner',
+                'banner_content' 			=> '.nova-banner__content',
+                'banner_overlay' 			=> '.nova-banner__overlay',
+                'banner_title'   			=> '.nova-banner__title',
+                'banner_text'   			=> '.nova-banner__text',
+                'banner_button_wrap'  => '.nova-banner__button-wrap',
+                'banner_button'  			=> '.nova-banner__button',
             )
         );
 
@@ -583,6 +584,31 @@ class Banner extends Nova_Widget {
 								'label'      => esc_html__( 'Button', 'nova-elements' ),
 								'tab'        => Controls_Manager::TAB_STYLE,
 								'show_label' => false,
+						)
+				);
+				$this->add_responsive_control(
+						'button_alignment',
+						array(
+								'label'   => esc_html__( 'Button Alignment', 'nova-elements' ),
+								'type'    => Controls_Manager::CHOOSE,
+								'default' => 'center',
+								'options' => array(
+										'flex-start'    => array(
+												'title' => esc_html__( 'Left', 'nova-elements' ),
+												'icon'  => 'fa fa-arrow-left',
+										),
+										'center' => array(
+												'title' => esc_html__( 'Center', 'nova-elements' ),
+												'icon'  => 'fa fa-align-center',
+										),
+										'flex-end' => array(
+												'title' => esc_html__( 'Right', 'nova-elements' ),
+												'icon'  => 'fa fa-arrow-right',
+										),
+								),
+								'selectors'  => array(
+										'{{WRAPPER}} ' . $css_scheme['banner_button_wrap'] => 'justify-content: {{VALUE}};',
+								),
 						)
 				);
 				$this->add_responsive_control(
