@@ -35,6 +35,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"/addons/_nova-banner.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "/addons/_nova-banner.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"/addons/_nova-button.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -161,19 +174,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/addons/_nova-posts.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/addons/_nova-slider.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/addons/_nova-slider.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -447,19 +447,6 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "/skin/_nova-instagram-gallery.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"/skin/_nova-slider.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/skin/_nova-slider.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
