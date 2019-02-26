@@ -871,7 +871,7 @@ class Banner extends Nova_Widget {
 								'max'     => 3,
 								'step'    => 1,
 								'selectors' => array(
-										'{{WRAPPER}} '. $css_scheme['banner_button'] => 'order: {{VALUE}};',
+										'{{WRAPPER}} '. $css_scheme['banner_button_wrap'] => 'order: {{VALUE}};',
 								),
 						)
 				);
