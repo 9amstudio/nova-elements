@@ -185,7 +185,7 @@ class Banner extends Nova_Widget {
                 'banner_overlay' 			=> '.nova-banner__overlay',
                 'banner_title'   			=> '.nova-banner__title',
                 'banner_text'   			=> '.nova-banner__text',
-                'banner_button_wrap'  => '.nova-banner__button-wrap',
+                'banner_button_wrap'  => '.nova-banner__btn-wrap',
                 'banner_button'  			=> '.nova-banner__button',
             )
         );
