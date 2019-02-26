@@ -3,12 +3,17 @@
  * Plugin Name: Nova Elements For Elementor
  * Plugin URI:  https://nineamstudio.com
  * Description: This plugin use only for Nova theme with Elementor Page Builder
+ * Version:     1.0
  * Author:      Nova
  * Author URI:  https://nineamstudio.com
- * Text Domain: nova-elements
- * Version:          1.0.2
- * GitHub Theme URI: https://github.com/9amstudio/nova-elements
- * GitHub Branch:    master
+ * License:           GNU General Public License v2
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.html
+ * Domain Path:       /languages
+ * Text Domain:       nova-elements
+ * Network:           true
+ * GitHub Plugin URI: hhttps://github.com/9amstudio/nova-elements
+ * Requires WP:       4.6
+ * Requires PHP:      5.6
  */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
