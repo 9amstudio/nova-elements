@@ -1726,6 +1726,12 @@
   background-position-y: 50%;
   will-change: transform; }
 
+.nova-parallax-section .nova-parallax-section__scroll-layout .nova-parallax-section__image {
+  position: absolute;
+  left: 0;
+  top: -20%;
+  height: 120%; }
+
 .nova-parallax-section .nova-parallax-section__scroll-layout:not(.is-mac) .nova-parallax-section__image {
   transition: transform 0.5s cubic-bezier(0.25, 0.88, 0.54, 0.98), background-position 0s linear; }
 

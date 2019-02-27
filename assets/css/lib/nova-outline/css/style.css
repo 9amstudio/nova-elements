@@ -19,14 +19,17 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
-.nova-outline-icon-free-return:before {
+.nova-outline-icon-btn_arrow:before {
   content: "\ea01"; }
 
-.nova-outline-icon-free-shipping:before {
+.nova-outline-icon-free-return:before {
   content: "\ea02"; }
 
-.nova-outline-icon-member-discount:before {
+.nova-outline-icon-free-shipping:before {
   content: "\ea03"; }
 
-.nova-outline-icon-support-24-7:before {
+.nova-outline-icon-member-discount:before {
   content: "\ea04"; }
+
+.nova-outline-icon-support-24-7:before {
+  content: "\ea05"; }
