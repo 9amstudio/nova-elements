@@ -270,7 +270,89 @@ class Slider extends Nova_Widget {
             Group_Control_Image_Size::get_type(),
             array(
                 'name'    => 'slider_image', // Usage: `{name}_size` and `{name}_custom_dimension`, in this case `image_size` and `image_custom_dimension`.
-                'default' => 'full',
+                'default' => 'large',
+            )
+        );
+
+				$this->add_control(
+						'slider_autoplay',
+						array(
+								'label'        => esc_html__( 'Use autoplay?', 'nova-elements' ),
+								'type'         => Controls_Manager::SWITCHER,
+								'label_on'     => esc_html__( 'Yes', 'nova-elements' ),
+								'label_off'    => esc_html__( 'No', 'nova-elements' ),
+								'return_value' => 'true',
+								'default'      => 'true',
+						)
+				);
+
+				$this->add_control(
+            'slider_autoplay_delay',
+            array(
+                'label'   => esc_html__( 'Autoplay delay(ms)', 'nova-elements' ),
+                'type'    => Controls_Manager::NUMBER,
+                'default' => 3000,
+                'min'     => 2000,
+                'max'     => 10000,
+                'step'    => 100,
+                'condition' => array(
+                    'slider_autoplay' => 'true',
+                ),
+            )
+        );
+
+				$this->add_control(
+						'slide_autoplay_on_hover',
+						array(
+								'label'   => esc_html__( 'Autoplay On Hover', 'lastudio-elements' ),
+								'type'    => Controls_Manager::SELECT,
+								'default' => 'pause',
+								'options' => array(
+										'none'  => esc_html__( 'None', 'nova-elements' ),
+										'pause' => esc_html__( 'Pause', 'nova-elements' ),
+										'stop'  => esc_html__( 'Stop', 'nova-elements' ),
+								),
+								'condition' => array(
+                    'slider_autoplay' => 'true',
+                ),
+						)
+				);
+
+        $this->add_control(
+            'slider_loop',
+            array(
+                'label'        => esc_html__( 'Indicates if the slides will be looped', 'lastudio-elements' ),
+                'type'         => Controls_Manager::SWITCHER,
+                'label_on'     => esc_html__( 'Yes', 'nova-elements' ),
+                'label_off'    => esc_html__( 'No', 'nova-elements' ),
+                'return_value' => 'true',
+                'default'      => 'true',
+            )
+        );
+
+        $this->add_control(
+            'slide_duration',
+            array(
+                'label'   => esc_html__( 'Slide Duration(ms)', 'nova-elements' ),
+                'type'    => Controls_Manager::NUMBER,
+                'default' => 1200,
+                'min'     => 100,
+                'max'     => 5000,
+                'step'    => 100,
+            )
+        );
+
+        $this->end_controls_section();
+
+        /**
+         * General Style Section
+         */
+        $this->start_controls_section(
+            'section_slider_general_style',
+            array(
+                'label'      => esc_html__( 'General', 'nova-elements' ),
+                'tab'        => Controls_Manager::TAB_STYLE,
+                'show_label' => false,
             )
         );
 
@@ -1766,14 +1848,11 @@ class Slider extends Nova_Widget {
         $module_settings = $this->get_settings();
 
         $settings = array(
-            'sliderWidth'           => $module_settings['slider_width'],
-            'sliderHeight'          => $module_settings['slider_height'],
-            'sliderHeightLaptop'    => $module_settings['slider_height_laptop'],
-            'sliderHeightTablet'    => $module_settings['slider_height_tablet'],
-            'sliderHeight800'       => $module_settings['slider_height_width800'],
-            'sliderHeight640'       => $module_settings['slider_height_width640'],
-            'sliderHeightMobile'    => $module_settings['slider_height_mobile'],
-            'rightToLeft'           => is_rtl(),
+	          'autoplay'      => filter_var( $module_settings['slider_autoplay'], FILTER_VALIDATE_BOOLEAN ),
+						'autoplayDelay' => $module_settings['slider_autoplay_delay'],
+						'autoplayHover' => $module_settings['slide_autoplay_on_hover'],
+						'loop'          => filter_var( $module_settings['slider_loop'], FILTER_VALIDATE_BOOLEAN ),
+						'speed'         => $module_settings['slide_duration'],
         );
 
         $settings = json_encode( $settings );

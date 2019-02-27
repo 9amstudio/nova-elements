@@ -25,7 +25,7 @@ $this->add_render_attribute( 'nova-button-secondary', 'class', 'hover-' . $hover
 
 ?>
 
-<div class="<?php echo $classes; ?>" <?php //echo $data_settings; ?>>
+<div class="<?php echo $classes; ?>" <?php echo (is_rtl() ? 'dir="rtl"' : '' ) ?> <?php echo $data_settings; ?>>
 	<?php $this->__get_global_looped_template( 'slider__caption', 'item_list' ); ?>
 	<?php $this->__get_global_looped_template( 'slider__image', 'item_list' ); ?>
 
