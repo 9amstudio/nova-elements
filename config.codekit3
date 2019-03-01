@@ -9,6 +9,14 @@
 	],
 "creatorBuild": "28905",
 "files": {
+	"/.remote-sync.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "/.remote-sync-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"/assets/css/editor.css": {
 		"aP": 1,
 		"bl": 0,

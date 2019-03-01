@@ -304,7 +304,7 @@ class Slider extends Nova_Widget {
 				$this->add_control(
 						'slide_autoplay_on_hover',
 						array(
-								'label'   => esc_html__( 'Autoplay On Hover', 'lastudio-elements' ),
+								'label'   => esc_html__( 'Autoplay On Hover', 'nova-elements' ),
 								'type'    => Controls_Manager::SELECT,
 								'default' => 'pause',
 								'options' => array(

@@ -309,7 +309,7 @@
                                     include_type: self.model.get('include_type')
                                 };
 
-                                console.log(data);
+                                //console.log(data);
 
                                 return elementor.ajax.addRequest('nova_panel_posts_control_filter_autocomplete', {
                                     data: data,
