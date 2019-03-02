@@ -62,8 +62,8 @@ function nova_elements_fail_load() {
         }
 
         $activation_url = wp_nonce_url( 'plugins.php?action=activate&amp;plugin=' . $plugin . '&amp;plugin_status=all&amp;paged=1&amp;s', 'activate-plugin_' . $plugin );
-        $message = __( 'Nova Elements requires Elementor plugin to be active. Please activate Elementor to continue.', 'nova-elements' );
-        $button_text = __( 'Activate Elementor', 'nova-elements' );
+        $message = esc_html__( 'Nova Elements requires Elementor plugin to be active. Please activate Elementor to continue.', 'nova-elements' );
+        $button_text = esc_html__( 'Activate Elementor', 'nova-elements' );
 
     } else {
         if ( ! current_user_can( 'install_plugins' ) ) {
@@ -71,8 +71,8 @@ function nova_elements_fail_load() {
         }
 
         $activation_url = wp_nonce_url( self_admin_url( 'update.php?action=install-plugin&plugin=elementor' ), 'install-plugin_elementor' );
-        $message = sprintf( __( 'Nova Elements requires %1$s"Elementor"%2$s plugin to be installed and activated. Please install Elementor to continue.', 'nova-elements' ), '<strong>', '</strong>' );
-        $button_text = __( 'Install Elementor', 'nova-elements' );
+        $message = sprintf( esc_html__( 'Nova Elements requires %1$s"Elementor"%2$s plugin to be installed and activated. Please install Elementor to continue.', 'nova-elements' ), '<strong>', '</strong>' );
+        $button_text = esc_html__( 'Install Elementor', 'nova-elements' );
     }
 
     $button = '<p><a href="' . $activation_url . '" class="button-primary">' . $button_text . '</a></p>';
@@ -92,7 +92,7 @@ function nova_elements_out_of_date() {
         return;
     }
 
-    $message = __( 'Nova Elements requires Elementor version at least ' . NOVA_ELEMENTS_ELEMENTOR_VERSION_REQUIRED . '. Please update Elementor to continue.', 'nova-elements' );
+    $message = wp_kses_post(__( 'Nova Elements requires Elementor version at least ' . NOVA_ELEMENTS_ELEMENTOR_VERSION_REQUIRED . '. Please update Elementor to continue.', 'nova-elements' ));
 
     printf( '<div class="error"><p>%1$s</p></div>', esc_html( $message ) );
 }
@@ -105,7 +105,7 @@ function nova_elements_out_of_date() {
  *
  */
 function nova_elements_fail_php() {
-    $message = __( 'Nova Elements requires PHP version ' . NOVA_ELEMENTS_PHP_VERSION_REQUIRED .'+ to work properly. The plugins is deactivated for now.', 'nova-elements' );
+    $message = wp_kses_post(__( 'Nova Elements requires PHP version ' . NOVA_ELEMENTS_PHP_VERSION_REQUIRED .'+ to work properly. The plugins is deactivated for now.', 'nova-elements' ));
 
     printf( '<div class="error"><p>%1$s</p></div>', esc_html( $message ) );
 
@@ -168,53 +168,53 @@ function nova_elements_override_editor_wp_head(){
     <script type="text/template" id="tmpl-elementor-panel-footer-content">
         <div id="elementor-panel-footer-settings" class="elementor-panel-footer-tool elementor-leave-open tooltip-target" data-tooltip="<?php esc_attr_e( 'Settings', 'nova-elements' ); ?>">
             <i class="fa fa-cog" aria-hidden="true"></i>
-            <span class="elementor-screen-only"><?php printf( __( '%s Settings', 'nova-elements' ), $document::get_title() ); ?></span>
+            <span class="elementor-screen-only"><?php printf( esc_html__( '%s Settings', 'nova-elements' ), $document::get_title() ); ?></span>
         </div>
         <div id="elementor-panel-footer-navigator" class="elementor-panel-footer-tool tooltip-target" data-tooltip="<?php esc_attr_e( 'Navigator', 'nova-elements' ); ?>">
             <i class="eicon-navigator" aria-hidden="true"></i>
-            <span class="elementor-screen-only"><?php echo __( 'Navigator', 'nova-elements' ); ?></span>
+            <span class="elementor-screen-only"><?php esc_html_e( 'Navigator', 'nova-elements' ); ?></span>
         </div>
         <div id="elementor-panel-footer-history" class="elementor-panel-footer-tool elementor-leave-open tooltip-target elementor-toggle-state" data-tooltip="<?php esc_attr_e( 'History', 'nova-elements' ); ?>">
             <i class="fa fa-history" aria-hidden="true"></i>
-            <span class="elementor-screen-only"><?php echo __( 'History', 'nova-elements' ); ?></span>
+            <span class="elementor-screen-only"><?php esc_html_e( 'History', 'nova-elements' ); ?></span>
         </div>
         <div id="elementor-panel-footer-responsive" class="elementor-panel-footer-tool elementor-toggle-state">
             <i class="eicon-device-desktop tooltip-target" aria-hidden="true" data-tooltip="<?php esc_attr_e( 'Responsive Mode', 'nova-elements' ); ?>"></i>
             <span class="elementor-screen-only">
-			<?php echo __( 'Responsive Mode', 'nova-elements' ); ?>
+			<?php esc_html_e( 'Responsive Mode', 'nova-elements' ); ?>
 		</span>
             <div class="elementor-panel-footer-sub-menu-wrapper">
                 <div class="elementor-panel-footer-sub-menu">
                     <div class="elementor-panel-footer-sub-menu-item" data-device-mode="desktop">
                         <i class="elementor-icon eicon-device-desktop" aria-hidden="true"></i>
-                        <span class="elementor-title"><?php echo __( 'Desktop', 'nova-elements' ); ?></span>
-                        <span class="elementor-description"><?php echo __( 'Default Preview', 'nova-elements' ); ?></span>
+                        <span class="elementor-title"><?php esc_html_e( 'Desktop', 'nova-elements' ); ?></span>
+                        <span class="elementor-description"><?php esc_html_e( 'Default Preview', 'nova-elements' ); ?></span>
                     </div>
                     <div class="elementor-panel-footer-sub-menu-item" data-device-mode="laptop">
                         <i class="elementor-icon eicon-laptop" aria-hidden="true"></i>
-                        <span class="elementor-title"><?php echo __( 'Laptop', 'nova-elements' ); ?></span>
-                        <span class="elementor-description"><?php echo sprintf( __( 'Preview for %s', 'nova-elements' ),   '1366px' ); ?></span>
+                        <span class="elementor-title"><?php esc_html_e( 'Laptop', 'nova-elements' ); ?></span>
+                        <span class="elementor-description"><?php echo sprintf( esc_html__( 'Preview for %s', 'nova-elements' ),   '1366px' ); ?></span>
                     </div>
                     <div class="elementor-panel-footer-sub-menu-item" data-device-mode="tablet">
                         <i class="elementor-icon eicon-device-tablet landscape" aria-hidden="true"></i>
-                        <span class="elementor-title"><?php echo __( 'Tablet Landscape', 'nova-elements' ); ?></span>
+                        <span class="elementor-title"><?php esc_html_e( 'Tablet Landscape', 'nova-elements' ); ?></span>
                         <?php $breakpoints = \Elementor\Core\Responsive\Responsive::get_breakpoints(); ?>
-                        <span class="elementor-description"><?php echo sprintf( __( 'Preview for %s', 'nova-elements' ), '1024px' ); ?></span>
+                        <span class="elementor-description"><?php echo sprintf( esc_html__( 'Preview for %s', 'nova-elements' ), '1024px' ); ?></span>
                     </div>
                     <div class="elementor-panel-footer-sub-menu-item" data-device-mode="width800">
                         <i class="elementor-icon eicon-device-width800" aria-hidden="true"></i>
-                        <span class="elementor-title"><?php echo __( 'Tablet Portrait', 'nova-elements' ); ?></span>
-                        <span class="elementor-description"><?php echo sprintf( __( 'Preview for %s', 'nova-elements' ), $breakpoints['md'] . 'px' ); ?></span>
+                        <span class="elementor-title"><?php esc_html_e( 'Tablet Portrait', 'nova-elements' ); ?></span>
+                        <span class="elementor-description"><?php echo sprintf( esc_html__( 'Preview for %s', 'nova-elements' ), $breakpoints['md'] . 'px' ); ?></span>
                     </div>
                     <div class="elementor-panel-footer-sub-menu-item" data-device-mode="mobile">
                         <i class="elementor-icon eicon-device-mobile landscape" aria-hidden="true"></i>
-                        <span class="elementor-title"><?php echo __( 'Mobile Landscape', 'nova-elements' ); ?></span>
-                        <span class="elementor-description"><?php echo __( 'Preview for 640px', 'nova-elements' ); ?></span>
+                        <span class="elementor-title"><?php esc_html_e( 'Mobile Landscape', 'nova-elements' ); ?></span>
+                        <span class="elementor-description"><?php esc_html_e( 'Preview for 640px', 'nova-elements' ); ?></span>
                     </div>
                     <div class="elementor-panel-footer-sub-menu-item" data-device-mode="width640">
                         <i class="elementor-icon eicon-device-width640" aria-hidden="true"></i>
-                        <span class="elementor-title"><?php echo __( 'Mobile Portrait', 'nova-elements' ); ?></span>
-                        <span class="elementor-description"><?php echo __( 'Preview for 360px', 'nova-elements' ); ?></span>
+                        <span class="elementor-title"><?php esc_html_e( 'Mobile Portrait', 'nova-elements' ); ?></span>
+                        <span class="elementor-description"><?php esc_html_e( 'Preview for 360px', 'nova-elements' ); ?></span>
                     </div>
                 </div>
             </div>
@@ -222,7 +222,7 @@ function nova_elements_override_editor_wp_head(){
         <div id="elementor-panel-footer-saver-preview" class="elementor-panel-footer-tool tooltip-target" data-tooltip="<?php esc_attr_e( 'Preview Changes', 'nova-elements' ); ?>">
 		<span id="elementor-panel-footer-saver-preview-label">
 			<i class="fa fa-eye" aria-hidden="true"></i>
-			<span class="elementor-screen-only"><?php echo __( 'Preview Changes', 'nova-elements' ); ?></span>
+			<span class="elementor-screen-only"><?php esc_html_e( 'Preview Changes', 'nova-elements' ); ?></span>
 		</span>
         </div>
         <div id="elementor-panel-footer-saver-publish" class="elementor-panel-footer-tool">
@@ -231,14 +231,14 @@ function nova_elements_override_editor_wp_head(){
 				<i class="fa fa-spin fa-circle-o-notch" aria-hidden="true"></i>
 			</span>
                 <span id="elementor-panel-saver-button-publish-label">
-				<?php echo __( 'Publish', 'nova-elements' ); ?>
+				<?php esc_html_e( 'Publish', 'nova-elements' ); ?>
 			</span>
             </button>
         </div>
         <div id="elementor-panel-footer-saver-options" class="elementor-panel-footer-tool elementor-toggle-state">
             <button id="elementor-panel-saver-button-save-options" class="elementor-button elementor-button-success tooltip-target elementor-disabled" data-tooltip="<?php esc_attr_e( 'Save Options', 'nova-elements' ); ?>">
                 <i class="fa fa-caret-up" aria-hidden="true"></i>
-                <span class="elementor-screen-only"><?php echo __( 'Save Options', 'nova-elements' ); ?></span>
+                <span class="elementor-screen-only"><?php esc_html_e( 'Save Options', 'nova-elements' ); ?></span>
             </button>
             <div class="elementor-panel-footer-sub-menu-wrapper">
                 <p class="elementor-last-edited-wrapper">
@@ -252,11 +252,11 @@ function nova_elements_override_editor_wp_head(){
                 <div class="elementor-panel-footer-sub-menu">
                     <div id="elementor-panel-footer-sub-menu-item-save-draft" class="elementor-panel-footer-sub-menu-item elementor-disabled">
                         <i class="elementor-icon fa fa-save" aria-hidden="true"></i>
-                        <span class="elementor-title"><?php echo __( 'Save Draft', 'nova-elements' ); ?></span>
+                        <span class="elementor-title"><?php esc_html_e( 'Save Draft', 'nova-elements' ); ?></span>
                     </div>
                     <div id="elementor-panel-footer-sub-menu-item-save-template" class="elementor-panel-footer-sub-menu-item">
                         <i class="elementor-icon fa fa-folder" aria-hidden="true"></i>
-                        <span class="elementor-title"><?php echo __( 'Save as Template', 'nova-elements' ); ?></span>
+                        <span class="elementor-title"><?php esc_html_e( 'Save as Template', 'nova-elements' ); ?></span>
                     </div>
                 </div>
             </div>

@@ -277,7 +277,7 @@ class Subscribe_Form extends Nova_Widget {
         $this->add_responsive_control(
             'container_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -461,7 +461,7 @@ class Subscribe_Form extends Nova_Widget {
         $this->add_responsive_control(
             'input_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -887,7 +887,7 @@ class Subscribe_Form extends Nova_Widget {
         $this->add_responsive_control(
             'button_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1011,7 +1011,7 @@ class Subscribe_Form extends Nova_Widget {
         $this->add_responsive_control(
             'button_hover_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1150,7 +1150,7 @@ class Subscribe_Form extends Nova_Widget {
         $this->add_responsive_control(
             'message_success_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1245,7 +1245,7 @@ class Subscribe_Form extends Nova_Widget {
         $this->add_responsive_control(
             'message_error_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(

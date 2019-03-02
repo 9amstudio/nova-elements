@@ -44,12 +44,12 @@ class Group_Control_Posts extends Group_Control_Base {
 		$fields = [];
 
 		$fields['post_type'] = [
-			'label' => __( 'Source', 'nova-elements' ),
+			'label' => esc_html__( 'Source', 'nova-elements' ),
 			'type' => Controls_Manager::SELECT,
 		];
 
 		$fields['posts_ids'] = [
-			'label' => __( 'Search & Select', 'nova-elements' ),
+			'label' => wp_kses_post(__( 'Search & Select', 'nova-elements' )),
 			'type' => Module::QUERY_CONTROL_ID,
 			'post_type' => '',
 			'options' => [],
@@ -62,7 +62,7 @@ class Group_Control_Posts extends Group_Control_Base {
 		];
 
 		$fields['authors'] = [
-			'label' => __( 'Author', 'nova-elements' ),
+			'label' => esc_html__( 'Author', 'nova-elements' ),
 			'label_block' => true,
 			'type' => Module::QUERY_CONTROL_ID,
 			'multiple' => true,
@@ -87,8 +87,8 @@ class Group_Control_Posts extends Group_Control_Base {
 
 		$post_types_options = $post_types;
 
-		$post_types_options['by_id'] = __( 'Manual Selection', 'nova-elements' );
-		$post_types_options['current_query'] = __( 'Current Query', 'nova-elements' );
+		$post_types_options['by_id'] = esc_html__( 'Manual Selection', 'nova-elements' );
+		$post_types_options['current_query'] = esc_html__( 'Current Query', 'nova-elements' );
 
 		$fields['post_type']['options'] = $post_types_options;
 

@@ -407,17 +407,17 @@ if ( ! class_exists( 'Nova_Elements_Tools' ) ) {
 			return apply_filters(
 				'nova_elements/carousel/available_arrows/prev',
 				array(
-					'fa fa-angle-left'          => __( 'Angle', 'nova-elements' ),
-					'fa fa-chevron-left'        => __( 'Chevron', 'nova-elements' ),
-					'fa fa-angle-double-left'   => __( 'Angle Double', 'nova-elements' ),
-					'fa fa-arrow-left'          => __( 'Arrow', 'nova-elements' ),
-					'fa fa-caret-left'          => __( 'Caret', 'nova-elements' ),
-					'fa fa-long-arrow-left'     => __( 'Long Arrow', 'nova-elements' ),
-					'fa fa-arrow-circle-left'   => __( 'Arrow Circle', 'nova-elements' ),
-					'fa fa-chevron-circle-left' => __( 'Chevron Circle', 'nova-elements' ),
-					'fa fa-caret-square-o-left' => __( 'Caret Square', 'nova-elements' ),
-					'dlicon arrows-1_tail-left' => __( 'Tail Left', 'nova-elements' ),
-          'dlicon arrows-1_tail-triangle-left' => __( 'Tail Triangle Left', 'nova-elements' ),
+					'fa fa-angle-left'          => esc_html__( 'Angle', 'nova-elements' ),
+					'fa fa-chevron-left'        => esc_html__( 'Chevron', 'nova-elements' ),
+					'fa fa-angle-double-left'   => esc_html__( 'Angle Double', 'nova-elements' ),
+					'fa fa-arrow-left'          => esc_html__( 'Arrow', 'nova-elements' ),
+					'fa fa-caret-left'          => esc_html__( 'Caret', 'nova-elements' ),
+					'fa fa-long-arrow-left'     => esc_html__( 'Long Arrow', 'nova-elements' ),
+					'fa fa-arrow-circle-left'   => esc_html__( 'Arrow Circle', 'nova-elements' ),
+					'fa fa-chevron-circle-left' => esc_html__( 'Chevron Circle', 'nova-elements' ),
+					'fa fa-caret-square-o-left' => esc_html__( 'Caret Square', 'nova-elements' ),
+					'dlicon arrows-1_tail-left' => esc_html__( 'Tail Left', 'nova-elements' ),
+          'dlicon arrows-1_tail-triangle-left' => esc_html__( 'Tail Triangle Left', 'nova-elements' ),
 				)
 			);
 
@@ -432,17 +432,17 @@ if ( ! class_exists( 'Nova_Elements_Tools' ) ) {
 			return apply_filters(
 				'nova_elements/carousel/available_arrows/next',
 				array(
-					'fa fa-angle-right'          => __( 'Angle', 'nova-elements' ),
-					'fa fa-chevron-right'        => __( 'Chevron', 'nova-elements' ),
-					'fa fa-angle-double-right'   => __( 'Angle Double', 'nova-elements' ),
-					'fa fa-arrow-right'          => __( 'Arrow', 'nova-elements' ),
-					'fa fa-caret-right'          => __( 'Caret', 'nova-elements' ),
-					'fa fa-long-arrow-right'     => __( 'Long Arrow', 'nova-elements' ),
-					'fa fa-arrow-circle-right'   => __( 'Arrow Circle', 'nova-elements' ),
-					'fa fa-chevron-circle-right' => __( 'Chevron Circle', 'nova-elements' ),
-					'fa fa-caret-square-o-right' => __( 'Caret Square', 'nova-elements' ),
-                    'dlicon arrows-1_tail-right' => __( 'Tail Right', 'nova-elements' ),
-                    'dlicon arrows-1_tail-triangle-right' => __( 'Tail Triangle Right', 'nova-elements' ),
+					'fa fa-angle-right'          => esc_html__( 'Angle', 'nova-elements' ),
+					'fa fa-chevron-right'        => esc_html__( 'Chevron', 'nova-elements' ),
+					'fa fa-angle-double-right'   => esc_html__( 'Angle Double', 'nova-elements' ),
+					'fa fa-arrow-right'          => esc_html__( 'Arrow', 'nova-elements' ),
+					'fa fa-caret-right'          => esc_html__( 'Caret', 'nova-elements' ),
+					'fa fa-long-arrow-right'     => esc_html__( 'Long Arrow', 'nova-elements' ),
+					'fa fa-arrow-circle-right'   => esc_html__( 'Arrow Circle', 'nova-elements' ),
+					'fa fa-chevron-circle-right' => esc_html__( 'Chevron Circle', 'nova-elements' ),
+					'fa fa-caret-square-o-right' => esc_html__( 'Caret Square', 'nova-elements' ),
+                    'dlicon arrows-1_tail-right' => esc_html__( 'Tail Right', 'nova-elements' ),
+                    'dlicon arrows-1_tail-triangle-right' => esc_html__( 'Tail Triangle Right', 'nova-elements' ),
 				)
 			);
 

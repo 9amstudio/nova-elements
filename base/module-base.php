@@ -28,7 +28,7 @@ abstract class Module_Base {
 	 */
 	public function __clone() {
 		// Cloning instances of the class is forbidden
-		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'nova-elements' ), '1.0.0' );
+		_doing_it_wrong( __FUNCTION__, wp_kses_post(__( 'Cheatin&#8217; huh?', 'nova-elements' )), '1.0.0' );
 	}
 
 	/**
@@ -39,7 +39,7 @@ abstract class Module_Base {
 	 */
 	public function __wakeup() {
 		// Unserializing instances of the class is forbidden
-		_doing_it_wrong( __FUNCTION__, __( 'Cheatin&#8217; huh?', 'nova-elements' ), '1.0.0' );
+		_doing_it_wrong( __FUNCTION__, wp_kses_post(__( 'Cheatin&#8217; huh?', 'nova-elements' )), '1.0.0' );
 	}
 
 	public static function is_active() {
@@ -79,24 +79,24 @@ abstract class Module_Base {
 		foreach ( $this->get_widgets() as $widget ) {
             $widget_name = strtolower( $widget );
 			$widget_filename = 'nova-' . str_replace( '_', '-', $widget_name );
-            
+
             if ( $this->is_widget_active( $widget_filename ) ) {
                 $class_name = $this->reflection->getNamespaceName() . '\Widgets\\' . $widget;
                 $widget_manager->register_widget_type( new $class_name() );
             }
 		}
 	}
-    
+
     static function is_widget_active( $widget = '' ) {
 
 	    return true;
 
         $enabled_modules = nova_elements_get_enabled_modules();
-        
+
         if ( in_array( $widget, $enabled_modules ) ) {
             return true;
         }
-        
+
         return false;
     }
 }

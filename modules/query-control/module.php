@@ -41,12 +41,12 @@ class Module extends Module_Base {
 		$widget->add_control(
 			'exclude',
 			[
-				'label' => __( 'Exclude', 'nova-elements' ),
+				'label' => esc_html__( 'Exclude', 'nova-elements' ),
 				'type' => Controls_Manager::SELECT2,
 				'multiple' => true,
 				'options' => [
-					'current_post' => __( 'Current Post', 'nova-elements' ),
-					'manual_selection' => __( 'Manual Selection', 'nova-elements' ),
+					'current_post' => esc_html__( 'Current Post', 'nova-elements' ),
+					'manual_selection' => esc_html__( 'Manual Selection', 'nova-elements' ),
 				],
 				'label_block' => true,
 			]
@@ -55,7 +55,7 @@ class Module extends Module_Base {
 		$widget->add_control(
 			'exclude_ids',
 			[
-				'label' => __( 'Search & Select', 'nova-elements' ),
+				'label' => wp_kses_post(__( 'Search & Select', 'nova-elements' )),
 				'type' => self::QUERY_CONTROL_ID,
 				'post_type' => '',
 				'options' => [],
@@ -72,10 +72,10 @@ class Module extends Module_Base {
 		$widget->add_control(
 			'avoid_duplicates',
 			[
-				'label' => __( 'Avoid Duplicates', 'nova-elements' ),
+				'label' => esc_html__( 'Avoid Duplicates', 'nova-elements' ),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => '',
-				'description' => __( 'Set to Yes to avoid duplicate posts from showing up. This only effects the frontend.', 'nova-elements' ),
+				'description' => esc_html__( 'Set to Yes to avoid duplicate posts from showing up. This only effects the frontend.', 'nova-elements' ),
 			]
 		);
 
@@ -434,7 +434,7 @@ class Module extends Module_Base {
 	public function localize_settings( $settings ) {
 		$settings = array_replace_recursive( $settings, [
 			'i18n' => [
-				'all' => __( 'All', 'nova-elements' )
+				'all' => esc_html__( 'All', 'nova-elements' )
 			]
 		] );
 

@@ -591,7 +591,7 @@ class Testimonials extends Nova_Widget {
         $this->add_responsive_control(
             'custom_image_width',
             [
-                'label' => __( 'Custom Image Width', 'nova-elements' ),
+                'label' => esc_html__( 'Custom Image Width', 'nova-elements' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units'  => array( 'px' ),
                 'range' => [
@@ -618,7 +618,7 @@ class Testimonials extends Nova_Widget {
         $this->add_responsive_control(
             'thumb_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1443,7 +1443,7 @@ class Testimonials extends Nova_Widget {
         $this->add_responsive_control(
             'comment_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'default' => array(
@@ -1461,7 +1461,7 @@ class Testimonials extends Nova_Widget {
         $this->add_responsive_control(
             'comment_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1606,7 +1606,7 @@ class Testimonials extends Nova_Widget {
         $this->add_responsive_control(
             'name_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1618,7 +1618,7 @@ class Testimonials extends Nova_Widget {
         $this->add_responsive_control(
             'name_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1763,7 +1763,7 @@ class Testimonials extends Nova_Widget {
         $this->add_responsive_control(
             'position_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1775,7 +1775,7 @@ class Testimonials extends Nova_Widget {
         $this->add_responsive_control(
             'position_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(

@@ -172,9 +172,9 @@ class Tabs_Widget extends Nova_Widget {
         $repeater->add_control(
             'item_editor_content',
             [
-                'label'      => __( 'Content', 'nova-elements' ),
+                'label'      => esc_html__( 'Content', 'nova-elements' ),
                 'type'       => Controls_Manager::WYSIWYG,
-                'default'    => __( 'Tab Item Content', 'nova-elements' ),
+                'default'    => esc_html__( 'Tab Item Content', 'nova-elements' ),
                 'dynamic' => [
                     'active' => true,
                 ],
@@ -336,7 +336,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_container_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -348,7 +348,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_container_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -371,7 +371,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_container_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -442,7 +442,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_control_wrapper_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -454,7 +454,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_control_wrapper_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -477,7 +477,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_control_wrapper_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -722,7 +722,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_control_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -734,7 +734,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_control_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -853,7 +853,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_control_padding_hover',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -865,7 +865,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_control_margin_hover',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -972,7 +972,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_control_padding_active',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -984,7 +984,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_control_margin_active',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1053,7 +1053,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_content_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1076,7 +1076,7 @@ class Tabs_Widget extends Nova_Widget {
         $this->add_responsive_control(
             'tabs_content_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(

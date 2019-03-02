@@ -313,7 +313,7 @@ class Button extends Nova_Widget {
         $this->add_responsive_control(
             'button_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -353,7 +353,7 @@ class Button extends Nova_Widget {
         $this->add_responsive_control(
             'normal_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -365,7 +365,7 @@ class Button extends Nova_Widget {
         $this->add_responsive_control(
             'button_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -413,7 +413,7 @@ class Button extends Nova_Widget {
         $this->add_responsive_control(
             'hover_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -425,7 +425,7 @@ class Button extends Nova_Widget {
         $this->add_responsive_control(
             'hover_button_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -498,7 +498,7 @@ class Button extends Nova_Widget {
         $this->add_responsive_control(
             'normal_plane_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -554,7 +554,7 @@ class Button extends Nova_Widget {
         $this->add_responsive_control(
             'plane_hover_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -706,7 +706,7 @@ class Button extends Nova_Widget {
         $this->add_responsive_control(
             'normal_icon_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -832,7 +832,7 @@ class Button extends Nova_Widget {
         $this->add_responsive_control(
             'hover_icon_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -924,7 +924,7 @@ class Button extends Nova_Widget {
         $this->add_responsive_control(
             'label_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'separator'  => 'before',

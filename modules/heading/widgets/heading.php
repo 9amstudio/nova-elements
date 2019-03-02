@@ -196,7 +196,7 @@ class Heading extends Nova_Widget {
         $this->add_responsive_control(
             'instance_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -219,7 +219,7 @@ class Heading extends Nova_Widget {
         $this->add_responsive_control(
             'instance_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -297,7 +297,7 @@ class Heading extends Nova_Widget {
         $this->add_responsive_control(
             'title_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -309,7 +309,7 @@ class Heading extends Nova_Widget {
         $this->add_responsive_control(
             'title_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -321,7 +321,7 @@ class Heading extends Nova_Widget {
         $this->add_responsive_control(
             'title_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -400,7 +400,7 @@ class Heading extends Nova_Widget {
         $this->add_responsive_control(
             'sub_title_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -412,7 +412,7 @@ class Heading extends Nova_Widget {
         $this->add_responsive_control(
             'sub_title_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -424,7 +424,7 @@ class Heading extends Nova_Widget {
         $this->add_responsive_control(
             'sub_title_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(

@@ -94,7 +94,7 @@ class Module extends Module_Base {
         $controls_stack->start_controls_section(
             'section_custom_css',
             [
-                'label' => __( 'Custom CSS', 'nova-elements' ),
+                'label' => esc_html__( 'Custom CSS', 'nova-elements' ),
                 'tab' => $old_section['tab'],
             ]
         );
@@ -102,7 +102,7 @@ class Module extends Module_Base {
         $controls_stack->add_control(
             'custom_css_title',
             [
-                'raw' => __( 'Add your own custom CSS here', 'nova-elements' ),
+                'raw' => esc_html__( 'Add your own custom CSS here', 'nova-elements' ),
                 'type' => Controls_Manager::RAW_HTML,
             ]
         );
@@ -111,7 +111,7 @@ class Module extends Module_Base {
             'custom_css',
             [
                 'type' => Controls_Manager::CODE,
-                'label' => __( 'Custom CSS', 'nova-elements' ),
+                'label' => esc_html__( 'Custom CSS', 'nova-elements' ),
                 'language' => 'css',
                 'render_type' => 'ui',
                 'show_label' => false,
@@ -122,7 +122,7 @@ class Module extends Module_Base {
         $controls_stack->add_control(
             'custom_css_description',
             [
-                'raw' => __( 'Use "selector" to target wrapper element. Examples:<br>selector {color: red;} // For main element<br>selector .child-element {margin: 10px;} // For child element<br>.my-class {text-align: center;} // Or use any custom selector', 'nova-elements' ),
+                'raw' => esc_html__( 'Use "selector" to target wrapper element. Examples:<br>selector {color: red;} // For main element<br>selector .child-element {margin: 10px;} // For child element<br>.my-class {text-align: center;} // Or use any custom selector', 'nova-elements' ),
                 'type' => Controls_Manager::RAW_HTML,
                 'content_classes' => 'elementor-descriptor',
             ]

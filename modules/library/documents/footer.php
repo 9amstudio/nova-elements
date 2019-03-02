@@ -61,6 +61,6 @@ class Footer extends Library_Document {
 	 * @return string Document title.
 	 */
 	public static function get_title() {
-		return __( 'Footer', 'nova-elements' );
+		return esc_html__( 'Footer', 'nova-elements' );
 	}
 }

@@ -338,7 +338,7 @@ class Posts extends Nova_Widget {
         $this->add_responsive_control(
             'box_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(

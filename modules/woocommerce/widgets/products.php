@@ -22,7 +22,7 @@ class Products extends Products_Base {
 	}
 
 	public function get_title() {
-		return __( 'Nova Products', 'nova-elements' );
+		return esc_html__( 'Nova Products', 'nova-elements' );
 	}
 
 	public function get_icon() {
@@ -49,7 +49,7 @@ class Products extends Products_Base {
 		$this->start_controls_section(
 			'section_query',
 			[
-				'label' => __( 'Query', 'nova-elements' ),
+				'label' => esc_html__( 'Query', 'nova-elements' ),
 				'tab' => Controls_Manager::TAB_CONTENT,
 			]
 		);
@@ -63,10 +63,10 @@ class Products extends Products_Base {
 					'post_type' => [
 						'default' => 'product',
 						'options' => [
-							'current_query' => __( 'Current Query', 'nova-elements' ),
-							'product' => __( 'Latest Products', 'nova-elements' ),
-							'sale' => __( 'Sale', 'nova-elements' ),
-							'featured' => __( 'Featured', 'nova-elements' ),
+							'current_query' => esc_html__( 'Current Query', 'nova-elements' ),
+							'product' => esc_html__( 'Latest Products', 'nova-elements' ),
+							'sale' => esc_html__( 'Sale', 'nova-elements' ),
+							'featured' => esc_html__( 'Featured', 'nova-elements' ),
 							'by_id' => _x( 'Manual Selection', 'Posts Query Control', 'nova-elements' ),
 						],
 					],
@@ -96,7 +96,7 @@ class Products extends Products_Base {
 		$this->add_control(
 			'advanced',
 			[
-				'label' => __( 'Advanced', 'nova-elements' ),
+				'label' => esc_html__( 'Advanced', 'nova-elements' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -104,17 +104,17 @@ class Products extends Products_Base {
 		$this->add_control(
 			'orderby',
 			[
-				'label' => __( 'Order by', 'nova-elements' ),
+				'label' => esc_html__( 'Order by', 'nova-elements' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'date',
 				'options' => [
-					'date' => __( 'Date', 'nova-elements' ),
-					'title' => __( 'Title', 'nova-elements' ),
-					'price' => __( 'Price', 'nova-elements' ),
-					'popularity' => __( 'Popularity', 'nova-elements' ),
-					'rating' => __( 'Rating', 'nova-elements' ),
-					'rand' => __( 'Random', 'nova-elements' ),
-					'menu_order' => __( 'Menu Order', 'nova-elements' ),
+					'date' => esc_html__( 'Date', 'nova-elements' ),
+					'title' => esc_html__( 'Title', 'nova-elements' ),
+					'price' => esc_html__( 'Price', 'nova-elements' ),
+					'popularity' => esc_html__( 'Popularity', 'nova-elements' ),
+					'rating' => esc_html__( 'Rating', 'nova-elements' ),
+					'rand' => esc_html__( 'Random', 'nova-elements' ),
+					'menu_order' => esc_html__( 'Menu Order', 'nova-elements' ),
 				],
 				'condition' => [
 					'query_post_type!' => 'current_query',
@@ -125,12 +125,12 @@ class Products extends Products_Base {
 		$this->add_control(
 			'order',
 			[
-				'label' => __( 'Order', 'nova-elements' ),
+				'label' => esc_html__( 'Order', 'nova-elements' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'desc',
 				'options' => [
-					'asc' => __( 'ASC', 'nova-elements' ),
-					'desc' => __( 'DESC', 'nova-elements' ),
+					'asc' => esc_html__( 'ASC', 'nova-elements' ),
+					'desc' => esc_html__( 'DESC', 'nova-elements' ),
 				],
 				'condition' => [
 					'query_post_type!' => 'current_query',
@@ -170,7 +170,7 @@ class Products extends Products_Base {
 		$this->start_controls_section(
 			'section_content',
 			[
-				'label' => __( 'Content', 'nova-elements' ),
+				'label' => esc_html__( 'Content', 'nova-elements' ),
 			]
 		);
 
@@ -182,8 +182,8 @@ class Products extends Products_Base {
                 'default'   => 'grid',
                 'render_type' => 'template',
                 'options'   => [
-                    'grid'      => __( 'Grid', 'plugin-domain' ),
-                    'masonry'   => __( 'Masonry', 'plugin-domain' ),
+                    'grid'      => esc_html__( 'Grid', 'plugin-domain' ),
+                    'masonry'   => esc_html__( 'Masonry', 'plugin-domain' ),
                 ]
             )
         );
@@ -233,7 +233,7 @@ class Products extends Products_Base {
 		$this->add_responsive_control(
 			'columns',
 			[
-				'label' => __( 'Columns', 'nova-elements' ),
+				'label' => esc_html__( 'Columns', 'nova-elements' ),
 				'type' => Controls_Manager::NUMBER,
 				'min' => 1,
 				'max' => 10,
@@ -248,7 +248,7 @@ class Products extends Products_Base {
 		$this->add_control(
 			'limit',
 			[
-                'label' => __( 'Limit', 'nova-elements' ),
+                'label' => esc_html__( 'Limit', 'nova-elements' ),
                 'type' => Controls_Manager::NUMBER,
                 'min' => -1,
                 'max' => 100,

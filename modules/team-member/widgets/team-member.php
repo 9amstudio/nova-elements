@@ -318,7 +318,7 @@ class Team_Member extends Nova_Widget {
         $this->add_responsive_control(
             'box_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -374,7 +374,7 @@ class Team_Member extends Nova_Widget {
         $this->add_control(
             'custom_image_height',
             [
-                'label' => __( 'Custom Image Height', 'nova-elements' ),
+                'label' => esc_html__( 'Custom Image Height', 'nova-elements' ),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -406,7 +406,7 @@ class Team_Member extends Nova_Widget {
         $this->add_responsive_control(
             'thumb_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -458,7 +458,7 @@ class Team_Member extends Nova_Widget {
         $this->add_responsive_control(
             'title_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -470,7 +470,7 @@ class Team_Member extends Nova_Widget {
         $this->add_responsive_control(
             'title_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -520,7 +520,7 @@ class Team_Member extends Nova_Widget {
         $this->add_responsive_control(
             'position_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -532,7 +532,7 @@ class Team_Member extends Nova_Widget {
         $this->add_responsive_control(
             'position_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(

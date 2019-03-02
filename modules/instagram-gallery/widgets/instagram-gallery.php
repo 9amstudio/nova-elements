@@ -348,7 +348,7 @@ class Instagram_Gallery extends Nova_Widget {
         $this->add_responsive_control(
             'item_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -371,7 +371,7 @@ class Instagram_Gallery extends Nova_Widget {
         $this->add_responsive_control(
             'item_border_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -428,7 +428,7 @@ class Instagram_Gallery extends Nova_Widget {
         $this->add_responsive_control(
             'caption_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -440,7 +440,7 @@ class Instagram_Gallery extends Nova_Widget {
         $this->add_responsive_control(
             'caption_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -627,7 +627,7 @@ class Instagram_Gallery extends Nova_Widget {
         $this->add_responsive_control(
             'meta_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -639,7 +639,7 @@ class Instagram_Gallery extends Nova_Widget {
         $this->add_responsive_control(
             'meta_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -651,7 +651,7 @@ class Instagram_Gallery extends Nova_Widget {
         $this->add_responsive_control(
             'meta_item_margin',
             array(
-                'label'      => __( 'Item Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Item Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -674,7 +674,7 @@ class Instagram_Gallery extends Nova_Widget {
         $this->add_responsive_control(
             'meta_radius',
             array(
-                'label'      => __( 'Border Radius', 'nova-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -762,7 +762,7 @@ class Instagram_Gallery extends Nova_Widget {
         $this->add_responsive_control(
             'overlay_paddings',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(

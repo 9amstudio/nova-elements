@@ -208,7 +208,7 @@ class Group_Control_Box_Style extends \Elementor\Group_Control_Base {
 			'label'   => _x( 'Border Type', 'Border Control', 'nova-elements' ),
 			'type'    => Controls_Manager::SELECT,
 			'options' => array(
-				''       => __( 'None', 'nova-elements' ),
+				''       => esc_html__( 'None', 'nova-elements' ),
 				'solid'  => _x( 'Solid', 'Border Control', 'nova-elements' ),
 				'double' => _x( 'Double', 'Border Control', 'nova-elements' ),
 				'dotted' => _x( 'Dotted', 'Border Control', 'nova-elements' ),

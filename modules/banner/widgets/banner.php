@@ -254,7 +254,7 @@ class Banner extends Nova_Widget {
 				$this->add_responsive_control(
 						'content_margin',
 						array(
-								'label'      => __( 'Content Padding', 'nova-elements' ),
+								'label'      => esc_html__( 'Content Padding', 'nova-elements' ),
 								'type'       => Controls_Manager::DIMENSIONS,
 								'size_units' => array( 'px', '%' ),
 								'selectors'  => array(
@@ -381,7 +381,7 @@ class Banner extends Nova_Widget {
         $this->add_responsive_control(
             'banner_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -394,7 +394,7 @@ class Banner extends Nova_Widget {
         $this->add_responsive_control(
             'banner_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -682,7 +682,7 @@ class Banner extends Nova_Widget {
         $this->add_responsive_control(
             'banner_button_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -773,7 +773,7 @@ class Banner extends Nova_Widget {
         $this->add_responsive_control(
             'banner_button_hover_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(

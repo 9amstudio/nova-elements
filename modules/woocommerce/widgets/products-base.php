@@ -22,7 +22,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->start_controls_section(
 			'section_products_style',
 			[
-				'label' => __( 'Products', 'nova-elements' ),
+				'label' => esc_html__( 'Products', 'nova-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -30,7 +30,7 @@ abstract class Products_Base extends Nova_Widget {
         $this->add_responsive_control(
             'column_gap',
             [
-                'label' => __( 'Columns Gap', 'nova-elements' ),
+                'label' => esc_html__( 'Columns Gap', 'nova-elements' ),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 15,
@@ -51,7 +51,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_responsive_control(
 			'row_gap',
 			[
-				'label' => __( 'Rows Gap', 'nova-elements' ),
+				'label' => esc_html__( 'Rows Gap', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 40,
@@ -71,19 +71,19 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_responsive_control(
 			'align',
 			[
-				'label' => __( 'Alignment', 'nova-elements' ),
+				'label' => esc_html__( 'Alignment', 'nova-elements' ),
 				'type' => Controls_Manager::CHOOSE,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'nova-elements' ),
+						'title' => esc_html__( 'Left', 'nova-elements' ),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => __( 'Center', 'nova-elements' ),
+						'title' => esc_html__( 'Center', 'nova-elements' ),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => __( 'Right', 'nova-elements' ),
+						'title' => esc_html__( 'Right', 'nova-elements' ),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -96,7 +96,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'heading_image_style',
 			[
-				'label' => __( 'Image', 'nova-elements' ),
+				'label' => esc_html__( 'Image', 'nova-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -113,7 +113,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_responsive_control(
 			'image_border_radius',
 			[
-				'label' => __( 'Border Radius', 'nova-elements' ),
+				'label' => esc_html__( 'Border Radius', 'nova-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -125,7 +125,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_responsive_control(
 			'image_spacing',
 			[
-				'label' => __( 'Spacing', 'nova-elements' ),
+				'label' => esc_html__( 'Spacing', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em' ],
 				'selectors' => [
@@ -137,7 +137,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'heading_title_style',
 			[
-				'label' => __( 'Title', 'nova-elements' ),
+				'label' => esc_html__( 'Title', 'nova-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -146,7 +146,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'title_color',
 			[
-				'label' => __( 'Color', 'nova-elements' ),
+				'label' => esc_html__( 'Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => Scheme_Color::get_type(),
@@ -170,7 +170,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_responsive_control(
 			'title_spacing',
 			[
-				'label' => __( 'Spacing', 'nova-elements' ),
+				'label' => esc_html__( 'Spacing', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em' ],
 				'range' => [
@@ -189,7 +189,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'heading_rating_style',
 			[
-				'label' => __( 'Rating', 'nova-elements' ),
+				'label' => esc_html__( 'Rating', 'nova-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -198,7 +198,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'star_color',
 			[
-				'label' => __( 'Star Color', 'nova-elements' ),
+				'label' => esc_html__( 'Star Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product .star-rating span' => 'color: {{VALUE}}',
@@ -209,7 +209,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'empty_star_color',
 			[
-				'label' => __( 'Empty Star Color', 'nova-elements' ),
+				'label' => esc_html__( 'Empty Star Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product .star-rating' => 'color: {{VALUE}}',
@@ -220,7 +220,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'star_size',
 			[
-				'label' => __( 'Star Size', 'nova-elements' ),
+				'label' => esc_html__( 'Star Size', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'unit' => 'em',
@@ -241,7 +241,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_responsive_control(
 			'rating_spacing',
 			[
-				'label' => __( 'Spacing', 'nova-elements' ),
+				'label' => esc_html__( 'Spacing', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em' ],
 				'range' => [
@@ -260,7 +260,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'heading_price_style',
 			[
-				'label' => __( 'Price', 'nova-elements' ),
+				'label' => esc_html__( 'Price', 'nova-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -269,7 +269,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'price_color',
 			[
-				'label' => __( 'Color', 'nova-elements' ),
+				'label' => esc_html__( 'Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => Scheme_Color::get_type(),
@@ -295,7 +295,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'heading_old_price_style',
 			[
-				'label' => __( 'Regular Price', 'nova-elements' ),
+				'label' => esc_html__( 'Regular Price', 'nova-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -304,7 +304,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'old_price_color',
 			[
-				'label' => __( 'Color', 'nova-elements' ),
+				'label' => esc_html__( 'Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'scheme' => [
 					'type' => Scheme_Color::get_type(),
@@ -329,7 +329,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'heading_button_style',
 			[
-				'label' => __( 'Button', 'nova-elements' ),
+				'label' => esc_html__( 'Button', 'nova-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -340,14 +340,14 @@ abstract class Products_Base extends Nova_Widget {
 		$this->start_controls_tab(
 			'tab_button_normal',
 			[
-				'label' => __( 'Normal', 'nova-elements' ),
+				'label' => esc_html__( 'Normal', 'nova-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'button_text_color',
 			[
-				'label' => __( 'Text Color', 'nova-elements' ),
+				'label' => esc_html__( 'Text Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -359,7 +359,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'button_background_color',
 			[
-				'label' => __( 'Background Color', 'nova-elements' ),
+				'label' => esc_html__( 'Background Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product .button' => 'background-color: {{VALUE}};',
@@ -370,7 +370,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'button_border_color',
 			[
-				'label' => __( 'Border Color', 'nova-elements' ),
+				'label' => esc_html__( 'Border Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product .button' => 'border-color: {{VALUE}};',
@@ -392,14 +392,14 @@ abstract class Products_Base extends Nova_Widget {
 		$this->start_controls_tab(
 			'tab_button_hover',
 			[
-				'label' => __( 'Hover', 'nova-elements' ),
+				'label' => esc_html__( 'Hover', 'nova-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'button_hover_color',
 			[
-				'label' => __( 'Text Color', 'nova-elements' ),
+				'label' => esc_html__( 'Text Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product .button:hover' => 'color: {{VALUE}};',
@@ -410,7 +410,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'button_hover_background_color',
 			[
-				'label' => __( 'Background Color', 'nova-elements' ),
+				'label' => esc_html__( 'Background Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product .button:hover' => 'background-color: {{VALUE}};',
@@ -421,7 +421,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'button_hover_border_color',
 			[
-				'label' => __( 'Border Color', 'nova-elements' ),
+				'label' => esc_html__( 'Border Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}}. ul.products li.product .button:hover' => 'border-color: {{VALUE}};',
@@ -445,7 +445,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'button_border_radius',
 			[
-				'label' => __( 'Border Radius', 'nova-elements' ),
+				'label' => esc_html__( 'Border Radius', 'nova-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -457,7 +457,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'button_text_padding',
 			[
-				'label' => __( 'Text Padding', 'nova-elements' ),
+				'label' => esc_html__( 'Text Padding', 'nova-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -469,7 +469,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_responsive_control(
 			'button_spacing',
 			[
-				'label' => __( 'Spacing', 'nova-elements' ),
+				'label' => esc_html__( 'Spacing', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em' ],
 				'selectors' => [
@@ -481,7 +481,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'heading_view_cart_style',
 			[
-				'label' => __( 'View Cart', 'nova-elements' ),
+				'label' => esc_html__( 'View Cart', 'nova-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -490,7 +490,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'view_cart_color',
 			[
-				'label' => __( 'Color', 'nova-elements' ),
+				'label' => esc_html__( 'Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .added_to_cart' => 'color: {{VALUE}}',
@@ -512,7 +512,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->start_controls_section(
 			'section_design_box',
 			[
-				'label' => __( 'Box', 'nova-elements' ),
+				'label' => esc_html__( 'Box', 'nova-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -520,7 +520,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'box_border_width',
 			[
-				'label' => __( 'Border Width', 'nova-elements' ),
+				'label' => esc_html__( 'Border Width', 'nova-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px' ],
 				'range' => [
@@ -538,7 +538,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'box_border_radius',
 			[
-				'label' => __( 'Border Radius', 'nova-elements' ),
+				'label' => esc_html__( 'Border Radius', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%' ],
 				'range' => [
@@ -556,7 +556,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_responsive_control(
 			'box_padding',
 			[
-				'label' => __( 'Padding', 'nova-elements' ),
+				'label' => esc_html__( 'Padding', 'nova-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em' ],
 				'range' => [
@@ -575,7 +575,7 @@ abstract class Products_Base extends Nova_Widget {
 
 		$this->start_controls_tab( 'classic_style_normal',
 			[
-				'label' => __( 'Normal', 'nova-elements' ),
+				'label' => esc_html__( 'Normal', 'nova-elements' ),
 			]
 		);
 
@@ -590,7 +590,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'box_bg_color',
 			[
-				'label' => __( 'Background Color', 'nova-elements' ),
+				'label' => esc_html__( 'Background Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product' => 'background-color: {{VALUE}}',
@@ -601,7 +601,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'box_border_color',
 			[
-				'label' => __( 'Border Color', 'nova-elements' ),
+				'label' => esc_html__( 'Border Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product' => 'border-color: {{VALUE}}',
@@ -613,7 +613,7 @@ abstract class Products_Base extends Nova_Widget {
 
 		$this->start_controls_tab( 'classic_style_hover',
 			[
-				'label' => __( 'Hover', 'nova-elements' ),
+				'label' => esc_html__( 'Hover', 'nova-elements' ),
 			]
 		);
 
@@ -628,7 +628,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'box_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'nova-elements' ),
+				'label' => esc_html__( 'Background Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product:hover' => 'background-color: {{VALUE}}',
@@ -639,7 +639,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'box_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'nova-elements' ),
+				'label' => esc_html__( 'Border Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product:hover' => 'border-color: {{VALUE}}',
@@ -656,7 +656,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->start_controls_section(
 			'section_pagination_style',
 			[
-				'label' => __( 'Pagination', 'nova-elements' ),
+				'label' => esc_html__( 'Pagination', 'nova-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 					'paginate' => 'yes',
@@ -667,19 +667,19 @@ abstract class Products_Base extends Nova_Widget {
         $this->add_responsive_control(
             'pagination_align',
             [
-                'label' => __( 'Alignment', 'nova-elements' ),
+                'label' => esc_html__( 'Alignment', 'nova-elements' ),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => __( 'Left', 'nova-elements' ),
+                        'title' => esc_html__( 'Left', 'nova-elements' ),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __( 'Center', 'nova-elements' ),
+                        'title' => esc_html__( 'Center', 'nova-elements' ),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => __( 'Right', 'nova-elements' ),
+                        'title' => esc_html__( 'Right', 'nova-elements' ),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -693,7 +693,7 @@ abstract class Products_Base extends Nova_Widget {
         $this->add_control(
 			'pagination_spacing',
 			[
-				'label' => __( 'Spacing', 'nova-elements' ),
+				'label' => esc_html__( 'Spacing', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'selectors' => [
 					'{{WRAPPER}} nav.woocommerce-pagination' => 'margin-top: {{SIZE}}{{UNIT}}',
@@ -704,10 +704,10 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'show_pagination_border',
 			[
-				'label' => __( 'Border', 'nova-elements' ),
+				'label' => esc_html__( 'Border', 'nova-elements' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_off' => __( 'Hide', 'nova-elements' ),
-				'label_on' => __( 'Show', 'nova-elements' ),
+				'label_off' => esc_html__( 'Hide', 'nova-elements' ),
+				'label_on' => esc_html__( 'Show', 'nova-elements' ),
 				'default' => 'yes',
 				'return_value' => 'yes',
 			]
@@ -716,7 +716,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'pagination_border_color',
 			[
-				'label' => __( 'Border Color', 'nova-elements' ),
+				'label' => esc_html__( 'Border Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} nav.woocommerce-pagination ul' => 'border-color: {{VALUE}}',
@@ -731,7 +731,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'pagination_padding',
 			[
-				'label' => __( 'Padding', 'nova-elements' ),
+				'label' => esc_html__( 'Padding', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'em' => [
@@ -759,14 +759,14 @@ abstract class Products_Base extends Nova_Widget {
 
 		$this->start_controls_tab( 'pagination_style_normal',
 			[
-				'label' => __( 'Normal', 'nova-elements' ),
+				'label' => esc_html__( 'Normal', 'nova-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'pagination_link_color',
 			[
-				'label' => __( 'Color', 'nova-elements' ),
+				'label' => esc_html__( 'Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} nav.woocommerce-pagination ul li a' => 'color: {{VALUE}}',
@@ -777,7 +777,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'pagination_link_bg_color',
 			[
-				'label' => __( 'Background Color', 'nova-elements' ),
+				'label' => esc_html__( 'Background Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} nav.woocommerce-pagination ul li a' => 'background-color: {{VALUE}}',
@@ -789,14 +789,14 @@ abstract class Products_Base extends Nova_Widget {
 
 		$this->start_controls_tab( 'pagination_style_hover',
 			[
-				'label' => __( 'Hover', 'nova-elements' ),
+				'label' => esc_html__( 'Hover', 'nova-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'pagination_link_color_hover',
 			[
-				'label' => __( 'Color', 'nova-elements' ),
+				'label' => esc_html__( 'Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} nav.woocommerce-pagination ul li a:hover' => 'color: {{VALUE}}',
@@ -807,7 +807,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'pagination_link_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'nova-elements' ),
+				'label' => esc_html__( 'Background Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} nav.woocommerce-pagination ul li a:hover' => 'background-color: {{VALUE}}',
@@ -819,14 +819,14 @@ abstract class Products_Base extends Nova_Widget {
 
 		$this->start_controls_tab( 'pagination_style_active',
 			[
-				'label' => __( 'Active', 'nova-elements' ),
+				'label' => esc_html__( 'Active', 'nova-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'pagination_link_color_active',
 			[
-				'label' => __( 'Color', 'nova-elements' ),
+				'label' => esc_html__( 'Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} nav.woocommerce-pagination ul li span.current' => 'color: {{VALUE}}',
@@ -837,7 +837,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'pagination_link_bg_color_active',
 			[
-				'label' => __( 'Background Color', 'nova-elements' ),
+				'label' => esc_html__( 'Background Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} nav.woocommerce-pagination ul li span.current' => 'background-color: {{VALUE}}',
@@ -855,7 +855,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->start_controls_section(
 			'sale_flash_style',
 			[
-				'label' => __( 'Sale Flash', 'nova-elements' ),
+				'label' => esc_html__( 'Sale Flash', 'nova-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -863,10 +863,10 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'show_onsale_flash',
 			[
-				'label' => __( 'Sale Flash', 'nova-elements' ),
+				'label' => esc_html__( 'Sale Flash', 'nova-elements' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_off' => __( 'Hide', 'nova-elements' ),
-				'label_on' => __( 'Show', 'nova-elements' ),
+				'label_off' => esc_html__( 'Hide', 'nova-elements' ),
+				'label_on' => esc_html__( 'Show', 'nova-elements' ),
 				'separator' => 'before',
 				'default' => 'no',
 				'return_value' => 'yes',
@@ -879,7 +879,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'onsale_text_color',
 			[
-				'label' => __( 'Text Color', 'nova-elements' ),
+				'label' => esc_html__( 'Text Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product span.onsale' => 'color: {{VALUE}}',
@@ -893,7 +893,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'onsale_text_background_color',
 			[
-				'label' => __( 'Background Color', 'nova-elements' ),
+				'label' => esc_html__( 'Background Color', 'nova-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} ul.products li.product span.onsale' => 'background-color: {{VALUE}}',
@@ -918,7 +918,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'onsale_border_radius',
 			[
-				'label' => __( 'Border Radius', 'nova-elements' ),
+				'label' => esc_html__( 'Border Radius', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em' ],
 				'selectors' => [
@@ -933,7 +933,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'onsale_width',
 			[
-				'label' => __( 'Width', 'nova-elements' ),
+				'label' => esc_html__( 'Width', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em' ],
 				'selectors' => [
@@ -948,7 +948,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'onsale_height',
 			[
-				'label' => __( 'Height', 'nova-elements' ),
+				'label' => esc_html__( 'Height', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em' ],
 				'selectors' => [
@@ -963,16 +963,16 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'onsale_horizontal_position',
 			[
-				'label' => __( 'Position', 'nova-elements' ),
+				'label' => esc_html__( 'Position', 'nova-elements' ),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => false,
 				'options' => [
 					'left' => [
-						'title' => __( 'Left', 'nova-elements' ),
+						'title' => esc_html__( 'Left', 'nova-elements' ),
 						'icon' => 'eicon-h-align-left',
 					],
 					'right' => [
-						'title' => __( 'Right', 'nova-elements' ),
+						'title' => esc_html__( 'Right', 'nova-elements' ),
 						'icon' => 'eicon-h-align-right',
 					],
 				],
@@ -992,7 +992,7 @@ abstract class Products_Base extends Nova_Widget {
 		$this->add_control(
 			'onsale_distance',
 			[
-				'label' => __( 'Distance', 'nova-elements' ),
+				'label' => esc_html__( 'Distance', 'nova-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em' ],
 				'range' => [

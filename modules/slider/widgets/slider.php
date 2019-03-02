@@ -470,7 +470,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'slider_title_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -482,7 +482,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'slider_title_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -603,7 +603,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'slider_subtitle_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -615,7 +615,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'slider_subtitle_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -735,7 +735,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'slider_desc_padding',
             array(
-                'label'      => __( 'Padding', 'nova-elements' ),
+                'label'      => esc_html__( 'Padding', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -747,7 +747,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'slider_desc_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -990,7 +990,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'primary_button_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1149,7 +1149,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'primary_button_icon_margin',
             array(
-                'label'      => __( 'Icon Box Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Icon Box Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1210,7 +1210,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'primary_button_hover_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1369,7 +1369,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'primary_button_hover_icon_margin',
             array(
-                'label'      => __( 'Icon Box Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Icon Box Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1443,7 +1443,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'secondary_button_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1602,7 +1602,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'secondary_button_icon_margin',
             array(
-                'label'      => __( 'Icon Box Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Icon Box Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1663,7 +1663,7 @@ class Slider extends Nova_Widget {
         $this->add_responsive_control(
             'secondary_button_hover_margin',
             array(
-                'label'      => __( 'Margin', 'nova-elements' ),
+                'label'      => esc_html__( 'Margin', 'nova-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => array( 'px', '%' ),
                 'selectors'  => array(
@@ -1822,7 +1822,7 @@ class Slider extends Nova_Widget {
 				$this->add_responsive_control(
 				    'secondary_button_hover_icon_margin',
 				    array(
-				        'label'      => __( 'Icon Box Margin', 'nova-elements' ),
+				        'label'      => esc_html__( 'Icon Box Margin', 'nova-elements' ),
 				        'type'       => Controls_Manager::DIMENSIONS,
 				        'size_units' => array( 'px', '%' ),
 				        'selectors'  => array(

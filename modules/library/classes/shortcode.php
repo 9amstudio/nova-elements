@@ -16,7 +16,7 @@ class Shortcode {
 	}
 
 	public function admin_columns_headers( $defaults ) {
-		$defaults['shortcode'] = __( 'Shortcode', 'nova-elements' );
+		$defaults['shortcode'] = esc_html__( 'Shortcode', 'nova-elements' );
 
 		return $defaults;
 	}

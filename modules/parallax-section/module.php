@@ -157,7 +157,7 @@ class Module extends Module_Base {
         $repeater->add_control(
             'nova_parallax_layout_on',
             array(
-                'label'       => __( 'Enable On Device', 'nova-elements' ),
+                'label'       => esc_html__( 'Enable On Device', 'nova-elements' ),
                 'type'        => Controls_Manager::SELECT2,
                 'multiple'    => true,
                 'label_block' => 'true',
@@ -166,9 +166,9 @@ class Module extends Module_Base {
                     'tablet',
                 ),
                 'options'     => array(
-                    'desktop' => __( 'Desktop', 'nova-elements' ),
-                    'tablet'  => __( 'Tablet', 'nova-elements' ),
-                    'mobile'  => __( 'Mobile', 'nova-elements' ),
+                    'desktop' => esc_html__( 'Desktop', 'nova-elements' ),
+                    'tablet'  => esc_html__( 'Tablet', 'nova-elements' ),
+                    'mobile'  => esc_html__( 'Mobile', 'nova-elements' ),
                 ),
             )
         );
@@ -220,7 +220,7 @@ class Module extends Module_Base {
         $obj->add_responsive_control(
             '_inline_maxwidth',
             [
-                'label' => __( 'Column Max Width', 'elementor' ) . ' (px)',
+                'label' => esc_html__( 'Column Max Width', 'elementor' ) . ' (px)',
                 'type' => Controls_Manager::NUMBER,
                 'min' => 50,
                 'max' => 2000,
@@ -233,14 +233,14 @@ class Module extends Module_Base {
         $obj->add_responsive_control(
             'nova_column_align',
             [
-                'label' => __( 'Column Alignment', 'nova-elements' ),
+                'label' => esc_html__( 'Column Alignment', 'nova-elements' ),
                 'type' => Controls_Manager::SELECT,
                 'default' => '',
                 'options' => [
-                    '' => __( 'Default', 'nova-elements' ),
-                    'left' => __( 'Left', 'nova-elements' ),
-                    'right' => __( 'Right', 'nova-elements' ),
-                    'center' => __( 'Center', 'nova-elements' ),
+                    '' => esc_html__( 'Default', 'nova-elements' ),
+                    'left' => esc_html__( 'Left', 'nova-elements' ),
+                    'right' => esc_html__( 'Right', 'nova-elements' ),
+                    'center' => esc_html__( 'Center', 'nova-elements' ),
                 ],
                 'selectors_dictionary' => [
                     'left' => '-right',
@@ -274,12 +274,12 @@ class Module extends Module_Base {
         $obj->add_control(
             'hide_desktop_column',
             [
-                'label' => __( 'Hide On Desktop', 'nova-elements' ),
+                'label' => esc_html__( 'Hide On Desktop', 'nova-elements' ),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => '',
                 'prefix_class' => 'elementor-',
-                'label_on' => __( 'Hide', 'nova-elements' ),
-                'label_off' => __( 'Show', 'nova-elements' ),
+                'label_on' => esc_html__( 'Hide', 'nova-elements' ),
+                'label_off' => esc_html__( 'Show', 'nova-elements' ),
                 'return_value' => 'hidden-desktop',
             ]
         );
@@ -287,12 +287,12 @@ class Module extends Module_Base {
         $obj->add_control(
             'hide_tablet_landscape_column',
             [
-                'label' => __( 'Hide On Tablet Landscape', 'nova-elements' ),
+                'label' => esc_html__( 'Hide On Tablet Landscape', 'nova-elements' ),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => '',
                 'prefix_class' => 'elementor-',
-                'label_on' => __( 'Hide', 'nova-elements' ),
-                'label_off' => __( 'Show', 'nova-elements' ),
+                'label_on' => esc_html__( 'Hide', 'nova-elements' ),
+                'label_off' => esc_html__( 'Show', 'nova-elements' ),
                 'return_value' => 'hidden-tablet-landscape',
             ]
         );
@@ -300,12 +300,12 @@ class Module extends Module_Base {
         $obj->add_control(
             'hide_tablet_portrait_column',
             [
-                'label' => __( 'Hide On Tablet Portrait', 'nova-elements' ),
+                'label' => esc_html__( 'Hide On Tablet Portrait', 'nova-elements' ),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => '',
                 'prefix_class' => 'elementor-',
-                'label_on' => __( 'Hide', 'nova-elements' ),
-                'label_off' => __( 'Show', 'nova-elements' ),
+                'label_on' => esc_html__( 'Hide', 'nova-elements' ),
+                'label_off' => esc_html__( 'Show', 'nova-elements' ),
                 'return_value' => 'hidden-tablet-portrait',
             ]
         );
@@ -313,12 +313,12 @@ class Module extends Module_Base {
         $obj->add_control(
             'hide_mobile_landscape_column',
             [
-                'label' => __( 'Hide On Mobile Landscape', 'nova-elements' ),
+                'label' => esc_html__( 'Hide On Mobile Landscape', 'nova-elements' ),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => '',
                 'prefix_class' => 'elementor-',
-                'label_on' => __( 'Hide', 'nova-elements' ),
-                'label_off' => __( 'Show', 'nova-elements' ),
+                'label_on' => esc_html__( 'Hide', 'nova-elements' ),
+                'label_off' => esc_html__( 'Show', 'nova-elements' ),
                 'return_value' => 'hidden-phone-landscape',
             ]
         );
@@ -326,12 +326,12 @@ class Module extends Module_Base {
         $obj->add_control(
             'hide_mobile_portrait_column',
             [
-                'label' => __( 'Hide On Mobile Portrait', 'nova-elements' ),
+                'label' => esc_html__( 'Hide On Mobile Portrait', 'nova-elements' ),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => '',
                 'prefix_class' => 'elementor-',
-                'label_on' => __( 'Hide', 'nova-elements' ),
-                'label_off' => __( 'Show', 'nova-elements' ),
+                'label_on' => esc_html__( 'Hide', 'nova-elements' ),
+                'label_off' => esc_html__( 'Show', 'nova-elements' ),
                 'return_value' => 'hidden-phone-portrait',
             ]
         );
