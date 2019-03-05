@@ -8,19 +8,8 @@ $preset = $this->get_settings( 'preset' );
 
 $class_array = array('nova-testimonials__item');
 
-if( $this->get_settings('enable_carousel') != 'true' ) {
-    $class_array[] = nova_elements_tools()->col_classes( array(
-        'desk' => $this->get_settings( 'slides_to_show' ),
-        'lap' => $this->get_settings( 'slides_to_show_laptop' ),
-        'tab' => $this->get_settings( 'slides_to_show_width800' ),
-        'tabp'  => $this->get_settings( 'slides_to_show_tablet' ),
-        'mob'  => $this->get_settings( 'slides_to_show_mobile' ),
-        'mobp'  => $this->get_settings( 'slides_to_show_with640' ),
-    ) );
-}
-
 ?>
-<div class="<?php echo esc_attr(join(' ', $class_array)); ?>">
+<div class="cell">
 	<div class="nova-testimonials__item-inner">
 		<div class="nova-testimonials__content"><?php
 
