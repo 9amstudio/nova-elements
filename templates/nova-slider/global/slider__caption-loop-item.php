@@ -30,6 +30,10 @@ $use_icon = $this->get_settings_for_display( 'use_button_icon' );
               <span class="nova-button__label">%2$s</span>
             </div>
             </a>' );
+          ?>
+        </div>
+        <div class="nova-button__container">
+          <?php
             echo $this->__loop_button_item( array( 'item_button_secondary_url', 'item_button_secondary_text' ), '<a '.$this->get_render_attribute_string( 'nova-button-secondary' ).' href="%1$s">
             <div class="nova-button__plane nova-button__plane-normal"></div>
         		<div class="nova-button__plane nova-button__plane-hover"></div>
