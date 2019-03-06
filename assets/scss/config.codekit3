@@ -476,19 +476,6 @@
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
-		},
-	"/skin/_nova-testimonials.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/skin/_nova-testimonials.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
 		}
 	},
 "hooks": [

@@ -70,27 +70,6 @@ class Testimonials extends Nova_Widget {
             )
         );
 
-        $preset_type = apply_filters(
-            'nova-elements/testimonials/control/preset',
-            array(
-                'type-1' => esc_html__( 'Type-1', 'nova-elements' ),
-                'type-2' => esc_html__( 'Type-2', 'nova-elements' ),
-                'type-3' => esc_html__( 'Type-3', 'nova-elements' ),
-                'type-4' => esc_html__( 'Type-4', 'nova-elements' ),
-                'type-5' => esc_html__( 'Type-5', 'nova-elements' ),
-            )
-        );
-
-        $this->add_control(
-            'preset',
-            array(
-                'label'   => esc_html__( 'Preset', 'nova-elements' ),
-                'type'    => Controls_Manager::SELECT,
-                'default' => 'type-1',
-                'options' => $preset_type
-            )
-        );
-
         $this->add_control(
             'enable_carousel',
             array(
@@ -99,7 +78,7 @@ class Testimonials extends Nova_Widget {
                 'label_on'     => esc_html__( 'Yes', 'nova-elements' ),
                 'label_off'    => esc_html__( 'No', 'nova-elements' ),
                 'return_value' => 'true',
-                'default'      => '',
+                'default'      => 'true',
             )
         );
 
@@ -314,7 +293,7 @@ class Testimonials extends Nova_Widget {
                 'type'        => Controls_Manager::ICON,
                 'label_block' => true,
                 'file'        => '',
-                'default'     => 'fa fa-quote-left',
+                'default'     => '',
             )
         );
 
