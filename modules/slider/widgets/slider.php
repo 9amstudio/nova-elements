@@ -61,7 +61,7 @@ class Slider extends Nova_Widget {
                 'title'               => '.shortcode_nova_slider .slide-title',
                 'subtitle'            => '.shortcode_nova_slider .slide-subtitle',
                 'desc'                => '.shortcode_nova_slider .slide-description',
-								'buttons_wrapper'     => '.nova-slider__button-wrapper',
+								'buttons_wrapper'     => '.shortcode_nova_slider .slider__caption .swiper-slide .slider__item .nova-slider__button-wrapper',
 								'buttons_container'   => '.nova-button__container',
                 'primary_button'      => '.nova-slider__button--primary',
                 'secondary_button'    => '.nova-slider__button--secondary',
