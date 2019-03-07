@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Nova Elements For Elementor\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-03-02 02:25+0000\n"
+"POT-Creation-Date: 2019-03-07 02:23+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: \n"
@@ -60,7 +60,7 @@ msgstr ""
 #: modules/testimonials/widgets/testimonials.php:69
 #: modules/subscribe-form/widgets/subscribe-form.php:162
 #: modules/animated-text/widgets/animated-text.php:116
-#: modules/slider/widgets/slider.php:265
+#: modules/slider/widgets/slider.php:266
 #: modules/animated-box/widgets/animated-box.php:195
 #: modules/button/widgets/button.php:144
 #: modules/images-layout/widgets/images-layout.php:76
@@ -159,7 +159,7 @@ msgstr ""
 #: modules/parallax-section/module.php:86
 #: modules/tabs-widget/widgets/tabs-widget.php:223
 #: modules/posts/widgets/posts.php:1127 modules/posts/widgets/posts.php:1375
-#: modules/slider/widgets/slider.php:311 modules/slider/widgets/slider.php:850
+#: modules/slider/widgets/slider.php:312 modules/slider/widgets/slider.php:851
 #: modules/contact-form7/widgets/contact-form7.php:610
 #: modules/contact-form7/widgets/contact-form7.php:861
 #: modules/contact-form7/widgets/contact-form7.php:1112
@@ -182,11 +182,11 @@ msgstr ""
 #: modules/woocommerce/widgets/products.php:315
 #: modules/woocommerce/widgets/products-base.php:140
 #: modules/posts/widgets/posts.php:475
-#: modules/testimonials/widgets/testimonials.php:324
+#: modules/testimonials/widgets/testimonials.php:303
 #: modules/heading/widgets/heading.php:61
 #: modules/heading/widgets/heading.php:78
-#: modules/heading/widgets/heading.php:239 modules/slider/widgets/slider.php:95
-#: modules/slider/widgets/slider.php:444
+#: modules/heading/widgets/heading.php:239 modules/slider/widgets/slider.php:96
+#: modules/slider/widgets/slider.php:445
 #: modules/animated-box/widgets/animated-box.php:91
 #: modules/animated-box/widgets/animated-box.php:93
 #: modules/animated-box/widgets/animated-box.php:141
@@ -240,9 +240,9 @@ msgstr ""
 #: base/nova-widget.php:906 modules/tabs-widget/widgets/tabs-widget.php:294
 #: modules/tabs-widget/widgets/tabs-widget.php:632
 #: modules/posts/widgets/posts.php:1546 modules/posts/widgets/posts.php:1697
-#: modules/testimonials/widgets/testimonials.php:716
-#: modules/testimonials/widgets/testimonials.php:867
-#: modules/brands/widgets/brands.php:168 modules/slider/widgets/slider.php:894
+#: modules/testimonials/widgets/testimonials.php:695
+#: modules/testimonials/widgets/testimonials.php:846
+#: modules/brands/widgets/brands.php:168 modules/slider/widgets/slider.php:895
 #: modules/animated-box/widgets/animated-box.php:1839
 #: modules/animated-box/widgets/animated-box.php:1896
 #: modules/button/widgets/button.php:195
@@ -263,9 +263,9 @@ msgstr ""
 #: classes/class-nova-elements-tools.php:263 base/nova-widget.php:756
 #: base/nova-widget.php:907 modules/posts/widgets/posts.php:1547
 #: modules/posts/widgets/posts.php:1698
-#: modules/testimonials/widgets/testimonials.php:717
-#: modules/testimonials/widgets/testimonials.php:868
-#: modules/brands/widgets/brands.php:176 modules/slider/widgets/slider.php:896
+#: modules/testimonials/widgets/testimonials.php:696
+#: modules/testimonials/widgets/testimonials.php:847
+#: modules/brands/widgets/brands.php:176 modules/slider/widgets/slider.php:897
 #: modules/animated-box/widgets/animated-box.php:1841
 #: modules/animated-box/widgets/animated-box.php:1898
 #: modules/button/widgets/button.php:197
@@ -679,7 +679,6 @@ msgstr ""
 #: modules/woocommerce/widgets/products.php:151
 #: modules/woocommerce/widgets/products.php:158
 #: modules/woocommerce/widgets/products.php:165
-#: modules/testimonials/widgets/testimonials.php:76
 #: modules/heading/widgets/heading.php:53
 msgid "Type-1"
 msgstr ""
@@ -688,13 +687,11 @@ msgstr ""
 #: modules/woocommerce/widgets/products.php:152
 #: modules/woocommerce/widgets/products.php:159
 #: modules/woocommerce/widgets/products.php:166
-#: modules/testimonials/widgets/testimonials.php:77
 #: modules/heading/widgets/heading.php:54
 msgid "Type-2"
 msgstr ""
 
 #: shortcodes/team-member.php:42
-#: modules/testimonials/widgets/testimonials.php:78
 msgid "Type-3"
 msgstr ""
 
@@ -703,7 +700,6 @@ msgid "Posts Number"
 msgstr ""
 
 #: shortcodes/team-member.php:61 shortcodes/posts.php:76
-#: modules/testimonials/widgets/testimonials.php:87
 #: modules/heading/widgets/heading.php:68
 msgid "Preset"
 msgstr ""
@@ -737,19 +733,19 @@ msgstr ""
 #: modules/posts/widgets/posts.php:187 modules/posts/widgets/posts.php:199
 #: modules/posts/widgets/posts.php:211 modules/posts/widgets/posts.php:235
 #: modules/posts/widgets/posts.php:859 modules/posts/widgets/posts.php:2158
-#: modules/testimonials/widgets/testimonials.php:99
-#: modules/testimonials/widgets/testimonials.php:135
-#: modules/testimonials/widgets/testimonials.php:150
-#: modules/testimonials/widgets/testimonials.php:178
-#: modules/testimonials/widgets/testimonials.php:193
-#: modules/testimonials/widgets/testimonials.php:237
-#: modules/testimonials/widgets/testimonials.php:280
-#: modules/testimonials/widgets/testimonials.php:495
-#: modules/testimonials/widgets/testimonials.php:584
-#: modules/testimonials/widgets/testimonials.php:1238
-#: modules/testimonials/widgets/testimonials.php:1250
-#: modules/testimonials/widgets/testimonials.php:1544
-#: modules/testimonials/widgets/testimonials.php:1701
+#: modules/testimonials/widgets/testimonials.php:78
+#: modules/testimonials/widgets/testimonials.php:114
+#: modules/testimonials/widgets/testimonials.php:129
+#: modules/testimonials/widgets/testimonials.php:157
+#: modules/testimonials/widgets/testimonials.php:172
+#: modules/testimonials/widgets/testimonials.php:216
+#: modules/testimonials/widgets/testimonials.php:259
+#: modules/testimonials/widgets/testimonials.php:474
+#: modules/testimonials/widgets/testimonials.php:563
+#: modules/testimonials/widgets/testimonials.php:1217
+#: modules/testimonials/widgets/testimonials.php:1229
+#: modules/testimonials/widgets/testimonials.php:1523
+#: modules/testimonials/widgets/testimonials.php:1680
 #: modules/inline-svg/widgets/inline-svg.php:88
 #: modules/inline-svg/widgets/inline-svg.php:101
 #: modules/inline-svg/widgets/inline-svg.php:173
@@ -758,8 +754,8 @@ msgstr ""
 #: modules/subscribe-form/widgets/subscribe-form.php:171
 #: modules/subscribe-form/widgets/subscribe-form.php:196
 #: modules/subscribe-form/widgets/subscribe-form.php:691
-#: modules/slider/widgets/slider.php:282 modules/slider/widgets/slider.php:326
-#: modules/slider/widgets/slider.php:880
+#: modules/slider/widgets/slider.php:283 modules/slider/widgets/slider.php:327
+#: modules/slider/widgets/slider.php:881
 #: modules/animated-box/widgets/animated-box.php:1416
 #: modules/contact-form7/widgets/contact-form7.php:1174
 #: modules/button/widgets/button.php:181 modules/button/widgets/button.php:226
@@ -796,19 +792,19 @@ msgstr ""
 #: modules/posts/widgets/posts.php:188 modules/posts/widgets/posts.php:200
 #: modules/posts/widgets/posts.php:212 modules/posts/widgets/posts.php:236
 #: modules/posts/widgets/posts.php:860 modules/posts/widgets/posts.php:2159
-#: modules/testimonials/widgets/testimonials.php:100
-#: modules/testimonials/widgets/testimonials.php:136
-#: modules/testimonials/widgets/testimonials.php:151
-#: modules/testimonials/widgets/testimonials.php:179
-#: modules/testimonials/widgets/testimonials.php:194
-#: modules/testimonials/widgets/testimonials.php:238
-#: modules/testimonials/widgets/testimonials.php:281
-#: modules/testimonials/widgets/testimonials.php:496
-#: modules/testimonials/widgets/testimonials.php:585
-#: modules/testimonials/widgets/testimonials.php:1239
-#: modules/testimonials/widgets/testimonials.php:1251
-#: modules/testimonials/widgets/testimonials.php:1545
-#: modules/testimonials/widgets/testimonials.php:1702
+#: modules/testimonials/widgets/testimonials.php:79
+#: modules/testimonials/widgets/testimonials.php:115
+#: modules/testimonials/widgets/testimonials.php:130
+#: modules/testimonials/widgets/testimonials.php:158
+#: modules/testimonials/widgets/testimonials.php:173
+#: modules/testimonials/widgets/testimonials.php:217
+#: modules/testimonials/widgets/testimonials.php:260
+#: modules/testimonials/widgets/testimonials.php:475
+#: modules/testimonials/widgets/testimonials.php:564
+#: modules/testimonials/widgets/testimonials.php:1218
+#: modules/testimonials/widgets/testimonials.php:1230
+#: modules/testimonials/widgets/testimonials.php:1524
+#: modules/testimonials/widgets/testimonials.php:1681
 #: modules/inline-svg/widgets/inline-svg.php:89
 #: modules/inline-svg/widgets/inline-svg.php:102
 #: modules/inline-svg/widgets/inline-svg.php:174
@@ -817,8 +813,8 @@ msgstr ""
 #: modules/subscribe-form/widgets/subscribe-form.php:172
 #: modules/subscribe-form/widgets/subscribe-form.php:197
 #: modules/subscribe-form/widgets/subscribe-form.php:692
-#: modules/slider/widgets/slider.php:283 modules/slider/widgets/slider.php:327
-#: modules/slider/widgets/slider.php:881
+#: modules/slider/widgets/slider.php:284 modules/slider/widgets/slider.php:328
+#: modules/slider/widgets/slider.php:882
 #: modules/animated-box/widgets/animated-box.php:1417
 #: modules/contact-form7/widgets/contact-form7.php:1175
 #: modules/button/widgets/button.php:182 modules/button/widgets/button.php:227
@@ -1264,9 +1260,9 @@ msgstr ""
 #: modules/posts/widgets/posts.php:341 modules/posts/widgets/posts.php:395
 #: modules/posts/widgets/posts.php:1152 modules/posts/widgets/posts.php:1400
 #: modules/posts/widgets/posts.php:2393
-#: modules/testimonials/widgets/testimonials.php:524
-#: modules/testimonials/widgets/testimonials.php:621
-#: modules/testimonials/widgets/testimonials.php:1420
+#: modules/testimonials/widgets/testimonials.php:503
+#: modules/testimonials/widgets/testimonials.php:600
+#: modules/testimonials/widgets/testimonials.php:1399
 #: modules/subscribe-form/widgets/subscribe-form.php:292
 #: modules/subscribe-form/widgets/subscribe-form.php:476
 #: modules/subscribe-form/widgets/subscribe-form.php:902
@@ -1277,14 +1273,14 @@ msgstr ""
 #: modules/heading/widgets/heading.php:222
 #: modules/heading/widgets/heading.php:300
 #: modules/heading/widgets/heading.php:403
-#: modules/slider/widgets/slider.php:1005
-#: modules/slider/widgets/slider.php:1140
-#: modules/slider/widgets/slider.php:1225
-#: modules/slider/widgets/slider.php:1360
-#: modules/slider/widgets/slider.php:1458
-#: modules/slider/widgets/slider.php:1593
-#: modules/slider/widgets/slider.php:1678
-#: modules/slider/widgets/slider.php:1813
+#: modules/slider/widgets/slider.php:1007
+#: modules/slider/widgets/slider.php:1142
+#: modules/slider/widgets/slider.php:1227
+#: modules/slider/widgets/slider.php:1362
+#: modules/slider/widgets/slider.php:1460
+#: modules/slider/widgets/slider.php:1595
+#: modules/slider/widgets/slider.php:1680
+#: modules/slider/widgets/slider.php:1815
 #: modules/animated-box/widgets/animated-box.php:332
 #: modules/animated-box/widgets/animated-box.php:404
 #: modules/animated-box/widgets/animated-box.php:540
@@ -1337,75 +1333,75 @@ msgid "Carousel"
 msgstr ""
 
 #: base/nova-widget.php:500 modules/posts/widgets/posts.php:108
-#: modules/testimonials/widgets/testimonials.php:97
+#: modules/testimonials/widgets/testimonials.php:76
 #: modules/team-member/widgets/team-member.php:101
 msgid "Enable Carousel"
 msgstr ""
 
 #: base/nova-widget.php:512 modules/posts/widgets/posts.php:134
-#: modules/testimonials/widgets/testimonials.php:119
+#: modules/testimonials/widgets/testimonials.php:98
 #: modules/team-member/widgets/team-member.php:127
 msgid "Slides to Scroll"
 msgstr ""
 
 #: base/nova-widget.php:525 modules/posts/widgets/posts.php:147
-#: modules/testimonials/widgets/testimonials.php:235
+#: modules/testimonials/widgets/testimonials.php:214
 #: modules/team-member/widgets/team-member.php:140
 msgid "Show Arrows Navigation"
 msgstr ""
 
 #: base/nova-widget.php:537 modules/posts/widgets/posts.php:185
-#: modules/testimonials/widgets/testimonials.php:278
+#: modules/testimonials/widgets/testimonials.php:257
 #: modules/team-member/widgets/team-member.php:178
 msgid "Show Dots Navigation"
 msgstr ""
 
 #: base/nova-widget.php:549 modules/posts/widgets/posts.php:197
-#: modules/testimonials/widgets/testimonials.php:133
+#: modules/testimonials/widgets/testimonials.php:112
 #: modules/team-member/widgets/team-member.php:190
 msgid "Pause on Hover"
 msgstr ""
 
 #: base/nova-widget.php:561 modules/posts/widgets/posts.php:209
-#: modules/testimonials/widgets/testimonials.php:148
+#: modules/testimonials/widgets/testimonials.php:127
 #: modules/team-member/widgets/team-member.php:202
 msgid "Autoplay"
 msgstr ""
 
 #: base/nova-widget.php:573 modules/posts/widgets/posts.php:221
-#: modules/testimonials/widgets/testimonials.php:163
+#: modules/testimonials/widgets/testimonials.php:142
 #: modules/team-member/widgets/team-member.php:214
 msgid "Autoplay Speed"
 msgstr ""
 
 #: base/nova-widget.php:585 modules/posts/widgets/posts.php:233
-#: modules/testimonials/widgets/testimonials.php:176
+#: modules/testimonials/widgets/testimonials.php:155
 #: modules/team-member/widgets/team-member.php:226
 msgid "Infinite Loop"
 msgstr ""
 
 #: base/nova-widget.php:597 modules/posts/widgets/posts.php:245
-#: modules/testimonials/widgets/testimonials.php:206
+#: modules/testimonials/widgets/testimonials.php:185
 #: modules/team-member/widgets/team-member.php:238
 msgid "Effect"
 msgstr ""
 
 #: base/nova-widget.php:601 modules/posts/widgets/posts.php:249
-#: modules/testimonials/widgets/testimonials.php:210
+#: modules/testimonials/widgets/testimonials.php:189
 #: modules/team-member/widgets/team-member.php:242
 msgid "Slide"
 msgstr ""
 
 #: base/nova-widget.php:602 modules/tabs-widget/widgets/tabs-widget.php:224
 #: modules/posts/widgets/posts.php:250
-#: modules/testimonials/widgets/testimonials.php:211
-#: modules/slider/widgets/slider.php:851 modules/button/widgets/button.php:152
+#: modules/testimonials/widgets/testimonials.php:190
+#: modules/slider/widgets/slider.php:852 modules/button/widgets/button.php:152
 #: modules/team-member/widgets/team-member.php:243
 msgid "Fade"
 msgstr ""
 
 #: base/nova-widget.php:613 modules/posts/widgets/posts.php:261
-#: modules/testimonials/widgets/testimonials.php:223
+#: modules/testimonials/widgets/testimonials.php:202
 #: modules/team-member/widgets/team-member.php:254
 msgid "Animation Speed"
 msgstr ""
@@ -1430,12 +1426,12 @@ msgstr ""
 #: modules/woocommerce/widgets/products-base.php:762
 #: modules/posts/widgets/posts.php:497 modules/posts/widgets/posts.php:937
 #: modules/posts/widgets/posts.php:1479 modules/posts/widgets/posts.php:1848
-#: modules/testimonials/widgets/testimonials.php:649
-#: modules/testimonials/widgets/testimonials.php:1021
+#: modules/testimonials/widgets/testimonials.php:628
+#: modules/testimonials/widgets/testimonials.php:1000
 #: modules/subscribe-form/widgets/subscribe-form.php:306
 #: modules/subscribe-form/widgets/subscribe-form.php:490
 #: modules/subscribe-form/widgets/subscribe-form.php:820
-#: modules/slider/widgets/slider.php:946 modules/slider/widgets/slider.php:1399
+#: modules/slider/widgets/slider.php:948 modules/slider/widgets/slider.php:1401
 #: modules/animated-box/widgets/animated-box.php:1505
 #: modules/contact-form7/widgets/contact-form7.php:181
 #: modules/contact-form7/widgets/contact-form7.php:417
@@ -1450,8 +1446,8 @@ msgstr ""
 
 #: base/nova-widget.php:696 base/nova-widget.php:722
 #: modules/posts/widgets/posts.php:1487 modules/posts/widgets/posts.php:1513
-#: modules/testimonials/widgets/testimonials.php:657
-#: modules/testimonials/widgets/testimonials.php:683
+#: modules/testimonials/widgets/testimonials.php:636
+#: modules/testimonials/widgets/testimonials.php:662
 #: modules/team-member/widgets/team-member.php:571
 #: modules/team-member/widgets/team-member.php:597
 msgid "Arrows Style"
@@ -1465,11 +1461,11 @@ msgstr ""
 #: modules/woocommerce/widgets/products-base.php:792
 #: modules/posts/widgets/posts.php:521 modules/posts/widgets/posts.php:1185
 #: modules/posts/widgets/posts.php:1505 modules/posts/widgets/posts.php:1878
-#: modules/testimonials/widgets/testimonials.php:675
-#: modules/testimonials/widgets/testimonials.php:1051
+#: modules/testimonials/widgets/testimonials.php:654
+#: modules/testimonials/widgets/testimonials.php:1030
 #: modules/subscribe-form/widgets/subscribe-form.php:935
-#: modules/slider/widgets/slider.php:1166
-#: modules/slider/widgets/slider.php:1619
+#: modules/slider/widgets/slider.php:1168
+#: modules/slider/widgets/slider.php:1621
 #: modules/animated-box/widgets/animated-box.php:1604
 #: modules/contact-form7/widgets/contact-form7.php:668
 #: modules/button/widgets/button.php:96 modules/button/widgets/button.php:390
@@ -1482,15 +1478,15 @@ msgid "Hover"
 msgstr ""
 
 #: base/nova-widget.php:742 modules/posts/widgets/posts.php:1533
-#: modules/testimonials/widgets/testimonials.php:703
+#: modules/testimonials/widgets/testimonials.php:682
 #: modules/team-member/widgets/team-member.php:617
 msgid "Prev Arrow Position"
 msgstr ""
 
 #: base/nova-widget.php:751 base/nova-widget.php:902
 #: modules/posts/widgets/posts.php:1542 modules/posts/widgets/posts.php:1693
-#: modules/testimonials/widgets/testimonials.php:712
-#: modules/testimonials/widgets/testimonials.php:863
+#: modules/testimonials/widgets/testimonials.php:691
+#: modules/testimonials/widgets/testimonials.php:842
 #: modules/team-member/widgets/team-member.php:626
 #: modules/team-member/widgets/team-member.php:777
 msgid "Vertical Position by"
@@ -1498,8 +1494,8 @@ msgstr ""
 
 #: base/nova-widget.php:764 base/nova-widget.php:915
 #: modules/posts/widgets/posts.php:1555 modules/posts/widgets/posts.php:1706
-#: modules/testimonials/widgets/testimonials.php:725
-#: modules/testimonials/widgets/testimonials.php:876
+#: modules/testimonials/widgets/testimonials.php:704
+#: modules/testimonials/widgets/testimonials.php:855
 #: modules/team-member/widgets/team-member.php:639
 #: modules/team-member/widgets/team-member.php:790
 msgid "Top Indent"
@@ -1507,8 +1503,8 @@ msgstr ""
 
 #: base/nova-widget.php:793 base/nova-widget.php:944
 #: modules/posts/widgets/posts.php:1584 modules/posts/widgets/posts.php:1735
-#: modules/testimonials/widgets/testimonials.php:754
-#: modules/testimonials/widgets/testimonials.php:905
+#: modules/testimonials/widgets/testimonials.php:733
+#: modules/testimonials/widgets/testimonials.php:884
 #: modules/team-member/widgets/team-member.php:668
 #: modules/team-member/widgets/team-member.php:819
 msgid "Bottom Indent"
@@ -1516,8 +1512,8 @@ msgstr ""
 
 #: base/nova-widget.php:822 base/nova-widget.php:973
 #: modules/posts/widgets/posts.php:1613 modules/posts/widgets/posts.php:1764
-#: modules/testimonials/widgets/testimonials.php:783
-#: modules/testimonials/widgets/testimonials.php:934
+#: modules/testimonials/widgets/testimonials.php:762
+#: modules/testimonials/widgets/testimonials.php:913
 #: modules/team-member/widgets/team-member.php:697
 #: modules/team-member/widgets/team-member.php:848
 msgid "Horizontal Position by"
@@ -1536,15 +1532,15 @@ msgstr ""
 #: modules/posts/widgets/posts.php:801 modules/posts/widgets/posts.php:1440
 #: modules/posts/widgets/posts.php:1617 modules/posts/widgets/posts.php:1768
 #: modules/posts/widgets/posts.php:1979
-#: modules/testimonials/widgets/testimonials.php:787
-#: modules/testimonials/widgets/testimonials.php:938
-#: modules/testimonials/widgets/testimonials.php:1152
-#: modules/testimonials/widgets/testimonials.php:1481
-#: modules/testimonials/widgets/testimonials.php:1507
-#: modules/testimonials/widgets/testimonials.php:1638
-#: modules/testimonials/widgets/testimonials.php:1664
-#: modules/testimonials/widgets/testimonials.php:1795
-#: modules/testimonials/widgets/testimonials.php:1821
+#: modules/testimonials/widgets/testimonials.php:766
+#: modules/testimonials/widgets/testimonials.php:917
+#: modules/testimonials/widgets/testimonials.php:1131
+#: modules/testimonials/widgets/testimonials.php:1460
+#: modules/testimonials/widgets/testimonials.php:1486
+#: modules/testimonials/widgets/testimonials.php:1617
+#: modules/testimonials/widgets/testimonials.php:1643
+#: modules/testimonials/widgets/testimonials.php:1774
+#: modules/testimonials/widgets/testimonials.php:1800
 #: modules/inline-svg/widgets/inline-svg.php:230
 #: modules/subscribe-form/widgets/subscribe-form.php:428
 #: modules/subscribe-form/widgets/subscribe-form.php:794
@@ -1553,10 +1549,10 @@ msgstr ""
 #: modules/brands/widgets/brands.php:430
 #: modules/heading/widgets/heading.php:138
 #: modules/animated-text/widgets/animated-text.php:175
-#: modules/slider/widgets/slider.php:502 modules/slider/widgets/slider.php:528
-#: modules/slider/widgets/slider.php:635 modules/slider/widgets/slider.php:661
-#: modules/slider/widgets/slider.php:767 modules/slider/widgets/slider.php:793
-#: modules/slider/widgets/slider.php:893 modules/slider/widgets/slider.php:914
+#: modules/slider/widgets/slider.php:503 modules/slider/widgets/slider.php:529
+#: modules/slider/widgets/slider.php:636 modules/slider/widgets/slider.php:662
+#: modules/slider/widgets/slider.php:768 modules/slider/widgets/slider.php:794
+#: modules/slider/widgets/slider.php:894 modules/slider/widgets/slider.php:915
 #: modules/animated-box/widgets/animated-box.php:577
 #: modules/animated-box/widgets/animated-box.php:717
 #: modules/animated-box/widgets/animated-box.php:814
@@ -1600,15 +1596,15 @@ msgstr ""
 #: modules/posts/widgets/posts.php:809 modules/posts/widgets/posts.php:1448
 #: modules/posts/widgets/posts.php:1618 modules/posts/widgets/posts.php:1769
 #: modules/posts/widgets/posts.php:1987
-#: modules/testimonials/widgets/testimonials.php:788
-#: modules/testimonials/widgets/testimonials.php:939
-#: modules/testimonials/widgets/testimonials.php:1160
-#: modules/testimonials/widgets/testimonials.php:1489
-#: modules/testimonials/widgets/testimonials.php:1515
-#: modules/testimonials/widgets/testimonials.php:1646
-#: modules/testimonials/widgets/testimonials.php:1672
-#: modules/testimonials/widgets/testimonials.php:1803
-#: modules/testimonials/widgets/testimonials.php:1829
+#: modules/testimonials/widgets/testimonials.php:767
+#: modules/testimonials/widgets/testimonials.php:918
+#: modules/testimonials/widgets/testimonials.php:1139
+#: modules/testimonials/widgets/testimonials.php:1468
+#: modules/testimonials/widgets/testimonials.php:1494
+#: modules/testimonials/widgets/testimonials.php:1625
+#: modules/testimonials/widgets/testimonials.php:1651
+#: modules/testimonials/widgets/testimonials.php:1782
+#: modules/testimonials/widgets/testimonials.php:1808
 #: modules/inline-svg/widgets/inline-svg.php:238
 #: modules/subscribe-form/widgets/subscribe-form.php:436
 #: modules/subscribe-form/widgets/subscribe-form.php:802
@@ -1617,10 +1613,10 @@ msgstr ""
 #: modules/brands/widgets/brands.php:438
 #: modules/heading/widgets/heading.php:146
 #: modules/animated-text/widgets/animated-text.php:183
-#: modules/slider/widgets/slider.php:510 modules/slider/widgets/slider.php:536
-#: modules/slider/widgets/slider.php:643 modules/slider/widgets/slider.php:669
-#: modules/slider/widgets/slider.php:775 modules/slider/widgets/slider.php:801
-#: modules/slider/widgets/slider.php:895 modules/slider/widgets/slider.php:922
+#: modules/slider/widgets/slider.php:511 modules/slider/widgets/slider.php:537
+#: modules/slider/widgets/slider.php:644 modules/slider/widgets/slider.php:670
+#: modules/slider/widgets/slider.php:776 modules/slider/widgets/slider.php:802
+#: modules/slider/widgets/slider.php:896 modules/slider/widgets/slider.php:923
 #: modules/animated-box/widgets/animated-box.php:585
 #: modules/animated-box/widgets/animated-box.php:725
 #: modules/animated-box/widgets/animated-box.php:822
@@ -1654,8 +1650,8 @@ msgstr ""
 
 #: base/nova-widget.php:835 base/nova-widget.php:986
 #: modules/posts/widgets/posts.php:1626 modules/posts/widgets/posts.php:1777
-#: modules/testimonials/widgets/testimonials.php:796
-#: modules/testimonials/widgets/testimonials.php:947
+#: modules/testimonials/widgets/testimonials.php:775
+#: modules/testimonials/widgets/testimonials.php:926
 #: modules/team-member/widgets/team-member.php:710
 #: modules/team-member/widgets/team-member.php:861
 msgid "Left Indent"
@@ -1663,15 +1659,15 @@ msgstr ""
 
 #: base/nova-widget.php:864 base/nova-widget.php:1015
 #: modules/posts/widgets/posts.php:1655 modules/posts/widgets/posts.php:1806
-#: modules/testimonials/widgets/testimonials.php:825
-#: modules/testimonials/widgets/testimonials.php:976
+#: modules/testimonials/widgets/testimonials.php:804
+#: modules/testimonials/widgets/testimonials.php:955
 #: modules/team-member/widgets/team-member.php:739
 #: modules/team-member/widgets/team-member.php:890
 msgid "Right Indent"
 msgstr ""
 
 #: base/nova-widget.php:893 modules/posts/widgets/posts.php:1684
-#: modules/testimonials/widgets/testimonials.php:854
+#: modules/testimonials/widgets/testimonials.php:833
 #: modules/team-member/widgets/team-member.php:768
 msgid "Next Arrow Position"
 msgstr ""
@@ -1684,9 +1680,9 @@ msgstr ""
 #: base/nova-widget.php:1065 base/nova-widget.php:1095
 #: base/nova-widget.php:1125 modules/posts/widgets/posts.php:1856
 #: modules/posts/widgets/posts.php:1886 modules/posts/widgets/posts.php:1916
-#: modules/testimonials/widgets/testimonials.php:1029
-#: modules/testimonials/widgets/testimonials.php:1059
-#: modules/testimonials/widgets/testimonials.php:1089
+#: modules/testimonials/widgets/testimonials.php:1008
+#: modules/testimonials/widgets/testimonials.php:1038
+#: modules/testimonials/widgets/testimonials.php:1068
 #: modules/team-member/widgets/team-member.php:940
 #: modules/team-member/widgets/team-member.php:970
 #: modules/team-member/widgets/team-member.php:1000
@@ -1697,19 +1693,19 @@ msgstr ""
 #: modules/tabs-widget/widgets/tabs-widget.php:901
 #: modules/woocommerce/widgets/products-base.php:822
 #: modules/posts/widgets/posts.php:1908
-#: modules/testimonials/widgets/testimonials.php:1081
+#: modules/testimonials/widgets/testimonials.php:1060
 #: modules/team-member/widgets/team-member.php:992
 msgid "Active"
 msgstr ""
 
 #: base/nova-widget.php:1149 modules/posts/widgets/posts.php:1940
-#: modules/testimonials/widgets/testimonials.php:1113
+#: modules/testimonials/widgets/testimonials.php:1092
 #: modules/team-member/widgets/team-member.php:1024
 msgid "Gap"
 msgstr ""
 
 #: base/nova-widget.php:1171 modules/posts/widgets/posts.php:1962
-#: modules/testimonials/widgets/testimonials.php:1135
+#: modules/testimonials/widgets/testimonials.php:1114
 #: modules/team-member/widgets/team-member.php:1046
 msgid "Dots Box Margin"
 msgstr ""
@@ -1721,10 +1717,10 @@ msgstr ""
 #: modules/posts/widgets/posts.php:556 modules/posts/widgets/posts.php:698
 #: modules/posts/widgets/posts.php:796 modules/posts/widgets/posts.php:1435
 #: modules/posts/widgets/posts.php:1974
-#: modules/testimonials/widgets/testimonials.php:1147
-#: modules/testimonials/widgets/testimonials.php:1476
-#: modules/testimonials/widgets/testimonials.php:1633
-#: modules/testimonials/widgets/testimonials.php:1790
+#: modules/testimonials/widgets/testimonials.php:1126
+#: modules/testimonials/widgets/testimonials.php:1455
+#: modules/testimonials/widgets/testimonials.php:1612
+#: modules/testimonials/widgets/testimonials.php:1769
 #: modules/inline-svg/widgets/inline-svg.php:225
 #: modules/subscribe-form/widgets/subscribe-form.php:424
 #: modules/subscribe-form/widgets/subscribe-form.php:790
@@ -1733,8 +1729,8 @@ msgstr ""
 #: modules/brands/widgets/brands.php:425
 #: modules/heading/widgets/heading.php:133
 #: modules/animated-text/widgets/animated-text.php:170
-#: modules/slider/widgets/slider.php:523 modules/slider/widgets/slider.php:656
-#: modules/slider/widgets/slider.php:788 modules/slider/widgets/slider.php:909
+#: modules/slider/widgets/slider.php:524 modules/slider/widgets/slider.php:657
+#: modules/slider/widgets/slider.php:789 modules/slider/widgets/slider.php:910
 #: modules/animated-box/widgets/animated-box.php:572
 #: modules/animated-box/widgets/animated-box.php:712
 #: modules/animated-box/widgets/animated-box.php:809
@@ -1763,13 +1759,13 @@ msgstr ""
 #: modules/posts/widgets/posts.php:565 modules/posts/widgets/posts.php:707
 #: modules/posts/widgets/posts.php:805 modules/posts/widgets/posts.php:1444
 #: modules/posts/widgets/posts.php:1983
-#: modules/testimonials/widgets/testimonials.php:1156
-#: modules/testimonials/widgets/testimonials.php:1485
-#: modules/testimonials/widgets/testimonials.php:1511
-#: modules/testimonials/widgets/testimonials.php:1642
-#: modules/testimonials/widgets/testimonials.php:1668
-#: modules/testimonials/widgets/testimonials.php:1799
-#: modules/testimonials/widgets/testimonials.php:1825
+#: modules/testimonials/widgets/testimonials.php:1135
+#: modules/testimonials/widgets/testimonials.php:1464
+#: modules/testimonials/widgets/testimonials.php:1490
+#: modules/testimonials/widgets/testimonials.php:1621
+#: modules/testimonials/widgets/testimonials.php:1647
+#: modules/testimonials/widgets/testimonials.php:1778
+#: modules/testimonials/widgets/testimonials.php:1804
 #: modules/inline-svg/widgets/inline-svg.php:234
 #: modules/subscribe-form/widgets/subscribe-form.php:432
 #: modules/subscribe-form/widgets/subscribe-form.php:798
@@ -1778,10 +1774,10 @@ msgstr ""
 #: modules/brands/widgets/brands.php:434
 #: modules/heading/widgets/heading.php:142
 #: modules/animated-text/widgets/animated-text.php:179
-#: modules/slider/widgets/slider.php:506 modules/slider/widgets/slider.php:532
-#: modules/slider/widgets/slider.php:639 modules/slider/widgets/slider.php:665
-#: modules/slider/widgets/slider.php:771 modules/slider/widgets/slider.php:797
-#: modules/slider/widgets/slider.php:918
+#: modules/slider/widgets/slider.php:507 modules/slider/widgets/slider.php:533
+#: modules/slider/widgets/slider.php:640 modules/slider/widgets/slider.php:666
+#: modules/slider/widgets/slider.php:772 modules/slider/widgets/slider.php:798
+#: modules/slider/widgets/slider.php:919
 #: modules/animated-box/widgets/animated-box.php:581
 #: modules/animated-box/widgets/animated-box.php:721
 #: modules/animated-box/widgets/animated-box.php:818
@@ -1816,172 +1812,172 @@ msgstr ""
 msgid "Center"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-map.php:30
-msgid "Nova Map: Pin Address"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-map.php:33
-msgid "Nova Map: Pin Description"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-scroll-navigation.php:30
-msgid "Nova Scroll Navigation: Label"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-portfolio.php:30
-msgid "Nova Portfolio: Item Category"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-portfolio.php:33
-msgid "Nova Portfolio: Item Title"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-portfolio.php:36
-msgid "Nova Portfolio: Item Description"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-portfolio.php:39
-msgid "Nova Portfolio: Item Link Text"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-team-member.php:30
-msgid "Nova Team Member: Social Label"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-image-comparison.php:30
-msgid "Nova Image Comparison: Before Label"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-image-comparison.php:33
-msgid "Nova Image Comparison: After Label"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-animated-text.php:30
-msgid "Nova Animated Text: Item Text"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-pricing-table.php:30
-msgid "Nova Pricing Table: Features Item Text"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-advanced-carousel.php:30
-msgid "Advanced Carousel: Item Title"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-advanced-carousel.php:33
-msgid "Advanced Carousel: Item Description"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-advanced-carousel.php:36
-msgid "Advanced Carousel: Item Button Text"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-timeline.php:30
-msgid "Nova Vertical Timeline: Item Title"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-timeline.php:33
-msgid "Nova Vertical Timeline: Item Meta"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-timeline.php:36
-msgid "Nova Vertical Timeline: Item Description"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-timeline.php:39
-msgid "Nova Vertical Timeline: Item Point Text"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-testimonials.php:30
-msgid "Nova Testimonials: Item Title"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-testimonials.php:33
-msgid "Nova Testimonials: Item Comment"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-testimonials.php:36
-msgid "Nova Testimonials: Item Name"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-testimonials.php:39
-msgid "Nova Testimonials: Item Position"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-testimonials.php:42
-msgid "Nova Testimonials: Item Date"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-price-list.php:30
-msgid "Nova Price List: Item Title"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-price-list.php:33
-msgid "Nova Price List: Item Price"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-price-list.php:36
-msgid "Nova Price List: Item Description"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-brands.php:30
-msgid "Nova Brands: Company Name"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-brands.php:33
-msgid "Nova Brands: Company Description"
-msgstr ""
-
-#: classes/wpml/class-wpml-lastudio-elements-slider.php:30
+#: classes/wpml/class-wpml-nova-elements-slider.php:30
 msgid "Nova Slider: Slide Title"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-slider.php:33
+#: classes/wpml/class-wpml-nova-elements-slider.php:33
 msgid "Nova Slider: Slide Subtitle"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-slider.php:36
+#: classes/wpml/class-wpml-nova-elements-slider.php:36
 msgid "Nova Slider: Slide Description"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-slider.php:39
+#: classes/wpml/class-wpml-nova-elements-slider.php:39
 msgid "Nova Slider: Slide Button Primary Text"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-slider.php:42
+#: classes/wpml/class-wpml-nova-elements-slider.php:42
 msgid "Nova Slider: Slide Button Secondary Text"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-images-layout.php:30
-msgid "Nova Images Layout: Item Title"
+#: classes/wpml/class-wpml-nova-elements-brands.php:30
+msgid "Nova Brands: Company Name"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-images-layout.php:33
-msgid "Nova Images Layout: Item Description"
+#: classes/wpml/class-wpml-nova-elements-brands.php:33
+msgid "Nova Brands: Company Description"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-subscribe-form.php:30
-msgid "Nova Subscribe Form: Additional Field Placeholder"
+#: classes/wpml/class-wpml-nova-elements-map.php:30
+msgid "Nova Map: Pin Address"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-table.php:30
-msgid "Nova Table: Cell Text"
+#: classes/wpml/class-wpml-nova-elements-map.php:33
+msgid "Nova Map: Pin Description"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-horizontal-timeline.php:30
+#: classes/wpml/class-wpml-nova-elements-price-list.php:30
+msgid "Nova Price List: Item Title"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-price-list.php:33
+msgid "Nova Price List: Item Price"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-price-list.php:36
+msgid "Nova Price List: Item Description"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-timeline.php:30
+msgid "Nova Vertical Timeline: Item Title"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-timeline.php:33
+msgid "Nova Vertical Timeline: Item Meta"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-timeline.php:36
+msgid "Nova Vertical Timeline: Item Description"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-timeline.php:39
+msgid "Nova Vertical Timeline: Item Point Text"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-portfolio.php:30
+msgid "Nova Portfolio: Item Category"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-portfolio.php:33
+msgid "Nova Portfolio: Item Title"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-portfolio.php:36
+msgid "Nova Portfolio: Item Description"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-portfolio.php:39
+msgid "Nova Portfolio: Item Link Text"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-testimonials.php:30
+msgid "Nova Testimonials: Item Title"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-testimonials.php:33
+msgid "Nova Testimonials: Item Comment"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-testimonials.php:36
+msgid "Nova Testimonials: Item Name"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-testimonials.php:39
+msgid "Nova Testimonials: Item Position"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-testimonials.php:42
+msgid "Nova Testimonials: Item Date"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-horizontal-timeline.php:30
 msgid "Nova Horizontal Timeline: Item Title"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-horizontal-timeline.php:33
+#: classes/wpml/class-wpml-nova-elements-horizontal-timeline.php:33
 msgid "Nova Horizontal Timeline: Item Meta"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-horizontal-timeline.php:36
+#: classes/wpml/class-wpml-nova-elements-horizontal-timeline.php:36
 msgid "Nova Horizontal Timeline: Item Description"
 msgstr ""
 
-#: classes/wpml/class-wpml-lastudio-elements-horizontal-timeline.php:39
+#: classes/wpml/class-wpml-nova-elements-horizontal-timeline.php:39
 msgid "Nova Horizontal Timeline: Item Point Text"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-images-layout.php:30
+msgid "Nova Images Layout: Item Title"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-images-layout.php:33
+msgid "Nova Images Layout: Item Description"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-image-comparison.php:30
+msgid "Nova Image Comparison: Before Label"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-image-comparison.php:33
+msgid "Nova Image Comparison: After Label"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-advanced-carousel.php:30
+msgid "Advanced Carousel: Item Title"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-advanced-carousel.php:33
+msgid "Advanced Carousel: Item Description"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-advanced-carousel.php:36
+msgid "Advanced Carousel: Item Button Text"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-subscribe-form.php:30
+msgid "Nova Subscribe Form: Additional Field Placeholder"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-pricing-table.php:30
+msgid "Nova Pricing Table: Features Item Text"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-team-member.php:30
+msgid "Nova Team Member: Social Label"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-animated-text.php:30
+msgid "Nova Animated Text: Item Text"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-table.php:30
+msgid "Nova Table: Cell Text"
+msgstr ""
+
+#: classes/wpml/class-wpml-nova-elements-scroll-navigation.php:30
+msgid "Nova Scroll Navigation: Label"
 msgstr ""
 
 #: modules/subscribe-form/module.php:42
@@ -2064,9 +2060,9 @@ msgstr ""
 #: modules/parallax-section/module.php:55
 #: modules/tabs-widget/widgets/tabs-widget.php:99
 #: modules/woocommerce/widgets/products-base.php:99
-#: modules/testimonials/widgets/testimonials.php:304
-#: modules/testimonials/widgets/testimonials.php:573
-#: modules/slider/widgets/slider.php:83
+#: modules/testimonials/widgets/testimonials.php:283
+#: modules/testimonials/widgets/testimonials.php:552
+#: modules/slider/widgets/slider.php:84
 #: modules/team-member/widgets/team-member.php:356
 #: modules/images-layout/widgets/images-layout.php:160
 #: modules/banner/widgets/banner.php:49
@@ -2233,8 +2229,8 @@ msgid "Tabs"
 msgstr ""
 
 #: modules/tabs-widget/widgets/tabs-widget.php:55
-#: modules/testimonials/widgets/testimonials.php:295
-#: modules/slider/widgets/slider.php:74
+#: modules/testimonials/widgets/testimonials.php:274
+#: modules/slider/widgets/slider.php:75
 #: modules/images-layout/widgets/images-layout.php:151
 msgid "Items"
 msgstr ""
@@ -2244,7 +2240,7 @@ msgid "Use Image?"
 msgstr ""
 
 #: modules/tabs-widget/widgets/tabs-widget.php:88
-#: modules/testimonials/widgets/testimonials.php:313
+#: modules/testimonials/widgets/testimonials.php:292
 #: modules/subscribe-form/widgets/subscribe-form.php:702
 #: modules/animated-box/widgets/animated-box.php:80
 #: modules/animated-box/widgets/animated-box.php:130
@@ -2358,7 +2354,7 @@ msgstr ""
 #: modules/posts/widgets/posts.php:59
 #: modules/subscribe-form/widgets/subscribe-form.php:222
 #: modules/brands/widgets/brands.php:42 modules/heading/widgets/heading.php:124
-#: modules/slider/widgets/slider.php:353
+#: modules/slider/widgets/slider.php:354
 #: modules/animated-box/widgets/animated-box.php:266
 #: modules/button/widgets/button.php:215
 #: modules/team-member/widgets/team-member.php:54
@@ -2389,9 +2385,9 @@ msgstr ""
 #: modules/posts/widgets/posts.php:674 modules/posts/widgets/posts.php:822
 #: modules/posts/widgets/posts.php:1140 modules/posts/widgets/posts.php:1388
 #: modules/posts/widgets/posts.php:2381
-#: modules/testimonials/widgets/testimonials.php:1446
-#: modules/testimonials/widgets/testimonials.php:1609
-#: modules/testimonials/widgets/testimonials.php:1766
+#: modules/testimonials/widgets/testimonials.php:1425
+#: modules/testimonials/widgets/testimonials.php:1588
+#: modules/testimonials/widgets/testimonials.php:1745
 #: modules/subscribe-form/widgets/subscribe-form.php:268
 #: modules/subscribe-form/widgets/subscribe-form.php:452
 #: modules/subscribe-form/widgets/subscribe-form.php:878
@@ -2405,11 +2401,11 @@ msgstr ""
 #: modules/animated-text/widgets/animated-text.php:243
 #: modules/animated-text/widgets/animated-text.php:320
 #: modules/animated-text/widgets/animated-text.php:379
-#: modules/slider/widgets/slider.php:473 modules/slider/widgets/slider.php:606
-#: modules/slider/widgets/slider.php:738 modules/slider/widgets/slider.php:981
-#: modules/slider/widgets/slider.php:1201
-#: modules/slider/widgets/slider.php:1434
-#: modules/slider/widgets/slider.php:1654
+#: modules/slider/widgets/slider.php:474 modules/slider/widgets/slider.php:607
+#: modules/slider/widgets/slider.php:739 modules/slider/widgets/slider.php:983
+#: modules/slider/widgets/slider.php:1203
+#: modules/slider/widgets/slider.php:1436
+#: modules/slider/widgets/slider.php:1656
 #: modules/animated-box/widgets/animated-box.php:345
 #: modules/animated-box/widgets/animated-box.php:417
 #: modules/animated-box/widgets/animated-box.php:785
@@ -2450,9 +2446,9 @@ msgstr ""
 #: modules/posts/widgets/posts.php:415 modules/posts/widgets/posts.php:594
 #: modules/posts/widgets/posts.php:686 modules/posts/widgets/posts.php:834
 #: modules/posts/widgets/posts.php:2368
-#: modules/testimonials/widgets/testimonials.php:1464
-#: modules/testimonials/widgets/testimonials.php:1621
-#: modules/testimonials/widgets/testimonials.php:1778
+#: modules/testimonials/widgets/testimonials.php:1443
+#: modules/testimonials/widgets/testimonials.php:1600
+#: modules/testimonials/widgets/testimonials.php:1757
 #: modules/subscribe-form/widgets/subscribe-form.php:280
 #: modules/subscribe-form/widgets/subscribe-form.php:464
 #: modules/subscribe-form/widgets/subscribe-form.php:890
@@ -2463,11 +2459,11 @@ msgstr ""
 #: modules/heading/widgets/heading.php:199
 #: modules/heading/widgets/heading.php:324
 #: modules/heading/widgets/heading.php:427
-#: modules/slider/widgets/slider.php:485 modules/slider/widgets/slider.php:618
-#: modules/slider/widgets/slider.php:750 modules/slider/widgets/slider.php:993
-#: modules/slider/widgets/slider.php:1213
-#: modules/slider/widgets/slider.php:1446
-#: modules/slider/widgets/slider.php:1666
+#: modules/slider/widgets/slider.php:486 modules/slider/widgets/slider.php:619
+#: modules/slider/widgets/slider.php:751 modules/slider/widgets/slider.php:995
+#: modules/slider/widgets/slider.php:1215
+#: modules/slider/widgets/slider.php:1448
+#: modules/slider/widgets/slider.php:1668
 #: modules/animated-box/widgets/animated-box.php:552
 #: modules/animated-box/widgets/animated-box.php:692
 #: modules/animated-box/widgets/animated-box.php:797
@@ -2506,8 +2502,8 @@ msgstr ""
 #: modules/woocommerce/widgets/products-base.php:707
 #: modules/posts/widgets/posts.php:331 modules/posts/widgets/posts.php:385
 #: modules/posts/widgets/posts.php:1165 modules/posts/widgets/posts.php:1413
-#: modules/testimonials/widgets/testimonials.php:514
-#: modules/testimonials/widgets/testimonials.php:1410
+#: modules/testimonials/widgets/testimonials.php:493
+#: modules/testimonials/widgets/testimonials.php:1389
 #: modules/subscribe-form/widgets/subscribe-form.php:325
 #: modules/subscribe-form/widgets/subscribe-form.php:364
 #: modules/subscribe-form/widgets/subscribe-form.php:531
@@ -2521,10 +2517,10 @@ msgstr ""
 #: modules/heading/widgets/heading.php:212
 #: modules/heading/widgets/heading.php:289
 #: modules/heading/widgets/heading.php:392
-#: modules/slider/widgets/slider.php:1018
-#: modules/slider/widgets/slider.php:1238
-#: modules/slider/widgets/slider.php:1471
-#: modules/slider/widgets/slider.php:1691
+#: modules/slider/widgets/slider.php:1020
+#: modules/slider/widgets/slider.php:1240
+#: modules/slider/widgets/slider.php:1473
+#: modules/slider/widgets/slider.php:1693
 #: modules/animated-box/widgets/animated-box.php:322
 #: modules/animated-box/widgets/animated-box.php:394
 #: modules/animated-box/widgets/animated-box.php:530
@@ -2586,7 +2582,7 @@ msgid "Image Width"
 msgstr ""
 
 #: modules/tabs-widget/widgets/tabs-widget.php:627
-#: modules/posts/widgets/posts.php:869 modules/slider/widgets/slider.php:890
+#: modules/posts/widgets/posts.php:869 modules/slider/widgets/slider.php:891
 #: modules/animated-box/widgets/animated-box.php:1440
 #: modules/button/widgets/button.php:191
 msgid "Icon Position"
@@ -2612,9 +2608,9 @@ msgstr ""
 #: modules/subscribe-form/widgets/subscribe-form.php:1216
 #: modules/heading/widgets/heading.php:248
 #: modules/heading/widgets/heading.php:350
-#: modules/slider/widgets/slider.php:961 modules/slider/widgets/slider.php:1181
-#: modules/slider/widgets/slider.php:1414
-#: modules/slider/widgets/slider.php:1634
+#: modules/slider/widgets/slider.php:963 modules/slider/widgets/slider.php:1183
+#: modules/slider/widgets/slider.php:1416
+#: modules/slider/widgets/slider.php:1636
 #: modules/animated-box/widgets/animated-box.php:1527
 #: modules/animated-box/widgets/animated-box.php:1622
 #: modules/contact-form7/widgets/contact-form7.php:587
@@ -2631,10 +2627,10 @@ msgstr ""
 #: modules/posts/widgets/posts.php:909
 #: modules/subscribe-form/widgets/subscribe-form.php:737
 #: modules/subscribe-form/widgets/subscribe-form.php:980
-#: modules/slider/widgets/slider.php:1047
-#: modules/slider/widgets/slider.php:1267
-#: modules/slider/widgets/slider.php:1500
-#: modules/slider/widgets/slider.php:1720
+#: modules/slider/widgets/slider.php:1049
+#: modules/slider/widgets/slider.php:1269
+#: modules/slider/widgets/slider.php:1502
+#: modules/slider/widgets/slider.php:1722
 #: modules/animated-box/widgets/animated-box.php:467
 #: modules/animated-box/widgets/animated-box.php:607
 #: modules/animated-box/widgets/animated-box.php:1477
@@ -2648,10 +2644,10 @@ msgstr ""
 #: modules/tabs-widget/widgets/tabs-widget.php:947
 #: modules/posts/widgets/posts.php:889
 #: modules/subscribe-form/widgets/subscribe-form.php:717
-#: modules/slider/widgets/slider.php:1058
-#: modules/slider/widgets/slider.php:1278
-#: modules/slider/widgets/slider.php:1511
-#: modules/slider/widgets/slider.php:1731
+#: modules/slider/widgets/slider.php:1060
+#: modules/slider/widgets/slider.php:1280
+#: modules/slider/widgets/slider.php:1513
+#: modules/slider/widgets/slider.php:1733
 #: modules/animated-box/widgets/animated-box.php:1457
 #: modules/instagram-gallery/widgets/instagram-gallery.php:582
 msgid "Icon Size"
@@ -2745,7 +2741,7 @@ msgstr ""
 
 #: modules/woocommerce/widgets/products.php:115
 #: modules/woocommerce/widgets/products-base.php:192
-#: modules/testimonials/widgets/testimonials.php:360
+#: modules/testimonials/widgets/testimonials.php:339
 msgid "Rating"
 msgstr ""
 
@@ -2851,9 +2847,9 @@ msgstr ""
 #: modules/posts/widgets/posts.php:504 modules/posts/widgets/posts.php:528
 #: modules/posts/widgets/posts.php:776 modules/posts/widgets/posts.php:2288
 #: modules/posts/widgets/posts.php:2349
-#: modules/testimonials/widgets/testimonials.php:1187
-#: modules/testimonials/widgets/testimonials.php:1585
-#: modules/testimonials/widgets/testimonials.php:1742
+#: modules/testimonials/widgets/testimonials.php:1166
+#: modules/testimonials/widgets/testimonials.php:1564
+#: modules/testimonials/widgets/testimonials.php:1721
 #: modules/inline-svg/widgets/inline-svg.php:184
 #: modules/animated-text/widgets/animated-text.php:207
 #: modules/animated-text/widgets/animated-text.php:266
@@ -2894,7 +2890,7 @@ msgid "Regular Price"
 msgstr ""
 
 #: modules/woocommerce/widgets/products-base.php:332
-#: modules/posts/widgets/posts.php:848 modules/slider/widgets/slider.php:841
+#: modules/posts/widgets/posts.php:848 modules/slider/widgets/slider.php:842
 #: modules/button/widgets/button.php:29 modules/banner/widgets/banner.php:584
 msgid "Button"
 msgstr ""
@@ -2964,13 +2960,13 @@ msgid "Slides Minimal Height"
 msgstr ""
 
 #: modules/posts/widgets/posts.php:159
-#: modules/testimonials/widgets/testimonials.php:250
+#: modules/testimonials/widgets/testimonials.php:229
 #: modules/team-member/widgets/team-member.php:152
 msgid "Prev Arrow Icon"
 msgstr ""
 
 #: modules/posts/widgets/posts.php:172
-#: modules/testimonials/widgets/testimonials.php:264
+#: modules/testimonials/widgets/testimonials.php:243
 #: modules/team-member/widgets/team-member.php:165
 msgid "Next Arrow Icon"
 msgstr ""
@@ -3171,131 +3167,123 @@ msgstr ""
 msgid "Testimonials"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:79
-msgid "Type-4"
-msgstr ""
-
-#: modules/testimonials/widgets/testimonials.php:80
-msgid "Type-5"
-msgstr ""
-
-#: modules/testimonials/widgets/testimonials.php:109
+#: modules/testimonials/widgets/testimonials.php:88
 msgid "Item to Show"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:191
+#: modules/testimonials/widgets/testimonials.php:170
 msgid "Adaptive Height"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:333
-#: modules/testimonials/widgets/testimonials.php:1178
+#: modules/testimonials/widgets/testimonials.php:312
+#: modules/testimonials/widgets/testimonials.php:1157
 msgid "Comment"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:342
-#: modules/testimonials/widgets/testimonials.php:1533
+#: modules/testimonials/widgets/testimonials.php:321
+#: modules/testimonials/widgets/testimonials.php:1512
 msgid "Name"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:351
-#: modules/testimonials/widgets/testimonials.php:1690
+#: modules/testimonials/widgets/testimonials.php:330
+#: modules/testimonials/widgets/testimonials.php:1669
 msgctxt "Position at work"
 msgid "Position"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:375
-#: modules/testimonials/widgets/testimonials.php:381
-#: modules/testimonials/widgets/testimonials.php:387
-#: modules/testimonials/widgets/testimonials.php:393
-#: modules/testimonials/widgets/testimonials.php:399
-#: modules/testimonials/widgets/testimonials.php:405
+#: modules/testimonials/widgets/testimonials.php:354
+#: modules/testimonials/widgets/testimonials.php:360
+#: modules/testimonials/widgets/testimonials.php:366
+#: modules/testimonials/widgets/testimonials.php:372
+#: modules/testimonials/widgets/testimonials.php:378
+#: modules/testimonials/widgets/testimonials.php:384
 msgid ""
 "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod "
 "tempor incididunt ut labore et dolore magna aliqua."
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:376
+#: modules/testimonials/widgets/testimonials.php:355
 msgid "Mary Scott"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:377
-#: modules/testimonials/widgets/testimonials.php:383
-#: modules/testimonials/widgets/testimonials.php:389
-#: modules/testimonials/widgets/testimonials.php:395
-#: modules/testimonials/widgets/testimonials.php:401
-#: modules/testimonials/widgets/testimonials.php:407
+#: modules/testimonials/widgets/testimonials.php:356
+#: modules/testimonials/widgets/testimonials.php:362
+#: modules/testimonials/widgets/testimonials.php:368
+#: modules/testimonials/widgets/testimonials.php:374
+#: modules/testimonials/widgets/testimonials.php:380
+#: modules/testimonials/widgets/testimonials.php:386
 msgid "Founder & CEO"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:382
+#: modules/testimonials/widgets/testimonials.php:361
 msgid "John Borthwick"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:388
+#: modules/testimonials/widgets/testimonials.php:367
 msgid "Jane Bill"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:394
+#: modules/testimonials/widgets/testimonials.php:373
 msgid "David Anderson"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:400
+#: modules/testimonials/widgets/testimonials.php:379
 msgid "Susan O’Neill"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:406
+#: modules/testimonials/widgets/testimonials.php:385
 msgid "Ryan King"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:420
+#: modules/testimonials/widgets/testimonials.php:399
 msgid "Carousel List"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:430
+#: modules/testimonials/widgets/testimonials.php:409
 msgid "Padding Left"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:456
+#: modules/testimonials/widgets/testimonials.php:435
 msgid "Padding Right"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:484
+#: modules/testimonials/widgets/testimonials.php:463
 #: modules/team-member/widgets/team-member.php:290
 msgid "Item"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:493
+#: modules/testimonials/widgets/testimonials.php:472
 msgid "Equal Items Height"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:544
+#: modules/testimonials/widgets/testimonials.php:523
 #: modules/instagram-gallery/widgets/instagram-gallery.php:654
 msgid "Item Margin"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:558
+#: modules/testimonials/widgets/testimonials.php:537
 msgid "Item Padding"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:582
+#: modules/testimonials/widgets/testimonials.php:561
 msgid "Enable Custom Image Width"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:594
+#: modules/testimonials/widgets/testimonials.php:573
 msgid "Custom Image Width"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:638
+#: modules/testimonials/widgets/testimonials.php:617
 msgid "Arrows"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1010
+#: modules/testimonials/widgets/testimonials.php:989
 msgid "Dots"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1208
-#: modules/testimonials/widgets/testimonials.php:1554
-#: modules/testimonials/widgets/testimonials.php:1711
+#: modules/testimonials/widgets/testimonials.php:1187
+#: modules/testimonials/widgets/testimonials.php:1533
+#: modules/testimonials/widgets/testimonials.php:1690
 #: modules/inline-svg/widgets/inline-svg.php:115
 #: modules/subscribe-form/widgets/subscribe-form.php:244
 #: modules/subscribe-form/widgets/subscribe-form.php:400
@@ -3303,43 +3291,43 @@ msgstr ""
 msgid "Width"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1236
+#: modules/testimonials/widgets/testimonials.php:1215
 msgid "Use comment corner"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1248
+#: modules/testimonials/widgets/testimonials.php:1227
 msgid "Use corner as line"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1263
+#: modules/testimonials/widgets/testimonials.php:1242
 msgid "Corner Line Color"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1278
+#: modules/testimonials/widgets/testimonials.php:1257
 msgid "Corner Color"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1293
+#: modules/testimonials/widgets/testimonials.php:1272
 msgid "Corner Position"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1318
+#: modules/testimonials/widgets/testimonials.php:1297
 msgid "Corner Width"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1343
+#: modules/testimonials/widgets/testimonials.php:1322
 msgid "Corner Height"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1368
+#: modules/testimonials/widgets/testimonials.php:1347
 msgid "Corner Skew"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1502
-#: modules/testimonials/widgets/testimonials.php:1659
-#: modules/testimonials/widgets/testimonials.php:1816
-#: modules/slider/widgets/slider.php:497 modules/slider/widgets/slider.php:630
-#: modules/slider/widgets/slider.php:762
+#: modules/testimonials/widgets/testimonials.php:1481
+#: modules/testimonials/widgets/testimonials.php:1638
+#: modules/testimonials/widgets/testimonials.php:1795
+#: modules/slider/widgets/slider.php:498 modules/slider/widgets/slider.php:631
+#: modules/slider/widgets/slider.php:763
 #: modules/animated-box/widgets/animated-box.php:835
 #: modules/animated-box/widgets/animated-box.php:940
 #: modules/animated-box/widgets/animated-box.php:1063
@@ -3351,8 +3339,8 @@ msgstr ""
 msgid "Text Alignment"
 msgstr ""
 
-#: modules/testimonials/widgets/testimonials.php:1542
-#: modules/testimonials/widgets/testimonials.php:1699
+#: modules/testimonials/widgets/testimonials.php:1521
+#: modules/testimonials/widgets/testimonials.php:1678
 msgid "Custom width"
 msgstr ""
 
@@ -3581,7 +3569,7 @@ msgid "Logo Wrapper"
 msgstr ""
 
 #: modules/brands/widgets/brands.php:316 modules/brands/widgets/brands.php:389
-#: modules/slider/widgets/slider.php:453
+#: modules/slider/widgets/slider.php:454
 #: modules/animated-box/widgets/animated-box.php:765
 #: modules/animated-box/widgets/animated-box.php:870
 #: modules/banner/widgets/banner.php:450
@@ -3796,14 +3784,14 @@ msgstr ""
 msgid "Slider"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:104 modules/slider/widgets/slider.php:577
+#: modules/slider/widgets/slider.php:105 modules/slider/widgets/slider.php:578
 #: modules/animated-box/widgets/animated-box.php:101
 #: modules/animated-box/widgets/animated-box.php:151
 #: modules/animated-box/widgets/animated-box.php:975
 msgid "Subtitle"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:114 modules/slider/widgets/slider.php:709
+#: modules/slider/widgets/slider.php:115 modules/slider/widgets/slider.php:710
 #: modules/animated-box/widgets/animated-box.php:111
 #: modules/animated-box/widgets/animated-box.php:161
 #: modules/animated-box/widgets/animated-box.php:1203
@@ -3813,50 +3801,50 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:123
+#: modules/slider/widgets/slider.php:124
 msgid "Action Button URL"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:139
+#: modules/slider/widgets/slider.php:140
 msgid "Action Button Text"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:141 modules/slider/widgets/slider.php:174
-#: modules/slider/widgets/slider.php:199
+#: modules/slider/widgets/slider.php:142 modules/slider/widgets/slider.php:175
+#: modules/slider/widgets/slider.php:200
 msgid "More"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:148
+#: modules/slider/widgets/slider.php:149
 msgid "Action Button Background Color"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:156
+#: modules/slider/widgets/slider.php:157
 msgid "Primary Button URL"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:172
+#: modules/slider/widgets/slider.php:173
 msgid "Primary Button Text"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:181
+#: modules/slider/widgets/slider.php:182
 msgid "Secondary Button URL"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:197
+#: modules/slider/widgets/slider.php:198
 msgid "Secondary Button Text"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:213
+#: modules/slider/widgets/slider.php:214
 msgid "Slide #1"
-msgstr ""
-
-#: modules/slider/widgets/slider.php:214 modules/slider/widgets/slider.php:229
-#: modules/slider/widgets/slider.php:244
-msgid "SubTitle"
 msgstr ""
 
 #: modules/slider/widgets/slider.php:215 modules/slider/widgets/slider.php:230
 #: modules/slider/widgets/slider.php:245
+msgid "SubTitle"
+msgstr ""
+
+#: modules/slider/widgets/slider.php:216 modules/slider/widgets/slider.php:231
+#: modules/slider/widgets/slider.php:246
 #: modules/images-layout/widgets/images-layout.php:254
 #: modules/images-layout/widgets/images-layout.php:263
 #: modules/images-layout/widgets/images-layout.php:272
@@ -3866,182 +3854,182 @@ msgstr ""
 msgid "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
 msgstr ""
 
-#: modules/slider/widgets/slider.php:217 modules/slider/widgets/slider.php:232
-#: modules/slider/widgets/slider.php:247
+#: modules/slider/widgets/slider.php:218 modules/slider/widgets/slider.php:233
+#: modules/slider/widgets/slider.php:248
 msgid "View More"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:220 modules/slider/widgets/slider.php:235
-#: modules/slider/widgets/slider.php:250
+#: modules/slider/widgets/slider.php:221 modules/slider/widgets/slider.php:236
+#: modules/slider/widgets/slider.php:251
 msgid "Button #1"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:222 modules/slider/widgets/slider.php:237
-#: modules/slider/widgets/slider.php:252
+#: modules/slider/widgets/slider.php:223 modules/slider/widgets/slider.php:238
+#: modules/slider/widgets/slider.php:253
 msgid "Button #2"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:228
+#: modules/slider/widgets/slider.php:229
 msgid "Slide #2"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:243
+#: modules/slider/widgets/slider.php:244
 msgid "Slide #3"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:280
+#: modules/slider/widgets/slider.php:281
 msgid "Use autoplay?"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:292
+#: modules/slider/widgets/slider.php:293
 msgid "Autoplay delay(ms)"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:307
+#: modules/slider/widgets/slider.php:308
 msgid "Autoplay On Hover"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:312
+#: modules/slider/widgets/slider.php:313
 msgid "Pause"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:313
+#: modules/slider/widgets/slider.php:314
 msgid "Stop"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:336
+#: modules/slider/widgets/slider.php:337
 msgid "Slide Duration(ms)"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:362
+#: modules/slider/widgets/slider.php:363
 msgid "Slider Width(%)"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:383
+#: modules/slider/widgets/slider.php:384
 msgid "Slider Height(px)"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:411
+#: modules/slider/widgets/slider.php:412
 msgid "Slider Container Width(%)"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:549 modules/slider/widgets/slider.php:682
-#: modules/slider/widgets/slider.php:814
+#: modules/slider/widgets/slider.php:550 modules/slider/widgets/slider.php:683
+#: modules/slider/widgets/slider.php:815
 msgid "Max Width"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:586
+#: modules/slider/widgets/slider.php:587
 #: modules/animated-box/widgets/animated-box.php:993
 #: modules/animated-box/widgets/animated-box.php:1098
 msgid "Subtitle Color"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:718
+#: modules/slider/widgets/slider.php:719
 #: modules/animated-box/widgets/animated-box.php:1221
 #: modules/animated-box/widgets/animated-box.php:1300
 #: modules/banner/widgets/banner.php:519
 msgid "Description Color"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:852 modules/button/widgets/button.php:153
+#: modules/slider/widgets/slider.php:853 modules/button/widgets/button.php:153
 msgid "Up Slide"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:853 modules/button/widgets/button.php:154
+#: modules/slider/widgets/slider.php:854 modules/button/widgets/button.php:154
 msgid "Down Slide"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:854 modules/button/widgets/button.php:155
+#: modules/slider/widgets/slider.php:855 modules/button/widgets/button.php:155
 msgid "Right Slide"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:855 modules/button/widgets/button.php:156
+#: modules/slider/widgets/slider.php:856 modules/button/widgets/button.php:156
 msgid "Left Slide"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:856 modules/button/widgets/button.php:157
+#: modules/slider/widgets/slider.php:857 modules/button/widgets/button.php:157
 msgid "Up Scale"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:857 modules/button/widgets/button.php:158
+#: modules/slider/widgets/slider.php:858 modules/button/widgets/button.php:158
 msgid "Down Scale"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:858 modules/button/widgets/button.php:159
+#: modules/slider/widgets/slider.php:859 modules/button/widgets/button.php:159
 msgid "Top Diagonal Slide"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:859 modules/button/widgets/button.php:160
+#: modules/slider/widgets/slider.php:860 modules/button/widgets/button.php:160
 msgid "Bottom Diagonal Slide"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:860 modules/button/widgets/button.php:161
+#: modules/slider/widgets/slider.php:861 modules/button/widgets/button.php:161
 msgid "Right Rayen"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:861 modules/button/widgets/button.php:162
+#: modules/slider/widgets/slider.php:862 modules/button/widgets/button.php:162
 msgid "Left Rayen"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:868 modules/button/widgets/button.php:169
+#: modules/slider/widgets/slider.php:869 modules/button/widgets/button.php:169
 msgid "Hover Effect"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:878 modules/button/widgets/button.php:179
+#: modules/slider/widgets/slider.php:879 modules/button/widgets/button.php:179
 msgid "Use Icon?"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:935
+#: modules/slider/widgets/slider.php:937
 msgid "Primary Button"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:1036
-#: modules/slider/widgets/slider.php:1256
-#: modules/slider/widgets/slider.php:1489
-#: modules/slider/widgets/slider.php:1709 modules/button/widgets/button.php:73
+#: modules/slider/widgets/slider.php:1038
+#: modules/slider/widgets/slider.php:1258
+#: modules/slider/widgets/slider.php:1491
+#: modules/slider/widgets/slider.php:1711 modules/button/widgets/button.php:73
 #: modules/button/widgets/button.php:103
 msgid "Button Icon"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:1078
-#: modules/slider/widgets/slider.php:1298
-#: modules/slider/widgets/slider.php:1531
-#: modules/slider/widgets/slider.php:1751 modules/button/widgets/button.php:635
+#: modules/slider/widgets/slider.php:1080
+#: modules/slider/widgets/slider.php:1300
+#: modules/slider/widgets/slider.php:1533
+#: modules/slider/widgets/slider.php:1753 modules/button/widgets/button.php:635
 #: modules/button/widgets/button.php:761
 msgid "Icon Box Width"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:1098
-#: modules/slider/widgets/slider.php:1318
-#: modules/slider/widgets/slider.php:1551
-#: modules/slider/widgets/slider.php:1771 modules/button/widgets/button.php:655
+#: modules/slider/widgets/slider.php:1100
+#: modules/slider/widgets/slider.php:1320
+#: modules/slider/widgets/slider.php:1553
+#: modules/slider/widgets/slider.php:1773 modules/button/widgets/button.php:655
 #: modules/button/widgets/button.php:781
 msgid "Icon Box Height"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:1118
-#: modules/slider/widgets/slider.php:1338
-#: modules/slider/widgets/slider.php:1571
-#: modules/slider/widgets/slider.php:1791 modules/button/widgets/button.php:675
+#: modules/slider/widgets/slider.php:1120
+#: modules/slider/widgets/slider.php:1340
+#: modules/slider/widgets/slider.php:1573
+#: modules/slider/widgets/slider.php:1793 modules/button/widgets/button.php:675
 #: modules/button/widgets/button.php:801
 msgid "Icon Box Color"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:1130
-#: modules/slider/widgets/slider.php:1350
-#: modules/slider/widgets/slider.php:1583
-#: modules/slider/widgets/slider.php:1803
+#: modules/slider/widgets/slider.php:1132
+#: modules/slider/widgets/slider.php:1352
+#: modules/slider/widgets/slider.php:1585
+#: modules/slider/widgets/slider.php:1805
 msgid "Icon Box Border"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:1152
-#: modules/slider/widgets/slider.php:1372
-#: modules/slider/widgets/slider.php:1605
-#: modules/slider/widgets/slider.php:1825
+#: modules/slider/widgets/slider.php:1154
+#: modules/slider/widgets/slider.php:1374
+#: modules/slider/widgets/slider.php:1607
+#: modules/slider/widgets/slider.php:1827
 msgid "Icon Box Margin"
 msgstr ""
 
-#: modules/slider/widgets/slider.php:1388
+#: modules/slider/widgets/slider.php:1390
 msgid "Secondary Button"
 msgstr ""
 

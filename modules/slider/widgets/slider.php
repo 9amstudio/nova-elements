@@ -322,7 +322,7 @@ class Slider extends Nova_Widget {
         $this->add_control(
             'slider_loop',
             array(
-                'label'        => esc_html__( 'Indicates if the slides will be looped', 'lastudio-elements' ),
+                'label'        => esc_html__( 'Indicates if the slides will be looped', 'nova-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
                 'label_on'     => esc_html__( 'Yes', 'nova-elements' ),
                 'label_off'    => esc_html__( 'No', 'nova-elements' ),

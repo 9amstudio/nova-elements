@@ -1480,19 +1480,6 @@
 		"oS": 0,
 		"uL": 1
 		},
-	"/assets/scss/skin/_nova-testimonials.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 1,
-		"oAP": "/assets/scss/skin/_nova-testimonials.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
 	"/base/module-base.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -1549,123 +1536,123 @@
 		"oAP": "/classes/utils.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-advanced-carousel.php": {
+	"/classes/wpml/class-wpml-nova-elements-advanced-carousel.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-advanced-carousel.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-advanced-carousel.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-animated-text.php": {
+	"/classes/wpml/class-wpml-nova-elements-animated-text.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-animated-text.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-animated-text.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-brands.php": {
+	"/classes/wpml/class-wpml-nova-elements-brands.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-brands.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-brands.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-horizontal-timeline.php": {
+	"/classes/wpml/class-wpml-nova-elements-horizontal-timeline.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-horizontal-timeline.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-horizontal-timeline.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-image-comparison.php": {
+	"/classes/wpml/class-wpml-nova-elements-image-comparison.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-image-comparison.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-image-comparison.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-images-layout.php": {
+	"/classes/wpml/class-wpml-nova-elements-images-layout.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-images-layout.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-images-layout.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-map.php": {
+	"/classes/wpml/class-wpml-nova-elements-map.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-map.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-map.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-portfolio.php": {
+	"/classes/wpml/class-wpml-nova-elements-portfolio.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-portfolio.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-portfolio.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-price-list.php": {
+	"/classes/wpml/class-wpml-nova-elements-price-list.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-price-list.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-price-list.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-pricing-table.php": {
+	"/classes/wpml/class-wpml-nova-elements-pricing-table.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-pricing-table.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-pricing-table.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-scroll-navigation.php": {
+	"/classes/wpml/class-wpml-nova-elements-scroll-navigation.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-scroll-navigation.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-scroll-navigation.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-slider.php": {
+	"/classes/wpml/class-wpml-nova-elements-slider.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-slider.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-slider.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-subscribe-form.php": {
+	"/classes/wpml/class-wpml-nova-elements-subscribe-form.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-subscribe-form.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-subscribe-form.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-table.php": {
+	"/classes/wpml/class-wpml-nova-elements-table.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-table.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-table.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-team-member.php": {
+	"/classes/wpml/class-wpml-nova-elements-team-member.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-team-member.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-team-member.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-testimonials.php": {
+	"/classes/wpml/class-wpml-nova-elements-testimonials.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-testimonials.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-testimonials.php",
 		"oF": 0
 		},
-	"/classes/wpml/class-wpml-lastudio-elements-timeline.php": {
+	"/classes/wpml/class-wpml-nova-elements-timeline.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "/classes/wpml/class-wpml-lastudio-elements-timeline.php",
+		"oAP": "/classes/wpml/class-wpml-nova-elements-timeline.php",
 		"oF": 0
 		},
 	"/controls/control-icon.php": {
