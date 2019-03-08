@@ -18,7 +18,7 @@ class Products_Renderer extends \WC_Shortcode_Products {
 		$this->attributes = $this->parse_attributes( [
 			'columns' => $settings['columns'],
 			'limit' => $settings['limit'],
-			'paginate' => $settings['paginate'],
+			'paginate' => isset($settings['paginate'])?$settings['paginate']:'no',
 			'cache' => false,
 		] );
 		$this->query_args = $this->parse_query_args();
@@ -103,7 +103,7 @@ class Products_Renderer extends \WC_Shortcode_Products {
 
 			$query_args = apply_filters( 'woocommerce_shortcode_products_query', $query_args, $this->attributes, $this->type );
 
-			if ( 'yes' === $settings['paginate'] && 'yes' === $settings['allow_order'] ) {
+			if ( ( isset($settings['paginate']) && 'yes' === $settings['paginate'] ) && 'yes' === $settings['allow_order'] ) {
 				$ordering_args = WC()->query->get_catalog_ordering_args();
 			} else {
 				$ordering_args = WC()->query->get_catalog_ordering_args( $query_args['orderby'], $query_args['order'] );
@@ -118,7 +118,7 @@ class Products_Renderer extends \WC_Shortcode_Products {
 			$query_args['posts_per_page'] = $settings['limit'];
 		} // End if().
 
-		if ( 'yes' === $settings['paginate'] ) {
+		if ( isset($settings['paginate']) && 'yes' === $settings['paginate'] ) {
 			$page = absint( empty( $_GET['product-page'] ) ? 1 : $_GET['product-page'] );
 
 			if ( 1 < $page ) {
@@ -213,10 +213,10 @@ class Products_Renderer extends \WC_Shortcode_Products {
 
         $loopCssClass 	= array();
         $container_attr = $disable_alt_image = $image_size = false;
-        if( 'yes' == $this->settings['enable_custom_image_size'] ) {
+        if( isset( $this->settings['enable_custom_image_size'] ) && 'yes' == $this->settings['enable_custom_image_size'] ) {
             $image_size = true;
         }
-        if( 'yes' == $this->settings['disable_alt_image'] ) {
+        if( isset( $this->settings['disable_alt_image'] ) && 'yes' == $this->settings['disable_alt_image'] ) {
             $disable_alt_image = true;
         }
         if( $layout == 'grid' ){
