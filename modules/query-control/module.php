@@ -62,7 +62,6 @@ class Module extends Module_Base {
 				'label_block' => true,
 				'multiple' => true,
 				'filter_type' => 'by_id',
-				'object_type' => $widget->get_ajax_object_type(),
 				'condition' => [
 					'exclude' => 'manual_selection',
 				],
@@ -129,7 +128,7 @@ class Module extends Module_Base {
 			case 'by_id':
 			case 'post':
 				$query_params = [
-					'post_type' => $data['object_type'],
+					'post_type' => $this->extract_post_type( $data ),
 					's' => $data['q'],
 					'posts_per_page' => -1,
 				];
@@ -142,10 +141,9 @@ class Module extends Module_Base {
 
 				foreach ( $query->posts as $post ) {
 					if ( ! empty( $data['include_type'] ) ) {
-						$post_type_obj = get_post_type_object( $post->post_type );
 						$text = $post_type_obj->labels->singular_name . ': ' . $post->post_title;
 					} else {
-						$text = $post->post_title;
+						$text = ( $post_type_obj->hierarchical ) ? $this->get_post_name_with_parents( $post ) : $post->post_title;
 					}
 
 					$results[] = [
@@ -180,7 +178,7 @@ class Module extends Module_Base {
 				}
 				break;
 			default:
-				$results = apply_filters( 'nova-elements/query_control/get_autocomplete/' . $data['filter_type'], [] );
+				$results = apply_filters( 'nova-elements/query_control/get_autocomplete/' . $data['filter_type'], [], $data );
 		} // End switch().
 
 		return [
@@ -253,7 +251,14 @@ class Module extends Module_Base {
 
 		$controls_manager->register_control( self::QUERY_CONTROL_ID, new Query() );
 	}
+	private function extract_post_type( $data ) {
 
+		if ( ! empty( $data['query'] ) && ! empty( $data['query']['post_type'] ) ) {
+			return $data['query']['post_type'];
+		}
+
+		return $data['object_type'];
+	}
 	/**
 	 * get_term_name_with_parents
 	 * @param \WP_Term $term
@@ -287,7 +292,39 @@ class Module extends Module_Base {
 		}
 		return $name_string . '...' . $separator . $term->name;
 	}
+	/**
+		 * get post name with parents
+		 * @param \WP_Post $post
+		 * @param int $max
+		 *
+		 * @return string
+		 */
+	private function get_post_name_with_parents( $post, $max = 3 ) {
+			if ( 0 === $post->post_parent ) {
+				return $post->post_title;
+			}
+			$separator = is_rtl() ? ' < ' : ' > ';
+			$test_post = $post;
+			$names = [];
+			while ( $test_post->post_parent > 0 ) {
+				$test_post = get_post( $test_post->post_parent );
+				if ( ! $test_post ) {
+					break;
+				}
+				$names[] = $test_post->post_title;
+			}
 
+			$names = array_reverse( $names );
+			if ( count( $names ) < ( $max ) ) {
+				return implode( $separator, $names ) . $separator . $post->post_title;
+			}
+
+			$name_string = '';
+			for ( $i = 0; $i < ( $max - 1 ); $i++ ) {
+				$name_string .= $names[ $i ] . $separator;
+			}
+			return $name_string . '...' . $separator . $post->post_title;
+	}
 	public static function get_query_args( $control_id, $settings ) {
 		$defaults = [
 			$control_id . '_post_type' => 'post',

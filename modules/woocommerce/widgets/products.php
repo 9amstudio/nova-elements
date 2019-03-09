@@ -72,7 +72,7 @@ class Products extends Products_Base {
 					],
 					'product_cat_ids' => [
 						'condition' => [
-							'query_post_type!' => [
+							'post_type!' => [
 								'current_query',
 								'by_id',
 							],
@@ -80,7 +80,7 @@ class Products extends Products_Base {
 					],
 					'product_tag_ids' => [
 						'condition' => [
-							'query_post_type!' => [
+							'post_type!' => [
 								'current_query',
 								'by_id',
 							],

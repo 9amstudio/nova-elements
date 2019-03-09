@@ -145,7 +145,7 @@ class Tabs_Widget extends Nova_Widget {
             [
                 'label'       => esc_html__( 'Content Type', 'nova-elements' ),
                 'type'        => Controls_Manager::SELECT,
-                'default'     => 'template',
+                'default'     => 'editor',
                 'options'     => [
                     'template' => esc_html__( 'Template', 'nova-elements' ),
                     'editor'   => esc_html__( 'Editor', 'nova-elements' ),

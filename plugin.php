@@ -343,6 +343,20 @@ class NovaPlugin {
             NOVA_ELEMENTS_VER,
             true
         );
+				wp_localize_script('lastudio-elements-editor', 'LaCustomBPFE', [
+						'laptop' => [
+								'name' => __( 'Laptop', 'lastudio-elements' ),
+								'text' => __( 'Preview for 1366px', 'lastudio-elements' )
+						],
+						'width800' => [
+								'name' => __( 'Tablet Portrait', 'lastudio-elements' ),
+								'text' => __( 'Preview for 768px', 'lastudio-elements' )
+						],
+						'tablet' => [
+								'name' => __( 'Tablet Landscape', 'lastudio-elements' ),
+								'text' => __( 'Preview for 1024px', 'lastudio-elements' )
+						]
+				]);
 
 	}
 
