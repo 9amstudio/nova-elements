@@ -343,18 +343,18 @@ class NovaPlugin {
             NOVA_ELEMENTS_VER,
             true
         );
-				wp_localize_script('lastudio-elements-editor', 'LaCustomBPFE', [
+				wp_localize_script('nova-elements-editor', 'NovaCustomBPFE', [
 						'laptop' => [
-								'name' => __( 'Laptop', 'lastudio-elements' ),
-								'text' => __( 'Preview for 1366px', 'lastudio-elements' )
+								'name' => __( 'Laptop', 'nova-elements' ),
+								'text' => __( 'Preview for 1366px', 'nova-elements' )
 						],
 						'width800' => [
-								'name' => __( 'Tablet Portrait', 'lastudio-elements' ),
+								'name' => __( 'Tablet Portrait', 'nova-elements' ),
 								'text' => __( 'Preview for 768px', 'lastudio-elements' )
 						],
 						'tablet' => [
-								'name' => __( 'Tablet Landscape', 'lastudio-elements' ),
-								'text' => __( 'Preview for 1024px', 'lastudio-elements' )
+								'name' => __( 'Tablet Landscape', 'nova-elements' ),
+								'text' => __( 'Preview for 1024px', 'nova-elements' )
 						]
 				]);
 

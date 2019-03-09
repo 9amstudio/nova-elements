@@ -4,15 +4,15 @@
 
 	$(window).on('load', function () {
 
-			var _html = '<div class="elementor-panel-footer-sub-menu-item" data-device-mode="laptop"><i class="elementor-icon eicon-laptop" aria-hidden="true"></i><span class="elementor-title">'+ LaCustomBPFE.laptop.name +'</span><span class="elementor-description">'+LaCustomBPFE.laptop.text+'</span></div>';
-				_html += '<div class="elementor-panel-footer-sub-menu-item" data-device-mode="tablet"><i class="elementor-icon eicon-device-tablet landscape" aria-hidden="true"></i><span class="elementor-title">'+LaCustomBPFE.tablet.name+'</span><span class="elementor-description">'+LaCustomBPFE.tablet.text+'</span></div>',
-				_html += '<div class="elementor-panel-footer-sub-menu-item" data-device-mode="width800"><i class="elementor-icon eicon-device-width800" aria-hidden="true"></i><span class="elementor-title">'+LaCustomBPFE.width800.name+'</span><span class="elementor-description">'+LaCustomBPFE.width800.text+'</span></div>';
+			var _html = '<div class="elementor-panel-footer-sub-menu-item" data-device-mode="laptop"><i class="elementor-icon eicon-laptop" aria-hidden="true"></i><span class="elementor-title">'+ NovaCustomBPFE.laptop.name +'</span><span class="elementor-description">'+LaCustomBPFE.laptop.text+'</span></div>';
+				_html += '<div class="elementor-panel-footer-sub-menu-item" data-device-mode="tablet"><i class="elementor-icon eicon-device-tablet landscape" aria-hidden="true"></i><span class="elementor-title">'+NovaCustomBPFE.tablet.name+'</span><span class="elementor-description">'+LaCustomBPFE.tablet.text+'</span></div>',
+				_html += '<div class="elementor-panel-footer-sub-menu-item" data-device-mode="width800"><i class="elementor-icon eicon-device-width800" aria-hidden="true"></i><span class="elementor-title">'+NovaCustomBPFE.width800.name+'</span><span class="elementor-description">'+LaCustomBPFE.width800.text+'</span></div>';
 
 
 				$('#elementor-panel-footer-responsive .elementor-panel-footer-sub-menu-wrapper .elementor-panel-footer-sub-menu-item[data-device-mode="tablet"]').replaceWith(_html);
 
 		});
-		
+
 	var NovaElementsEditor = {
 
 		activeSection: null,
