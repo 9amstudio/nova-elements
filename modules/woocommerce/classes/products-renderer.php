@@ -222,7 +222,7 @@ class Products_Renderer extends \WC_Shortcode_Products {
         if( $layout == 'grid' ){
             if( 'yes' == $this->settings['carousel_enabled'] ) {
                 $container_attr = ' data-slider_config="'. esc_attr($this->settings['carousel_setting']) .'"';
-                $loopCssClass[] = 'nova-carousel slick-carousel';
+                $loopCssClass[] = 'nova-carousel';
             }
         }
 
