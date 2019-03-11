@@ -9,13 +9,13 @@ $use_icon = $this->get_settings_for_display( 'use_button_icon' );
 <div class="swiper-slide">
   <div class="slider__item">
     <?php
-      echo $this->__loop_item( array( 'item_subtitle' ), '<h6 class="slide-subtitle"><span class="down-up"><span>%s</span></span></h6>' );
-      echo $this->__loop_item( array( 'item_title' ), '<h3 class="slide-title"><span class="down-up"><span>%s</span></span></h3>' );
-      echo $this->__loop_item( array( 'item_desc' ), '<div class="slide-description"><span class="down-up"><span>%s</span></span></div>' );
+      echo $this->__loop_item( array( 'item_subtitle' ), '<div class="down-up"><div class="span"><h6 class="slide-subtitle">%s</h6></div></div>' );
+      echo $this->__loop_item( array( 'item_title' ), '<div class="down-up"><div class="span"><h3 class="slide-title">%s</h3></div></div>' );
+      echo $this->__loop_item( array( 'item_desc' ), '<div class="down-up"><div class="span"><div class="slide-description">%s</div></div></div>' );
     ?>
 
     <div class="nova-slider__button-wrapper">
-      <span class="down-up"><span>
+      <div class="down-up"><div class="span">
         <div class="nova-button__container">
           <?php
             echo $this->__loop_button_item( array( 'item_button_primary_url', 'item_button_primary_text' ), '<a '.$this->get_render_attribute_string( 'nova-button-primary' ).' href="%1$s">
@@ -48,7 +48,7 @@ $use_icon = $this->get_settings_for_display( 'use_button_icon' );
             </a>' );
           ?>
         </div>
-      </span></span>
+      </div></div>
     </div>
   </div>
 </div>
