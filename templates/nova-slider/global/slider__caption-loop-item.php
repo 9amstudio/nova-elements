@@ -10,7 +10,7 @@ $use_icon = $this->get_settings_for_display( 'use_button_icon' );
   <div class="slider__item">
     <?php
       echo $this->__loop_item( array( 'item_subtitle' ), '<h6 class="slide-subtitle"><span class="down-up"><span>%s</span></span></h6>' );
-      echo $this->__loop_item( array( 'item_title' ), '<h1 class="slide-title"><span class="down-up"><span>%s</span></span></h1>' );
+      echo $this->__loop_item( array( 'item_title' ), '<h3 class="slide-title"><span class="down-up"><span>%s</span></span></h3>' );
       echo $this->__loop_item( array( 'item_desc' ), '<div class="slide-description"><span class="down-up"><span>%s</span></span></div>' );
     ?>
 
