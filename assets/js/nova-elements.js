@@ -425,49 +425,48 @@
             mobilePortraitSlides = parseInt(options.slidesToShow.mobile_portrait) || mobileSlides;
 
 			options.slidesToShow = parseInt(options.slidesToShow.desktop) || 1;
-
+			console.log(laptopSlides);
 			defaultOptions = {
 				responsive: [
-                    {
-                        breakpoint: 1600,
-                        settings: {
-                            slidesToShow: laptopSlides,
-                            slidesToScroll: options.slidesToScroll
-                        }
-                    },
+          {
+              breakpoint: 1600,
+              settings: {
+                  slidesToShow: laptopSlides,
+                  slidesToScroll: options.slidesToScroll
+              }
+          },
 					{
 						breakpoint: 1025,
 						settings: {
 							slidesToShow: tabletSlides,
-                            slidesToScroll: tabletSlides
+              slidesToScroll: tabletSlides
 						}
 					},
 					{
 						breakpoint: 800,
 						settings: {
 							slidesToShow: tabletPortraitSlides,
-                            slidesToScroll: tabletPortraitSlides
+              slidesToScroll: tabletPortraitSlides
 						}
 					},
 					{
 						breakpoint: 768,
 						settings: {
 							slidesToShow: mobileSlides,
-                            slidesToScroll: mobileSlides
+              slidesToScroll: mobileSlides
 						}
 					},
 					{
 						breakpoint: 577,
 						settings: {
 							slidesToShow: mobilePortraitSlides,
-                            slidesToScroll: mobilePortraitSlides
+              slidesToScroll: mobilePortraitSlides
 						}
 					}
 				]
 			};
 
 			slickOptions = $.extend( {}, defaultOptions, options );
-
 			$target.slick( slickOptions );
 		},
 
