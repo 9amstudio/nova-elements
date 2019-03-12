@@ -2019,6 +2019,16 @@
 		"oAP": "/nova-elements.php",
 		"oF": 0
 		},
+	"/override/assets/js/editor.min-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "/override/assets/js/editor.min-min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
 	"/override/assets/js/editor.min.js": {
 		"ft": 64,
 		"ma": 0,
