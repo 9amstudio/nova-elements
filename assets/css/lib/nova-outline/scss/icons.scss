@@ -1,0 +1,28 @@
+/*------------------------
+	icons
+-------------------------*/
+@function unicode($str) {
+  @return unquote("\"\\#{$str}\"");
+}
+
+$nova-icon-delivery-3: unicode(ea02);
+$nova-icon-cart-return: unicode(ea03);
+$nova-icon-discount: unicode(ea04);
+$nova-icon-customer-support: unicode(ea05);
+
+.nova-icon-delivery-3::before {
+  content: $nova-icon-delivery-3;
+}
+
+.nova-icon-cart-return::before {
+  content: $nova-icon-cart-return;
+}
+
+.nova-icon-discount::before {
+  content: $nova-icon-discount;
+}
+
+.nova-icon-customer-support::before {
+  content: $nova-icon-customer-support;
+}
+

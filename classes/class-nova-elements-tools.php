@@ -201,7 +201,7 @@ if ( ! class_exists( 'Nova_Elements_Tools' ) ) {
 
 			$default = array(
 				'icons'  => false,
-				'format' => 'nova-outline-icon %s',
+				'format' => 'nova-icon %s',
 				'file'   => NOVA_ELEMENTS_PATH . 'assets/css/lib/nova-outline/css/style.css'
 			);
 
