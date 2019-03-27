@@ -5,14 +5,14 @@
   @return unquote("\"\\#{$str}\"");
 }
 
-$nova-icon-delivery-3: unicode(ea02);
 $nova-icon-cart-return: unicode(ea03);
 $nova-icon-discount: unicode(ea04);
 $nova-icon-customer-support: unicode(ea05);
-
-.nova-icon-delivery-3::before {
-  content: $nova-icon-delivery-3;
-}
+$nova-icon-delivery-fast: unicode(ea06);
+$nova-icon-discount-2: unicode(ea07);
+$nova-icon-customer-support-2: unicode(ea08);
+$nova-icon-cart-return-2: unicode(ea09);
+$nova-icon-delivery-fast-2: unicode(ea0a);
 
 .nova-icon-cart-return::before {
   content: $nova-icon-cart-return;
@@ -24,5 +24,25 @@ $nova-icon-customer-support: unicode(ea05);
 
 .nova-icon-customer-support::before {
   content: $nova-icon-customer-support;
+}
+
+.nova-icon-delivery-fast::before {
+  content: $nova-icon-delivery-fast;
+}
+
+.nova-icon-discount-2::before {
+  content: $nova-icon-discount-2;
+}
+
+.nova-icon-customer-support-2::before {
+  content: $nova-icon-customer-support-2;
+}
+
+.nova-icon-cart-return-2::before {
+  content: $nova-icon-cart-return-2;
+}
+
+.nova-icon-delivery-fast-2::before {
+  content: $nova-icon-delivery-fast-2;
 }
 
