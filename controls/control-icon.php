@@ -28,7 +28,6 @@ class Control_Icon extends \Elementor\Control_Icon {
 	public static function get_icons_set() {
 
 		$icon_data = nova_elements_tools()->get_theme_icons_data();
-
 		// Prepare icons array
 		if ( ! empty( $icon_data['icons'] ) ) {
 			$icons = $icon_data['icons'];

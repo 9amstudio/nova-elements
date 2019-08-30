@@ -154,35 +154,34 @@ Generated using nucleoapp.com
 	icons
 -------------------------*/
 
-.nova-icon-cart-return::before {
+.nova-icon-cart-return:before {
   content: "\ea03";
 }
 
-.nova-icon-discount::before {
+.nova-icon-discount:before {
   content: "\ea04";
 }
 
-.nova-icon-customer-support::before {
+.nova-icon-customer-support:before {
   content: "\ea05";
 }
 
-.nova-icon-delivery-fast::before {
+.nova-icon-delivery-fast:before {
   content: "\ea06";
 }
 
-.nova-icon-discount-2::before {
+.nova-icon-discount-2:before {
   content: "\ea07";
 }
 
-.nova-icon-customer-support-2::before {
+.nova-icon-customer-support-2:before {
   content: "\ea08";
 }
 
-.nova-icon-cart-return-2::before {
+.nova-icon-cart-return-2:before {
   content: "\ea09";
 }
 
-.nova-icon-delivery-fast-2::before {
+.nova-icon-delivery-fast-2:before {
   content: "\ea0a";
 }
-
