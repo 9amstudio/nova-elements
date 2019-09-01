@@ -350,7 +350,7 @@ class NovaPlugin {
 						],
 						'width800' => [
 								'name' => __( 'Tablet Portrait', 'nova-elements' ),
-								'text' => __( 'Preview for 768px', 'lastudio-elements' )
+								'text' => __( 'Preview for 768px', 'nova-elements' )
 						],
 						'tablet' => [
 								'name' => __( 'Tablet Landscape', 'nova-elements' ),
