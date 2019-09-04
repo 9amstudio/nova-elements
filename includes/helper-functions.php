@@ -15,7 +15,7 @@ if (!function_exists('nova_log')) {
 
 if(!function_exists('nova_elements_template_path')){
     function nova_elements_template_path(){
-        return apply_filters( 'nova-elements/template-path', 'nova-elements/' );
+        return apply_filters( 'nova-elements/template-path', 'templates/elementor/' );
     }
 }
 

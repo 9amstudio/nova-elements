@@ -391,7 +391,7 @@
 				return;
 			}
 
-            settings.adaptiveHeight = settings['adaptiveHeight'];
+            settings.adaptiveHeight = settings['adaptiveHeight'] || false;
 
             NovaElements.initCarousel( $target, settings );
 		},
@@ -432,7 +432,7 @@
               breakpoint: 1600,
               settings: {
                   slidesToShow: laptopSlides,
-                  slidesToScroll: options.slidesToScroll
+                  slidesToScroll: laptopSlides
               }
           },
 					{
